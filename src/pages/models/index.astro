@@ -71,8 +71,8 @@ const byEra = eras.map((e) => ({ ...e, models: models.filter((m) => m.era.key ==
 <style>
   .page-head { padding-block: clamp(56px, 9vw, 120px) 40px; }
   .page-head h1 { margin: 16px 0 24px; }
-  .filters { position: sticky; top: 65px; z-index: 10; display: grid; gap: 10px; padding-block: 14px; background: linear-gradient(var(--ink) 75%, transparent); }
-  .filters__row { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; align-items: center; }
+  .filters { position: sticky; top: 65px; z-index: 10; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; padding-block: 14px; background: linear-gradient(var(--ink) 75%, transparent); }
+  .filters__row { position: relative; display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; align-items: center; }
   .search { margin-left: auto; }
   .search input { font: inherit; font-family: var(--mono); font-size: .8rem; background: var(--ink-2); color: var(--cream); border: 1px solid var(--line-2); border-radius: 999px; padding: .55em 1.1em; width: 220px; }
   .search input:focus { outline: none; border-color: var(--amber); }

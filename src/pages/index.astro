@@ -26,8 +26,10 @@ const boxPool = [...archive.history, ...archive.brochures.map((b) => ({ ...b.pag
   ...archive.press.map((b) => ({ ...b.pages[0], caption: b.title }))].filter(isBox);
 const boxPicks = ['Rodec 25!', 'Rodec Radio, Lange', 'Stereo Technic', 'Rodec celebrates', 'In the Rodec lab']
   .map((t) => boxPool.find((i) => i.caption?.startsWith(t))).filter(Boolean) as typeof boxPool;
-const xfA = { src: '/media/models/cu881/cu-881-front-bw.webp', year: 1970, name: 'CU881', slug: 'cu881' };
-const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-wereldwijd-met-aparte-toonregeling-per-kanaal-1986.webp', year: 1986, name: 'MX18', slug: 'mx18' };
+// Crossfader: every Rodec with a photo, in order of release.
+const xfModels = models.filter((m) => !m.curiosity && !m.name.startsWith('Donalbi') && m.photos.length && m.year)
+  .map((m) => ({ src: m.photos[0].thumb, year: m.year, name: m.name, slug: m.slug }));
+const xfFirst = xfModels[0], xfLast = xfModels[xfModels.length - 1];
 ---
 <Base>
   <!-- HERO -->
@@ -60,23 +62,23 @@ const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-we
     <div class="wrap xf-wrap">
       <div class="xf__text reveal">
         <p class="label red">Crossfade through time</p>
-        <h2>Sixteen years. One revolution.</h2>
-        <p class="lede">In 1970 the CU881 put slide faders on a mixing panel. In 1986 the MX18 gave every channel its own three-band EQ, and the rest of the industry followed. Grab the crossfader.</p>
+        <h2>Half a century on one fader.</h2>
+        <p class="lede">From the {xfFirst.year} {xfFirst.name} to the {xfLast.year} {xfLast.name}: {xfModels.length} Rodecs in order of release. Grab the crossfader and slide through the decades.</p>
       </div>
-      <div class="xf reveal alu screws" style="--x:0">
+      <div class="xf reveal alu screws" data-models={JSON.stringify(xfModels)}>
         <div class="xf__screen">
-          <img class="xf__a" src={xfA.src} alt={`Rodec ${xfA.name}, ${xfA.year}`} loading="lazy" />
-          <img class="xf__b" src={xfB.src} alt={`Rodec ${xfB.name}, ${xfB.year}`} loading="lazy" />
-          <a class="xf__tag xf__tag--a" href={`/models/${xfA.slug}/`}>{xfA.year} · {xfA.name}</a>
-          <a class="xf__tag xf__tag--b" href={`/models/${xfB.slug}/`}>{xfB.year} · {xfB.name}</a>
+          <img class="xf__img xf__a" src={xfFirst.src} alt={`Rodec ${xfFirst.name}, ${xfFirst.year}`} />
+          <img class="xf__img xf__b" src={xfModels[1].src} alt="" style="opacity:0" />
+          <a class="xf__tag" href={`/models/${xfFirst.slug}/`}>{xfFirst.year} · {xfFirst.name}</a>
+          <span class="xf__count label">1 / {xfModels.length}</span>
         </div>
         <div class="xf__deck">
-          <span class="label">A</span>
+          <span class="label">{xfFirst.year}</span>
           <div class="xf__track">
-            <input type="range" min="0" max="100" value="0" aria-label="Crossfade between 1970 and 1986" />
+            <input type="range" min="0" max={(xfModels.length - 1) * 100} value="0" aria-label={`Crossfade through ${xfModels.length} Rodec models, ${xfFirst.year} to ${xfLast.year}`} />
             <div class="xf__ticks"></div>
           </div>
-          <span class="label">B</span>
+          <span class="label">{xfLast.year}</span>
         </div>
         <p class="label xf__silk">Crossfader · curve: smooth</p>
       </div>
@@ -170,9 +172,34 @@ const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-we
 </Base>
 
 <script>
+  // Crossfader: two image layers; slot A shows model i, slot B model i+1, faded by the fraction.
   const xf = document.querySelector<HTMLElement>('.xf');
-  const range = xf?.querySelector<HTMLInputElement>('input[type=range]');
-  range?.addEventListener('input', () => xf!.style.setProperty('--x', String(Number(range.value) / 100)));
+  if (xf) {
+    const list: { src: string; year: number; name: string; slug: string }[] = JSON.parse(xf.dataset.models!);
+    const range = xf.querySelector<HTMLInputElement>('input[type=range]')!;
+    const a = xf.querySelector<HTMLImageElement>('.xf__a')!, b = xf.querySelector<HTMLImageElement>('.xf__b')!;
+    const tag = xf.querySelector<HTMLAnchorElement>('.xf__tag')!, count = xf.querySelector<HTMLElement>('.xf__count')!;
+    const seen = new Set<string>();
+    const preload = (i: number) => { const m = list[i]; if (m && !seen.has(m.src)) { seen.add(m.src); new Image().src = m.src; } };
+    const set = (img: HTMLImageElement, m?: { src: string; name: string; year: number }) => {
+      if (!m) return;
+      if (!img.src.endsWith(m.src)) img.src = m.src;
+      img.alt = `Rodec ${m.name}, ${m.year}`;
+    };
+    const update = () => {
+      const v = Number(range.value) / 100;
+      const i = Math.min(Math.floor(v), list.length - 1), f = v - i;
+      set(a, list[i]); set(b, list[i + 1]);
+      a.style.opacity = String(1 - f); b.style.opacity = String(f);
+      const cur = list[f < 0.5 ? i : Math.min(i + 1, list.length - 1)];
+      tag.textContent = `${cur.year} · ${cur.name}`;
+      tag.href = `/models/${cur.slug}/`;
+      count.textContent = `${list.indexOf(cur) + 1} / ${list.length}`;
+      for (let k = i - 2; k <= i + 3; k++) preload(k);
+    };
+    range.addEventListener('input', update);
+    range.addEventListener('pointerdown', () => list.forEach((_, k) => k < 12 && preload(k)), { once: true });
+  }
 </script>
 
 <style>
@@ -204,12 +231,11 @@ const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-we
   .xf__text h2 { margin: 12px 0 24px; }
   .xf { border-radius: 10px; padding: clamp(18px, 3vw, 32px); padding-top: 36px; }
   .xf__screen { position: relative; aspect-ratio: 16 / 10; border-radius: 4px; overflow: hidden; background: #0b0b0a; box-shadow: inset 0 2px 12px rgba(0,0,0,.8), 0 0 0 1px rgba(0,0,0,.4); }
-  .xf__screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 6%; transition: opacity .08s linear; }
-  .xf__a { opacity: calc(1 - var(--x)); filter: grayscale(1) contrast(1.05); background: #e8e6e1; }
-  .xf__b { opacity: var(--x); background: #f2f0ec; }
+  .xf__screen { background: #efede8; }
+  .xf__screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 6%; mix-blend-mode: multiply; }
+  .xf__count { position: absolute; top: 12px; right: 12px; color: #6b675f; }
   .xf__tag { position: absolute; bottom: 12px; font-family: var(--mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; padding: 5px 9px; border-radius: 3px; background: var(--ink); color: var(--cream); text-decoration: none; }
-  .xf__tag--a { left: 12px; opacity: calc(1 - var(--x) * .7); }
-  .xf__tag--b { right: 12px; opacity: calc(.3 + var(--x) * .7); background: var(--red); }
+  .xf__tag { left: 12px; background: var(--red); }
   .xf__deck { display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: center; margin-top: 24px; }
   .xf__track { position: relative; height: 44px; display: grid; align-items: center; }
   .xf__ticks { position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(90deg, #4a4740 0 1px, transparent 1px 10%) center / 100% 30px no-repeat; opacity: .5; }
