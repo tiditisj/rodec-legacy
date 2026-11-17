@@ -27,6 +27,8 @@ import xlrd
 from PIL import Image, ImageOps
 from pypdf import PdfReader, PdfWriter
 
+import box_scans
+
 Image.MAX_IMAGE_PIXELS = None
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -42,6 +44,8 @@ MANUALS = ARCHIVE / "RODEC Manuals + schemas"
 WEB_APPROVED = ARCHIVE / "_Web fotos (goedgekeurd)"
 # The 2010 "55 years" catalogue (history + full product range) lives in the Marketing folder.
 CATALOGUE = Path(os.environ.get("RODEC_CATALOGUE", ARCHIVE.parent.parent / "Marketing/history/rodec_history.pdf"))
+# Scans of the paper archive boxes (doos1, doos2, ...); contents are listed in box_scans.py.
+BOXES = ARCHIVE / "Rodec archiefdozen"
 CACHE = Path(__file__).resolve().parent.parent / ".cache"
 
 PUBLIC = ROOT / "public"
@@ -491,9 +495,35 @@ DOC_LIST = [
         PROG + ["mx180-original", "bx9-original", "bx14-original", "scratchbox", "restyler", "patch-live"],
         [str(CATALOGUE)]),
 ]
+DOC_LIST += [Doc(i, t, k, ms, [f"box:{s}" for s in stems]) for i, t, k, ms, stems in box_scans.DOCS]
+
+
+def box_src(stem: str, crop: tuple | None = None, rotate: int = 0) -> Path:
+    """A scan from the archive boxes, levelled (the scans come out grey) and optionally cropped,
+    cached as a JPEG so the rest of the pipeline can treat it like any other image."""
+    hits = sorted(BOXES.glob(f"doos*/{stem}.jpg"))
+    if not hits:
+        raise FileNotFoundError(f"box scan {stem} not found")
+    src = hits[0]
+    tag = f"-{'-'.join(map(str, crop))}" if crop else ""
+    out = CACHE / "boxes" / f"{slugify(stem) or 'scan'}{tag}.jpg"
+    if FORCE or not out.exists() or out.stat().st_mtime < src.stat().st_mtime:
+        out.parent.mkdir(parents=True, exist_ok=True)
+        with Image.open(src) as im:
+            im = im.convert("RGB")
+            if crop:
+                im = im.crop(crop)
+            if rotate:
+                im = im.rotate(rotate, expand=True)
+            im = ImageOps.autocontrast(im, cutoff=(0.3, 1.5), preserve_tone=True)
+            im.thumbnail((3200, 3200), Image.LANCZOS)
+            im.save(out, "JPEG", quality=90)
+    return out
 
 
 def resolve(patterns: list[str]) -> list[Path]:
+    if patterns and all(p.startswith("box:") for p in patterns):
+        return [box_src(p[4:]) for p in patterns]
     for pat in patterns:  # first pattern that yields files wins (fallback copies)
         if pat.startswith("/"):
             if Path(pat).is_file():
@@ -607,6 +637,12 @@ def main() -> None:
         m["photos"] = [Img(p, f"models/{m['slug']}/{slugify(stem)}", f"Rodec {m['name']}",
                            re.sub(r"(?i)\b(BW|C)\b", "", stem).strip()).build() for p, stem in items]
 
+    # ---- studio photo prints from the archive boxes
+    for stem, slug, cap, first in box_scans.PHOTOS:
+        m = by_slug[slug]
+        img = Img(box_src(stem), f"models/{slug}/box-{slugify(stem)}", f"Rodec {m['name']}", cap).build()
+        m["photos"].insert(0, img) if first else m["photos"].append(img)
+
     # ---- brochures (old folders) and press
     print("Brochures & press …")
     general_brochures, press = {}, {}
@@ -650,6 +686,26 @@ def main() -> None:
     add_press(ads / "OLD REVIEWS & AD's", "ad")
     add_press(ads / "NEW REVIEW", "review")
     add_press(ads, "press")
+
+    # ---- archive boxes: brochures (replacing older scans of the same brochure, see box_scans.REPLACES) and press
+    print("Archive boxes …")
+    for title, slug, stems in box_scans.BROCHURES:
+        what = f"Rodec {title}" if slug else title
+        pages = [Img(box_src(st), f"brochures/box-{slugify(title)}-{i + 1:03d}", f"{what}, page {i + 1}", full=2000).build()
+                 for i, st in enumerate(stems)]
+        old_title = box_scans.REPLACES.get(title)
+        if slug:
+            old = by_slug[slug]["brochures"]
+            if old_title and not any(b["title"] == old_title for b in old):
+                warn(f"{title}: nothing called {old_title!r} to replace")
+            by_slug[slug]["brochures"] = [b for b in old if b["title"] != old_title] + [{"title": title, "pages": pages, "box": True}]
+        else:
+            general_brochures.pop(old_title, None)
+            general_brochures[title] = pages
+    for title, kind, stems in box_scans.PRESS:
+        press[title] = {"title": title, "kind": kind, "pages": [
+            Img(box_src(st), f"press/box-{slugify(title)}-{i + 1:03d}", f"{title}, page {i + 1}", full=2000).build()
+            for i, st in enumerate(stems)]}
 
     # ---- 2010 catalogue: product shots, history collages and every page
     catalogue_pages, catalogue_history = [], []
@@ -712,11 +768,13 @@ def main() -> None:
         r"^dealerdays anno 1979$": "Dealer days, 1979",
         r"^eind test rodec mx180mkiii$": "Final test of an MX180 MKIII",
     }
+    box_history = [Img(box_src(st, crop, rot), f"history/box-{slugify(cap)[:60]}", cap, cap).build()
+                   for st, cap, crop, rot in box_scans.HISTORY]
     for h in history:
         for pat, cap in HISTORY_CAPTIONS.items():
             if re.match(pat, h.get("caption", ""), re.I):
                 h["caption"] = h["alt"] = cap
-    history = dedupe(history, prefer=[r"RODEC RADIO, Lange", r"founder of Rodec", r"Export business card"])
+    history = dedupe(box_history + history, prefer=[r"RODEC RADIO, Lange", r"founder of Rodec", r"Export business card"])
     # Variants too different for the hash check: other edits of the shop, Roger and card photos.
     history = [h for h in history if not re.match(
         r"(?i)^((rodec )?rodec radio shop|roger de clerck (b&w|color|old)$|rodec address card 70's( - 002)?$)", h.get("caption", ""))]

@@ -427,6 +427,14 @@
   "series": "CU series",
   "photos": [
    {
+    "src": "/media/models/cu881/box-rodec-007.webp",
+    "thumb": "/media/models/cu881/box-rodec-007.thumb.webp",
+    "w": 1800,
+    "h": 1271,
+    "alt": "Rodec CU881",
+    "caption": "CU881, press photo"
+   },
+   {
     "src": "/media/models/cu881/cu-881-eerste-mixer-met-schuif-faders-1970.webp",
     "thumb": "/media/models/cu881/cu-881-eerste-mixer-met-schuif-faders-1970.thumb.webp",
     "w": 1024,
@@ -462,6 +470,26 @@
       "alt": "Rodec brochure: CU881, page 2"
      }
     ]
+   },
+   {
+    "title": "CU881: press photo with specifications",
+    "pages": [
+     {
+      "src": "/media/brochures/box-cu881-press-photo-with-specifications-001.webp",
+      "thumb": "/media/brochures/box-cu881-press-photo-with-specifications-001.thumb.webp",
+      "w": 2000,
+      "h": 1413,
+      "alt": "Rodec CU881: press photo with specifications, page 1"
+     },
+     {
+      "src": "/media/brochures/box-cu881-press-photo-with-specifications-002.webp",
+      "thumb": "/media/brochures/box-cu881-press-photo-with-specifications-002.thumb.webp",
+      "w": 1401,
+      "h": 2000,
+      "alt": "Rodec CU881: press photo with specifications, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -485,6 +513,14 @@
   },
   "series": "CU series",
   "photos": [
+   {
+    "src": "/media/models/cu882/box-rodec-006.webp",
+    "thumb": "/media/models/cu882/box-rodec-006.thumb.webp",
+    "w": 1800,
+    "h": 1207,
+    "alt": "Rodec CU882",
+    "caption": "CU882 control unit, press photo"
+   },
    {
     "src": "/media/models/cu882/cu-882-front-bw.webp",
     "thumb": "/media/models/cu882/cu-882-front-bw.thumb.webp",
@@ -513,6 +549,26 @@
       "alt": "Rodec brochure: CU882, page 2"
      }
     ]
+   },
+   {
+    "title": "CU882: press photo with description",
+    "pages": [
+     {
+      "src": "/media/brochures/box-cu882-press-photo-with-description-001.webp",
+      "thumb": "/media/brochures/box-cu882-press-photo-with-description-001.thumb.webp",
+      "w": 2000,
+      "h": 1341,
+      "alt": "Rodec CU882: press photo with description, page 1"
+     },
+     {
+      "src": "/media/brochures/box-cu882-press-photo-with-description-002.webp",
+      "thumb": "/media/brochures/box-cu882-press-photo-with-description-002.thumb.webp",
+      "w": 1353,
+      "h": 2000,
+      "alt": "Rodec CU882: press photo with description, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -564,6 +620,39 @@
       "alt": "Rodec brochure: CU888, page 2"
      }
     ]
+   },
+   {
+    "title": "CU888 mixing panel",
+    "pages": [
+     {
+      "src": "/media/brochures/box-cu888-mixing-panel-001.webp",
+      "thumb": "/media/brochures/box-cu888-mixing-panel-001.thumb.webp",
+      "w": 1349,
+      "h": 2000,
+      "alt": "Rodec CU888 mixing panel, page 1"
+     }
+    ],
+    "box": true
+   },
+   {
+    "title": "CU888 (Beglec folder)",
+    "pages": [
+     {
+      "src": "/media/brochures/box-cu888-beglec-folder-001.webp",
+      "thumb": "/media/brochures/box-cu888-beglec-folder-001.thumb.webp",
+      "w": 1367,
+      "h": 2000,
+      "alt": "Rodec CU888 (Beglec folder), page 1"
+     },
+     {
+      "src": "/media/brochures/box-cu888-beglec-folder-002.webp",
+      "thumb": "/media/brochures/box-cu888-beglec-folder-002.thumb.webp",
+      "w": 1368,
+      "h": 2000,
+      "alt": "Rodec CU888 (Beglec folder), page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -700,16 +789,17 @@
   ],
   "brochures": [
    {
-    "title": "1572",
+    "title": "Power Amplifier 1572",
     "pages": [
      {
-      "src": "/media/brochures/1572-001.webp",
-      "thumb": "/media/brochures/1572-001.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-power-amplifier-1572-001.webp",
+      "thumb": "/media/brochures/box-power-amplifier-1572-001.thumb.webp",
+      "w": 1355,
       "h": 2000,
-      "alt": "Rodec brochure: 1572, page 1"
+      "alt": "Rodec Power Amplifier 1572, page 1"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -744,23 +834,24 @@
   ],
   "brochures": [
    {
-    "title": "1372",
+    "title": "1372 micro mixing panel",
     "pages": [
      {
-      "src": "/media/brochures/1372-001.webp",
-      "thumb": "/media/brochures/1372-001.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-1372-micro-mixing-panel-001.webp",
+      "thumb": "/media/brochures/box-1372-micro-mixing-panel-001.thumb.webp",
+      "w": 1391,
       "h": 2000,
-      "alt": "Rodec brochure: 1372, page 1"
+      "alt": "Rodec 1372 micro mixing panel, page 1"
      },
      {
-      "src": "/media/brochures/1372-002.webp",
-      "thumb": "/media/brochures/1372-002.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-1372-micro-mixing-panel-002.webp",
+      "thumb": "/media/brochures/box-1372-micro-mixing-panel-002.thumb.webp",
+      "w": 1409,
       "h": 2000,
-      "alt": "Rodec brochure: 1372, page 2"
+      "alt": "Rodec 1372 micro mixing panel, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -785,6 +876,14 @@
   "series": null,
   "photos": [
    {
+    "src": "/media/models/2560/box-rodec-008.webp",
+    "thumb": "/media/models/2560/box-rodec-008.thumb.webp",
+    "w": 1800,
+    "h": 1280,
+    "alt": "Rodec 2560",
+    "caption": "2560 two-channel power amplifier, press photo"
+   },
+   {
     "src": "/media/models/2560/2560-front-bw.webp",
     "thumb": "/media/models/2560/2560-front-bw.thumb.webp",
     "w": 1090,
@@ -795,23 +894,44 @@
   ],
   "brochures": [
    {
-    "title": "2560",
+    "title": "2560 two-channel power amplifier",
     "pages": [
      {
-      "src": "/media/brochures/2560-001.webp",
-      "thumb": "/media/brochures/2560-001.thumb.webp",
-      "w": 1422,
+      "src": "/media/brochures/box-2560-two-channel-power-amplifier-001.webp",
+      "thumb": "/media/brochures/box-2560-two-channel-power-amplifier-001.thumb.webp",
+      "w": 1457,
       "h": 2000,
-      "alt": "Rodec brochure: 2560, page 1"
+      "alt": "Rodec 2560 two-channel power amplifier, page 1"
      },
      {
-      "src": "/media/brochures/2560-002.webp",
-      "thumb": "/media/brochures/2560-002.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-2560-two-channel-power-amplifier-002.webp",
+      "thumb": "/media/brochures/box-2560-two-channel-power-amplifier-002.thumb.webp",
+      "w": 1447,
       "h": 2000,
-      "alt": "Rodec brochure: 2560, page 2"
+      "alt": "Rodec 2560 two-channel power amplifier, page 2"
      }
-    ]
+    ],
+    "box": true
+   },
+   {
+    "title": "2560: press photo with specifications",
+    "pages": [
+     {
+      "src": "/media/brochures/box-2560-press-photo-with-specifications-001.webp",
+      "thumb": "/media/brochures/box-2560-press-photo-with-specifications-001.thumb.webp",
+      "w": 2000,
+      "h": 1422,
+      "alt": "Rodec 2560: press photo with specifications, page 1"
+     },
+     {
+      "src": "/media/brochures/box-2560-press-photo-with-specifications-002.webp",
+      "thumb": "/media/brochures/box-2560-press-photo-with-specifications-002.thumb.webp",
+      "w": 2000,
+      "h": 1444,
+      "alt": "Rodec 2560: press photo with specifications, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -846,16 +966,24 @@
   ],
   "brochures": [
    {
-    "title": "T800",
+    "title": "Tuner T800",
     "pages": [
      {
-      "src": "/media/brochures/t800-001.webp",
-      "thumb": "/media/brochures/t800-001.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-tuner-t800-001.webp",
+      "thumb": "/media/brochures/box-tuner-t800-001.thumb.webp",
+      "w": 1427,
       "h": 2000,
-      "alt": "Rodec brochure: T800, page 1"
+      "alt": "Rodec Tuner T800, page 1"
+     },
+     {
+      "src": "/media/brochures/box-tuner-t800-002.webp",
+      "thumb": "/media/brochures/box-tuner-t800-002.thumb.webp",
+      "w": 1424,
+      "h": 2000,
+      "alt": "Rodec Tuner T800, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -907,6 +1035,26 @@
       "alt": "Rodec brochure: 1361-71, page 2"
      }
     ]
+   },
+   {
+    "title": "1361/1371 stereo mixing panel",
+    "pages": [
+     {
+      "src": "/media/brochures/box-1361-1371-stereo-mixing-panel-001.webp",
+      "thumb": "/media/brochures/box-1361-1371-stereo-mixing-panel-001.thumb.webp",
+      "w": 1431,
+      "h": 2000,
+      "alt": "Rodec 1361/1371 stereo mixing panel, page 1"
+     },
+     {
+      "src": "/media/brochures/box-1361-1371-stereo-mixing-panel-002.webp",
+      "thumb": "/media/brochures/box-1361-1371-stereo-mixing-panel-002.thumb.webp",
+      "w": 1433,
+      "h": 2000,
+      "alt": "Rodec 1361/1371 stereo mixing panel, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -949,26 +1097,29 @@
   ],
   "brochures": [
    {
-    "title": "1364-74",
+    "title": "1364/1374 stereo mixing panel",
     "pages": [
      {
-      "src": "/media/brochures/1364-74-001.webp",
-      "thumb": "/media/brochures/1364-74-001.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-1364-1374-stereo-mixing-panel-001.webp",
+      "thumb": "/media/brochures/box-1364-1374-stereo-mixing-panel-001.thumb.webp",
+      "w": 1425,
       "h": 2000,
-      "alt": "Rodec brochure: 1364-74, page 1"
+      "alt": "Rodec 1364/1374 stereo mixing panel, page 1"
      },
      {
-      "src": "/media/brochures/1364-74-002.webp",
-      "thumb": "/media/brochures/1364-74-002.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-1364-1374-stereo-mixing-panel-002.webp",
+      "thumb": "/media/brochures/box-1364-1374-stereo-mixing-panel-002.thumb.webp",
+      "w": 1419,
       "h": 2000,
-      "alt": "Rodec brochure: 1364-74, page 2"
+      "alt": "Rodec 1364/1374 stereo mixing panel, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
-  "docs": []
+  "docs": [
+   "1364-service-box"
+  ]
  },
  {
   "name": "1363 / 1373",
@@ -1017,6 +1168,26 @@
       "alt": "Rodec brochure: 1363-73, page 2"
      }
     ]
+   },
+   {
+    "title": "1363/1373 stereo mixing panel",
+    "pages": [
+     {
+      "src": "/media/brochures/box-1363-1373-stereo-mixing-panel-001.webp",
+      "thumb": "/media/brochures/box-1363-1373-stereo-mixing-panel-001.thumb.webp",
+      "w": 1446,
+      "h": 2000,
+      "alt": "Rodec 1363/1373 stereo mixing panel, page 1"
+     },
+     {
+      "src": "/media/brochures/box-1363-1373-stereo-mixing-panel-002.webp",
+      "thumb": "/media/brochures/box-1363-1373-stereo-mixing-panel-002.thumb.webp",
+      "w": 1451,
+      "h": 2000,
+      "alt": "Rodec 1363/1373 stereo mixing panel, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -1040,6 +1211,14 @@
   },
   "series": null,
   "photos": [
+   {
+    "src": "/media/models/1061-1071/box-rodec-005.webp",
+    "thumb": "/media/models/1061-1071/box-rodec-005.thumb.webp",
+    "w": 1800,
+    "h": 1325,
+    "alt": "Rodec 1061 / 1071",
+    "caption": "Fader 1061, press photo"
+   },
    {
     "src": "/media/models/1061-1071/1061-front-slanted-bw.webp",
     "thumb": "/media/models/1061-1071/1061-front-slanted-bw.thumb.webp",
@@ -1068,6 +1247,46 @@
       "alt": "Rodec brochure: The fader 1061, page 2"
      }
     ]
+   },
+   {
+    "title": "Fader 1061/1071",
+    "pages": [
+     {
+      "src": "/media/brochures/box-fader-1061-1071-001.webp",
+      "thumb": "/media/brochures/box-fader-1061-1071-001.thumb.webp",
+      "w": 1430,
+      "h": 2000,
+      "alt": "Rodec Fader 1061/1071, page 1"
+     },
+     {
+      "src": "/media/brochures/box-fader-1061-1071-002.webp",
+      "thumb": "/media/brochures/box-fader-1061-1071-002.thumb.webp",
+      "w": 1424,
+      "h": 2000,
+      "alt": "Rodec Fader 1061/1071, page 2"
+     }
+    ],
+    "box": true
+   },
+   {
+    "title": "Fader 1061: press photo with typed specifications",
+    "pages": [
+     {
+      "src": "/media/brochures/box-fader-1061-press-photo-with-typed-specifications-001.webp",
+      "thumb": "/media/brochures/box-fader-1061-press-photo-with-typed-specifications-001.thumb.webp",
+      "w": 2000,
+      "h": 1472,
+      "alt": "Rodec Fader 1061: press photo with typed specifications, page 1"
+     },
+     {
+      "src": "/media/brochures/box-fader-1061-press-photo-with-typed-specifications-002.webp",
+      "thumb": "/media/brochures/box-fader-1061-press-photo-with-typed-specifications-002.thumb.webp",
+      "w": 1483,
+      "h": 2000,
+      "alt": "Rodec Fader 1061: press photo with typed specifications, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -1168,27 +1387,29 @@
   ],
   "brochures": [
    {
-    "title": "1385",
+    "title": "1385 stereo mixing panel",
     "pages": [
      {
-      "src": "/media/brochures/1385-001.webp",
-      "thumb": "/media/brochures/1385-001.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-1385-stereo-mixing-panel-001.webp",
+      "thumb": "/media/brochures/box-1385-stereo-mixing-panel-001.thumb.webp",
+      "w": 1452,
       "h": 2000,
-      "alt": "Rodec brochure: 1385, page 1"
+      "alt": "Rodec 1385 stereo mixing panel, page 1"
      },
      {
-      "src": "/media/brochures/1385-002.webp",
-      "thumb": "/media/brochures/1385-002.thumb.webp",
-      "w": 1414,
+      "src": "/media/brochures/box-1385-stereo-mixing-panel-002.webp",
+      "thumb": "/media/brochures/box-1385-stereo-mixing-panel-002.thumb.webp",
+      "w": 1437,
       "h": 2000,
-      "alt": "Rodec brochure: 1385, page 2"
+      "alt": "Rodec 1385 stereo mixing panel, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": [
-   "1385-manual"
+   "1385-manual",
+   "1385-service-box"
   ]
  },
  {
@@ -1290,16 +1511,17 @@
   ],
   "brochures": [
    {
-    "title": "Mixetta",
+    "title": "Mixetta: the best mixer money can buy",
     "pages": [
      {
-      "src": "/media/brochures/mixetta-001.webp",
-      "thumb": "/media/brochures/mixetta-001.thumb.webp",
-      "w": 1424,
+      "src": "/media/brochures/box-mixetta-the-best-mixer-money-can-buy-001.webp",
+      "thumb": "/media/brochures/box-mixetta-the-best-mixer-money-can-buy-001.thumb.webp",
+      "w": 1428,
       "h": 2000,
-      "alt": "Rodec brochure: Mixetta, page 1"
+      "alt": "Rodec Mixetta: the best mixer money can buy, page 1"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -1353,7 +1575,9 @@
     ]
    }
   ],
-  "docs": []
+  "docs": [
+   "mixmaster-user-jp"
+  ]
  },
  {
   "name": "POWER PROJECT 100",
@@ -1404,13 +1628,14 @@
     "title": "Power Project 100",
     "pages": [
      {
-      "src": "/media/brochures/power-project-100-001.webp",
-      "thumb": "/media/brochures/power-project-100-001.thumb.webp",
+      "src": "/media/brochures/box-power-project-100-001.webp",
+      "thumb": "/media/brochures/box-power-project-100-001.thumb.webp",
       "w": 2000,
-      "h": 1405,
-      "alt": "Rodec brochure: Power Project 100, page 1"
+      "h": 1433,
+      "alt": "Rodec Power Project 100, page 1"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -1435,6 +1660,14 @@
   "series": null,
   "photos": [
    {
+    "src": "/media/models/olympus-olympus2/box-rodec-009.webp",
+    "thumb": "/media/models/olympus-olympus2/box-rodec-009.thumb.webp",
+    "w": 1800,
+    "h": 1228,
+    "alt": "Rodec OLYMPUS / OLYMPUS2",
+    "caption": "Olympus 2, press photo"
+   },
+   {
     "src": "/media/models/olympus-olympus2/olympus-2-front-bw.webp",
     "thumb": "/media/models/olympus-olympus2/olympus-2-front-bw.thumb.webp",
     "w": 767,
@@ -1451,7 +1684,21 @@
     "caption": "OLYMPUS Front"
    }
   ],
-  "brochures": [],
+  "brochures": [
+   {
+    "title": "Olympus: een mixer voor prijsbewuste kopers",
+    "pages": [
+     {
+      "src": "/media/brochures/box-olympus-een-mixer-voor-prijsbewuste-kopers-001.webp",
+      "thumb": "/media/brochures/box-olympus-een-mixer-voor-prijsbewuste-kopers-001.thumb.webp",
+      "w": 1429,
+      "h": 2000,
+      "alt": "Rodec Olympus: een mixer voor prijsbewuste kopers, page 1"
+     }
+    ],
+    "box": true
+   }
+  ],
   "docs": []
  },
  {
@@ -1536,6 +1783,39 @@
       "alt": "Rodec brochure: Disco-Mix & Disco-Max - 25 years Rodec, page 2"
      }
     ]
+   },
+   {
+    "title": "Disco-Mix: de doorbraak in mixer-technologie",
+    "pages": [
+     {
+      "src": "/media/brochures/box-disco-mix-de-doorbraak-in-mixer-technologie-001.webp",
+      "thumb": "/media/brochures/box-disco-mix-de-doorbraak-in-mixer-technologie-001.thumb.webp",
+      "w": 1411,
+      "h": 2000,
+      "alt": "Rodec Disco-Mix: de doorbraak in mixer-technologie, page 1"
+     }
+    ],
+    "box": true
+   },
+   {
+    "title": "Disco-Mix leaflet with block diagram",
+    "pages": [
+     {
+      "src": "/media/brochures/box-disco-mix-leaflet-with-block-diagram-001.webp",
+      "thumb": "/media/brochures/box-disco-mix-leaflet-with-block-diagram-001.thumb.webp",
+      "w": 1413,
+      "h": 2000,
+      "alt": "Rodec Disco-Mix leaflet with block diagram, page 1"
+     },
+     {
+      "src": "/media/brochures/box-disco-mix-leaflet-with-block-diagram-002.webp",
+      "thumb": "/media/brochures/box-disco-mix-leaflet-with-block-diagram-002.thumb.webp",
+      "w": 1409,
+      "h": 2000,
+      "alt": "Rodec Disco-Mix leaflet with block diagram, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -1691,23 +1971,31 @@
   ],
   "brochures": [
    {
-    "title": "Disco max",
+    "title": "Disco-Max",
     "pages": [
      {
-      "src": "/media/brochures/disco-max-001.webp",
-      "thumb": "/media/brochures/disco-max-001.thumb.webp",
-      "w": 1393,
+      "src": "/media/brochures/box-disco-max-001.webp",
+      "thumb": "/media/brochures/box-disco-max-001.thumb.webp",
+      "w": 1427,
       "h": 2000,
-      "alt": "Rodec brochure: Disco max, page 1"
+      "alt": "Rodec Disco-Max, page 1"
      },
      {
-      "src": "/media/brochures/disco-max-002.webp",
-      "thumb": "/media/brochures/disco-max-002.thumb.webp",
-      "w": 1379,
+      "src": "/media/brochures/box-disco-max-002.webp",
+      "thumb": "/media/brochures/box-disco-max-002.thumb.webp",
+      "w": 2000,
+      "h": 1433,
+      "alt": "Rodec Disco-Max, page 2"
+     },
+     {
+      "src": "/media/brochures/box-disco-max-003.webp",
+      "thumb": "/media/brochures/box-disco-max-003.thumb.webp",
+      "w": 1418,
       "h": 2000,
-      "alt": "Rodec brochure: Disco max, page 2"
+      "alt": "Rodec Disco-Max, page 3"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -1796,37 +2084,44 @@
   ],
   "brochures": [
    {
-    "title": "MF100M",
+    "title": "MF100M: a new approach to mixing pleasure",
     "pages": [
      {
-      "src": "/media/brochures/mf100m-001.webp",
-      "thumb": "/media/brochures/mf100m-001.thumb.webp",
-      "w": 1403,
-      "h": 2000,
-      "alt": "Rodec brochure: MF100M, page 1"
+      "src": "/media/brochures/box-mf100m-a-new-approach-to-mixing-pleasure-001.webp",
+      "thumb": "/media/brochures/box-mf100m-a-new-approach-to-mixing-pleasure-001.thumb.webp",
+      "w": 2000,
+      "h": 1409,
+      "alt": "Rodec MF100M: a new approach to mixing pleasure, page 1"
      },
      {
-      "src": "/media/brochures/mf100m-002.webp",
-      "thumb": "/media/brochures/mf100m-002.thumb.webp",
-      "w": 1392,
-      "h": 2000,
-      "alt": "Rodec brochure: MF100M, page 2"
-     },
-     {
-      "src": "/media/brochures/mf100m-003.webp",
-      "thumb": "/media/brochures/mf100m-003.thumb.webp",
-      "w": 1169,
-      "h": 819,
-      "alt": "Rodec brochure: MF100M, page 3"
-     },
-     {
-      "src": "/media/brochures/mf100m-004.webp",
-      "thumb": "/media/brochures/mf100m-004.thumb.webp",
-      "w": 1169,
-      "h": 816,
-      "alt": "Rodec brochure: MF100M, page 4"
+      "src": "/media/brochures/box-mf100m-a-new-approach-to-mixing-pleasure-002.webp",
+      "thumb": "/media/brochures/box-mf100m-a-new-approach-to-mixing-pleasure-002.thumb.webp",
+      "w": 2000,
+      "h": 1407,
+      "alt": "Rodec MF100M: a new approach to mixing pleasure, page 2"
      }
-    ]
+    ],
+    "box": true
+   },
+   {
+    "title": "MF100M: Rodec mixes music into magic",
+    "pages": [
+     {
+      "src": "/media/brochures/box-mf100m-rodec-mixes-music-into-magic-001.webp",
+      "thumb": "/media/brochures/box-mf100m-rodec-mixes-music-into-magic-001.thumb.webp",
+      "w": 1428,
+      "h": 2000,
+      "alt": "Rodec MF100M: Rodec mixes music into magic, page 1"
+     },
+     {
+      "src": "/media/brochures/box-mf100m-rodec-mixes-music-into-magic-002.webp",
+      "thumb": "/media/brochures/box-mf100m-rodec-mixes-music-into-magic-002.thumb.webp",
+      "w": 1415,
+      "h": 2000,
+      "alt": "Rodec MF100M: Rodec mixes music into magic, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -2080,23 +2375,24 @@
   ],
   "brochures": [
    {
-    "title": "HDA340",
+    "title": "HDA340: success is no accident",
     "pages": [
      {
-      "src": "/media/brochures/hda340-001.webp",
-      "thumb": "/media/brochures/hda340-001.thumb.webp",
-      "w": 1387,
+      "src": "/media/brochures/box-hda340-success-is-no-accident-001.webp",
+      "thumb": "/media/brochures/box-hda340-success-is-no-accident-001.thumb.webp",
+      "w": 1428,
       "h": 2000,
-      "alt": "Rodec brochure: HDA340, page 1"
+      "alt": "Rodec HDA340: success is no accident, page 1"
      },
      {
-      "src": "/media/brochures/hda340-002.webp",
-      "thumb": "/media/brochures/hda340-002.thumb.webp",
-      "w": 1388,
+      "src": "/media/brochures/box-hda340-success-is-no-accident-002.webp",
+      "thumb": "/media/brochures/box-hda340-success-is-no-accident-002.thumb.webp",
+      "w": 1440,
       "h": 2000,
-      "alt": "Rodec brochure: HDA340, page 2"
+      "alt": "Rodec HDA340: success is no accident, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -2210,23 +2506,24 @@
   ],
   "brochures": [
    {
-    "title": "SM300",
+    "title": "SM300: a triumph of flexibility",
     "pages": [
      {
-      "src": "/media/brochures/sm300-001.webp",
-      "thumb": "/media/brochures/sm300-001.thumb.webp",
-      "w": 1407,
+      "src": "/media/brochures/box-sm300-a-triumph-of-flexibility-001.webp",
+      "thumb": "/media/brochures/box-sm300-a-triumph-of-flexibility-001.thumb.webp",
+      "w": 1427,
       "h": 2000,
-      "alt": "Rodec brochure: SM300, page 1"
+      "alt": "Rodec SM300: a triumph of flexibility, page 1"
      },
      {
-      "src": "/media/brochures/sm300-002.webp",
-      "thumb": "/media/brochures/sm300-002.thumb.webp",
-      "w": 1402,
+      "src": "/media/brochures/box-sm300-a-triumph-of-flexibility-002.webp",
+      "thumb": "/media/brochures/box-sm300-a-triumph-of-flexibility-002.thumb.webp",
+      "w": 1436,
       "h": 2000,
-      "alt": "Rodec brochure: SM300, page 2"
+      "alt": "Rodec SM300: a triumph of flexibility, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -2262,7 +2559,35 @@
     "caption": "QS4 Front Slanted"
    }
   ],
-  "brochures": [],
+  "brochures": [
+   {
+    "title": "QS4 start unit",
+    "pages": [
+     {
+      "src": "/media/brochures/box-qs4-start-unit-001.webp",
+      "thumb": "/media/brochures/box-qs4-start-unit-001.thumb.webp",
+      "w": 1418,
+      "h": 2000,
+      "alt": "Rodec QS4 start unit, page 1"
+     },
+     {
+      "src": "/media/brochures/box-qs4-start-unit-002.webp",
+      "thumb": "/media/brochures/box-qs4-start-unit-002.thumb.webp",
+      "w": 1419,
+      "h": 2000,
+      "alt": "Rodec QS4 start unit, page 2"
+     },
+     {
+      "src": "/media/brochures/box-qs4-start-unit-003.webp",
+      "thumb": "/media/brochures/box-qs4-start-unit-003.thumb.webp",
+      "w": 1432,
+      "h": 2000,
+      "alt": "Rodec QS4 start unit, page 3"
+     }
+    ],
+    "box": true
+   }
+  ],
   "docs": []
  },
  {
@@ -2370,23 +2695,24 @@
   ],
   "brochures": [
    {
-    "title": "MX7",
+    "title": "MX7: the digital-ready mixer",
     "pages": [
      {
-      "src": "/media/brochures/mx7-001.webp",
-      "thumb": "/media/brochures/mx7-001.thumb.webp",
-      "w": 1409,
+      "src": "/media/brochures/box-mx7-the-digital-ready-mixer-001.webp",
+      "thumb": "/media/brochures/box-mx7-the-digital-ready-mixer-001.thumb.webp",
+      "w": 1426,
       "h": 2000,
-      "alt": "Rodec brochure: MX7, page 1"
+      "alt": "Rodec MX7: the digital-ready mixer, page 1"
      },
      {
-      "src": "/media/brochures/mx7-002.webp",
-      "thumb": "/media/brochures/mx7-002.thumb.webp",
-      "w": 1398,
+      "src": "/media/brochures/box-mx7-the-digital-ready-mixer-002.webp",
+      "thumb": "/media/brochures/box-mx7-the-digital-ready-mixer-002.thumb.webp",
+      "w": 1431,
       "h": 2000,
-      "alt": "Rodec brochure: MX7, page 2"
+      "alt": "Rodec MX7: the digital-ready mixer, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": []
@@ -2437,23 +2763,51 @@
   ],
   "brochures": [
    {
-    "title": "MX18",
+    "title": "MX18: the digital-ready mixer",
     "pages": [
      {
-      "src": "/media/brochures/mx18-001.webp",
-      "thumb": "/media/brochures/mx18-001.thumb.webp",
-      "w": 1402,
+      "src": "/media/brochures/box-mx18-the-digital-ready-mixer-001.webp",
+      "thumb": "/media/brochures/box-mx18-the-digital-ready-mixer-001.thumb.webp",
+      "w": 1424,
       "h": 2000,
-      "alt": "Rodec brochure: MX18, page 1"
+      "alt": "Rodec MX18: the digital-ready mixer, page 1"
      },
      {
-      "src": "/media/brochures/mx18-002.webp",
-      "thumb": "/media/brochures/mx18-002.thumb.webp",
-      "w": 1394,
+      "src": "/media/brochures/box-mx18-the-digital-ready-mixer-002.webp",
+      "thumb": "/media/brochures/box-mx18-the-digital-ready-mixer-002.thumb.webp",
+      "w": 2000,
+      "h": 1439,
+      "alt": "Rodec MX18: the digital-ready mixer, page 2"
+     },
+     {
+      "src": "/media/brochures/box-mx18-the-digital-ready-mixer-003.webp",
+      "thumb": "/media/brochures/box-mx18-the-digital-ready-mixer-003.thumb.webp",
+      "w": 1417,
       "h": 2000,
-      "alt": "Rodec brochure: MX18, page 2"
+      "alt": "Rodec MX18: the digital-ready mixer, page 3"
      }
-    ]
+    ],
+    "box": true
+   },
+   {
+    "title": "Preview MX18",
+    "pages": [
+     {
+      "src": "/media/brochures/box-preview-mx18-001.webp",
+      "thumb": "/media/brochures/box-preview-mx18-001.thumb.webp",
+      "w": 1416,
+      "h": 2000,
+      "alt": "Rodec Preview MX18, page 1"
+     },
+     {
+      "src": "/media/brochures/box-preview-mx18-002.webp",
+      "thumb": "/media/brochures/box-preview-mx18-002.thumb.webp",
+      "w": 1426,
+      "h": 2000,
+      "alt": "Rodec Preview MX18, page 2"
+     }
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -2498,23 +2852,31 @@
   ],
   "brochures": [
    {
-    "title": "MX10",
+    "title": "MX10: a stunning performer every night of the week",
     "pages": [
      {
-      "src": "/media/brochures/mx10-001.webp",
-      "thumb": "/media/brochures/mx10-001.thumb.webp",
-      "w": 1393,
+      "src": "/media/brochures/box-mx10-a-stunning-performer-every-night-of-the-week-001.webp",
+      "thumb": "/media/brochures/box-mx10-a-stunning-performer-every-night-of-the-week-001.thumb.webp",
+      "w": 1422,
       "h": 2000,
-      "alt": "Rodec brochure: MX10, page 1"
+      "alt": "Rodec MX10: a stunning performer every night of the week, page 1"
      },
      {
-      "src": "/media/brochures/mx10-002.webp",
-      "thumb": "/media/brochures/mx10-002.thumb.webp",
-      "w": 1396,
+      "src": "/media/brochures/box-mx10-a-stunning-performer-every-night-of-the-week-002.webp",
+      "thumb": "/media/brochures/box-mx10-a-stunning-performer-every-night-of-the-week-002.thumb.webp",
+      "w": 2000,
+      "h": 1436,
+      "alt": "Rodec MX10: a stunning performer every night of the week, page 2"
+     },
+     {
+      "src": "/media/brochures/box-mx10-a-stunning-performer-every-night-of-the-week-003.webp",
+      "thumb": "/media/brochures/box-mx10-a-stunning-performer-every-night-of-the-week-003.thumb.webp",
+      "w": 1423,
       "h": 2000,
-      "alt": "Rodec brochure: MX10, page 2"
+      "alt": "Rodec MX10: a stunning performer every night of the week, page 3"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -2712,6 +3074,14 @@
     "h": 1090,
     "alt": "Rodec MX180",
     "caption": "MX180 Back"
+   },
+   {
+    "src": "/media/models/mx180/box-rodec-010.webp",
+    "thumb": "/media/models/mx180/box-rodec-010.thumb.webp",
+    "w": 1800,
+    "h": 1279,
+    "alt": "Rodec MX180",
+    "caption": "MX180 in red, studio photo"
    }
   ],
   "brochures": [
@@ -2719,20 +3089,21 @@
     "title": "MX180",
     "pages": [
      {
-      "src": "/media/brochures/mx180-001.webp",
-      "thumb": "/media/brochures/mx180-001.thumb.webp",
-      "w": 1411,
+      "src": "/media/brochures/box-mx180-001.webp",
+      "thumb": "/media/brochures/box-mx180-001.thumb.webp",
+      "w": 1420,
       "h": 2000,
-      "alt": "Rodec brochure: MX180, page 1"
+      "alt": "Rodec MX180, page 1"
      },
      {
-      "src": "/media/brochures/mx180-002.webp",
-      "thumb": "/media/brochures/mx180-002.thumb.webp",
-      "w": 1405,
+      "src": "/media/brochures/box-mx180-002.webp",
+      "thumb": "/media/brochures/box-mx180-002.thumb.webp",
+      "w": 1425,
       "h": 2000,
-      "alt": "Rodec brochure: MX180, page 2"
+      "alt": "Rodec MX180, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -2772,20 +3143,21 @@
     "title": "MX100",
     "pages": [
      {
-      "src": "/media/brochures/mx100-001.webp",
-      "thumb": "/media/brochures/mx100-001.thumb.webp",
-      "w": 1404,
+      "src": "/media/brochures/box-mx100-001.webp",
+      "thumb": "/media/brochures/box-mx100-001.thumb.webp",
+      "w": 1432,
       "h": 2000,
-      "alt": "Rodec brochure: MX100, page 1"
+      "alt": "Rodec MX100, page 1"
      },
      {
-      "src": "/media/brochures/mx100-002.webp",
-      "thumb": "/media/brochures/mx100-002.thumb.webp",
-      "w": 1400,
+      "src": "/media/brochures/box-mx100-002.webp",
+      "thumb": "/media/brochures/box-mx100-002.thumb.webp",
+      "w": 1434,
       "h": 2000,
-      "alt": "Rodec brochure: MX100, page 2"
+      "alt": "Rodec MX100, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -2895,20 +3267,21 @@
     "title": "MX130",
     "pages": [
      {
-      "src": "/media/brochures/mx130-001.webp",
-      "thumb": "/media/brochures/mx130-001.thumb.webp",
-      "w": 1412,
+      "src": "/media/brochures/box-mx130-001.webp",
+      "thumb": "/media/brochures/box-mx130-001.thumb.webp",
+      "w": 1421,
       "h": 2000,
-      "alt": "Rodec brochure: MX130, page 1"
+      "alt": "Rodec MX130, page 1"
      },
      {
-      "src": "/media/brochures/mx130-002.webp",
-      "thumb": "/media/brochures/mx130-002.thumb.webp",
-      "w": 1410,
+      "src": "/media/brochures/box-mx130-002.webp",
+      "thumb": "/media/brochures/box-mx130-002.thumb.webp",
+      "w": 1436,
       "h": 2000,
-      "alt": "Rodec brochure: MX130, page 2"
+      "alt": "Rodec MX130, page 2"
      }
-    ]
+    ],
+    "box": true
    }
   ],
   "docs": [
@@ -3206,6 +3579,14 @@
     "h": 768,
     "alt": "Rodec MX240",
     "caption": "MX240Back004"
+   },
+   {
+    "src": "/media/models/mx240/box-rodec-001.webp",
+    "thumb": "/media/models/mx240/box-rodec-001.thumb.webp",
+    "w": 1800,
+    "h": 1326,
+    "alt": "Rodec MX240",
+    "caption": "MX240, studio photo"
    }
   ],
   "brochures": [],

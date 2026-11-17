@@ -65,7 +65,7 @@ const description = m.note ?? `Rodec ${m.name}, ${m.type ?? m.category.toLowerCa
 
   {m.brochures.length > 0 && (
     <section class="wrap block">
-      <h2 class="block__title">Original brochure <span class="label">{m.brochures.reduce((n, b) => n + b.pages.length, 0)} pages</span></h2>
+      <h2 class="block__title">Original brochure{m.brochures.length > 1 ? 's' : ''} <span class="label">{m.brochures.reduce((n, b) => n + b.pages.length, 0)} pages</span></h2>
       {m.brochures.map((b) => <Gallery photos={b.pages} group={`brochure-${b.title}`} variant="tall" />)}
     </section>
   )}

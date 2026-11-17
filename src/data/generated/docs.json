@@ -875,5 +875,56 @@
    "h": 372
   },
   "max_px": 2400
+ },
+ {
+  "id": "1385-service-box",
+  "title": "1385 service manual: schematic, parts list and PCB layout",
+  "kind": "service",
+  "models": [
+   "1385"
+  ],
+  "note": "",
+  "pages": 6,
+  "size": 2629942,
+  "cover": {
+   "src": "/media/docs/1385-service-box.webp",
+   "w": 369,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "1364-service-box",
+  "title": "1364 / 1374 service manual",
+  "kind": "service",
+  "models": [
+   "1364-1374"
+  ],
+  "note": "",
+  "pages": 4,
+  "size": 1401025,
+  "cover": {
+   "src": "/media/docs/1364-service-box.webp",
+   "w": 372,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mixmaster-user-jp",
+  "title": "Mixmaster user manual (Japanese, Imai & Co)",
+  "kind": "user",
+  "models": [
+   "mixmaster"
+  ],
+  "note": "",
+  "pages": 4,
+  "size": 1319979,
+  "cover": {
+   "src": "/media/docs/mixmaster-user-jp.webp",
+   "w": 372,
+   "h": 520
+  },
+  "max_px": 2400
  }
 ]

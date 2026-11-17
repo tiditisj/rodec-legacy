@@ -1271,25 +1271,6 @@
    ]
   },
   {
-   "title": "Sound Machines",
-   "pages": [
-    {
-     "src": "/media/brochures/sound-machines-001.webp",
-     "thumb": "/media/brochures/sound-machines-001.thumb.webp",
-     "w": 2000,
-     "h": 1340,
-     "alt": "Rodec brochure: Sound Machines, page 1"
-    },
-    {
-     "src": "/media/brochures/sound-machines-002.webp",
-     "thumb": "/media/brochures/sound-machines-002.thumb.webp",
-     "w": 2000,
-     "h": 1384,
-     "alt": "Rodec brochure: Sound Machines, page 2"
-    }
-   ]
-  },
-  {
    "title": "The link between night & day",
    "pages": [
     {
@@ -1298,25 +1279,6 @@
      "w": 941,
      "h": 1284,
      "alt": "Rodec brochure: The link between night & day, page 1"
-    }
-   ]
-  },
-  {
-   "title": "The new faces",
-   "pages": [
-    {
-     "src": "/media/brochures/the-new-faces-001.webp",
-     "thumb": "/media/brochures/the-new-faces-001.thumb.webp",
-     "w": 2000,
-     "h": 1396,
-     "alt": "Rodec brochure: The new faces, page 1"
-    },
-    {
-     "src": "/media/brochures/the-new-faces-002.webp",
-     "thumb": "/media/brochures/the-new-faces-002.thumb.webp",
-     "w": 2000,
-     "h": 1368,
-     "alt": "Rodec brochure: The new faces, page 2"
     }
    ]
   },
@@ -1338,9 +1300,276 @@
      "alt": "Rodec brochure: The sequel story - 10 years MX180, page 2"
     }
    ]
+  },
+  {
+   "title": "Rodec 25! 1954-1979",
+   "pages": [
+    {
+     "src": "/media/brochures/box-rodec-25-1954-1979-001.webp",
+     "thumb": "/media/brochures/box-rodec-25-1954-1979-001.thumb.webp",
+     "w": 2000,
+     "h": 1898,
+     "alt": "Rodec 25! 1954-1979, page 1"
+    },
+    {
+     "src": "/media/brochures/box-rodec-25-1954-1979-002.webp",
+     "thumb": "/media/brochures/box-rodec-25-1954-1979-002.thumb.webp",
+     "w": 2000,
+     "h": 959,
+     "alt": "Rodec 25! 1954-1979, page 2"
+    },
+    {
+     "src": "/media/brochures/box-rodec-25-1954-1979-003.webp",
+     "thumb": "/media/brochures/box-rodec-25-1954-1979-003.thumb.webp",
+     "w": 2000,
+     "h": 1892,
+     "alt": "Rodec 25! 1954-1979, page 3"
+    }
+   ]
+  },
+  {
+   "title": "Rodec celebrates: the new faces",
+   "pages": [
+    {
+     "src": "/media/brochures/box-rodec-celebrates-the-new-faces-001.webp",
+     "thumb": "/media/brochures/box-rodec-celebrates-the-new-faces-001.thumb.webp",
+     "w": 2000,
+     "h": 1423,
+     "alt": "Rodec celebrates: the new faces, page 1"
+    },
+    {
+     "src": "/media/brochures/box-rodec-celebrates-the-new-faces-002.webp",
+     "thumb": "/media/brochures/box-rodec-celebrates-the-new-faces-002.thumb.webp",
+     "w": 2000,
+     "h": 1418,
+     "alt": "Rodec celebrates: the new faces, page 2"
+    }
+   ]
+  },
+  {
+   "title": "Matériel audio-visuel de qualité depuis 1954",
+   "pages": [
+    {
+     "src": "/media/brochures/box-materiel-audio-visuel-de-qualite-depuis-1954-001.webp",
+     "thumb": "/media/brochures/box-materiel-audio-visuel-de-qualite-depuis-1954-001.thumb.webp",
+     "w": 2000,
+     "h": 1549,
+     "alt": "Matériel audio-visuel de qualité depuis 1954, page 1"
+    },
+    {
+     "src": "/media/brochures/box-materiel-audio-visuel-de-qualite-depuis-1954-002.webp",
+     "thumb": "/media/brochures/box-materiel-audio-visuel-de-qualite-depuis-1954-002.thumb.webp",
+     "w": 2000,
+     "h": 1552,
+     "alt": "Matériel audio-visuel de qualité depuis 1954, page 2"
+    }
+   ]
+  },
+  {
+   "title": "Precision in audio mixers (Canada)",
+   "pages": [
+    {
+     "src": "/media/brochures/box-precision-in-audio-mixers-canada-001.webp",
+     "thumb": "/media/brochures/box-precision-in-audio-mixers-canada-001.thumb.webp",
+     "w": 1551,
+     "h": 2000,
+     "alt": "Precision in audio mixers (Canada), page 1"
+    },
+    {
+     "src": "/media/brochures/box-precision-in-audio-mixers-canada-002.webp",
+     "thumb": "/media/brochures/box-precision-in-audio-mixers-canada-002.thumb.webp",
+     "w": 2000,
+     "h": 1553,
+     "alt": "Precision in audio mixers (Canada), page 2"
+    }
+   ]
+  },
+  {
+   "title": "The only way up (Germany)",
+   "pages": [
+    {
+     "src": "/media/brochures/box-the-only-way-up-germany-001.webp",
+     "thumb": "/media/brochures/box-the-only-way-up-germany-001.thumb.webp",
+     "w": 1413,
+     "h": 2000,
+     "alt": "The only way up (Germany), page 1"
+    },
+    {
+     "src": "/media/brochures/box-the-only-way-up-germany-002.webp",
+     "thumb": "/media/brochures/box-the-only-way-up-germany-002.thumb.webp",
+     "w": 2000,
+     "h": 1417,
+     "alt": "The only way up (Germany), page 2"
+    }
+   ]
+  },
+  {
+   "title": "Die Erfolgsstory 1961-1997 (Germany)",
+   "pages": [
+    {
+     "src": "/media/brochures/box-die-erfolgsstory-1961-1997-germany-001.webp",
+     "thumb": "/media/brochures/box-die-erfolgsstory-1961-1997-germany-001.thumb.webp",
+     "w": 2000,
+     "h": 1367,
+     "alt": "Die Erfolgsstory 1961-1997 (Germany), page 1"
+    },
+    {
+     "src": "/media/brochures/box-die-erfolgsstory-1961-1997-germany-002.webp",
+     "thumb": "/media/brochures/box-die-erfolgsstory-1961-1997-germany-002.thumb.webp",
+     "w": 2000,
+     "h": 1356,
+     "alt": "Die Erfolgsstory 1961-1997 (Germany), page 2"
+    }
+   ]
+  },
+  {
+   "title": "Retail price list, November 1996",
+   "pages": [
+    {
+     "src": "/media/brochures/box-retail-price-list-november-1996-001.webp",
+     "thumb": "/media/brochures/box-retail-price-list-november-1996-001.thumb.webp",
+     "w": 1434,
+     "h": 2000,
+     "alt": "Retail price list, November 1996, page 1"
+    }
+   ]
+  },
+  {
+   "title": "The Rodec history: presentation sheets (2000s)",
+   "pages": [
+    {
+     "src": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-001.webp",
+     "thumb": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-001.thumb.webp",
+     "w": 1426,
+     "h": 2000,
+     "alt": "The Rodec history: presentation sheets (2000s), page 1"
+    },
+    {
+     "src": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-002.webp",
+     "thumb": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-002.thumb.webp",
+     "w": 1424,
+     "h": 2000,
+     "alt": "The Rodec history: presentation sheets (2000s), page 2"
+    },
+    {
+     "src": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-003.webp",
+     "thumb": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-003.thumb.webp",
+     "w": 1433,
+     "h": 2000,
+     "alt": "The Rodec history: presentation sheets (2000s), page 3"
+    },
+    {
+     "src": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-004.webp",
+     "thumb": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-004.thumb.webp",
+     "w": 1431,
+     "h": 2000,
+     "alt": "The Rodec history: presentation sheets (2000s), page 4"
+    },
+    {
+     "src": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-005.webp",
+     "thumb": "/media/brochures/box-the-rodec-history-presentation-sheets-2000s-005.thumb.webp",
+     "w": 1427,
+     "h": 2000,
+     "alt": "The Rodec history: presentation sheets (2000s), page 5"
+    }
+   ]
+  },
+  {
+   "title": "Aerobic Dancing: Audio Luidsprekers, Eindhoven",
+   "pages": [
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-001.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-001.thumb.webp",
+     "w": 2000,
+     "h": 1517,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 1"
+    },
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-002.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-002.thumb.webp",
+     "w": 1504,
+     "h": 2000,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 2"
+    },
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-003.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-003.thumb.webp",
+     "w": 2000,
+     "h": 1367,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 3"
+    },
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-004.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-004.thumb.webp",
+     "w": 1444,
+     "h": 2000,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 4"
+    },
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-005.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-005.thumb.webp",
+     "w": 1449,
+     "h": 2000,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 5"
+    },
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-006.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-006.thumb.webp",
+     "w": 1437,
+     "h": 2000,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 6"
+    },
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-007.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-007.thumb.webp",
+     "w": 1431,
+     "h": 2000,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 7"
+    },
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-008.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-008.thumb.webp",
+     "w": 1409,
+     "h": 2000,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 8"
+    },
+    {
+     "src": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-009.webp",
+     "thumb": "/media/brochures/box-aerobic-dancing-audio-luidsprekers-eindhoven-009.thumb.webp",
+     "w": 1439,
+     "h": 2000,
+     "alt": "Aerobic Dancing: Audio Luidsprekers, Eindhoven, page 9"
+    }
+   ]
   }
  ],
  "press": [
+  {
+   "title": "Ad France: Bandes, tendances 80",
+   "kind": "ad",
+   "pages": [
+    {
+     "src": "/media/press/box-ad-france-bandes-tendances-80-001.webp",
+     "thumb": "/media/press/box-ad-france-bandes-tendances-80-001.thumb.webp",
+     "w": 1548,
+     "h": 2000,
+     "alt": "Ad France: Bandes, tendances 80, page 1"
+    }
+   ]
+  },
+  {
+   "title": "Ad Italy: La produzione giapponese",
+   "kind": "ad",
+   "pages": [
+    {
+     "src": "/media/press/box-ad-italy-la-produzione-giapponese-001.webp",
+     "thumb": "/media/press/box-ad-italy-la-produzione-giapponese-001.thumb.webp",
+     "w": 1512,
+     "h": 2000,
+     "alt": "Ad Italy: La produzione giapponese, page 1"
+    }
+   ]
+  },
   {
    "title": "Ad MX18 KOREA 1987",
    "kind": "ad",
@@ -1358,6 +1587,72 @@
      "w": 1491,
      "h": 2000,
      "alt": "Ad MX18 KOREA 1987, page 1"
+    }
+   ]
+  },
+  {
+   "title": "Ad: Mixmaster, Japan (Imai & Co)",
+   "kind": "ad",
+   "pages": [
+    {
+     "src": "/media/press/box-ad-mixmaster-japan-imai-co-001.webp",
+     "thumb": "/media/press/box-ad-mixmaster-japan-imai-co-001.thumb.webp",
+     "w": 1411,
+     "h": 2000,
+     "alt": "Ad: Mixmaster, Japan (Imai & Co), page 1"
+    }
+   ]
+  },
+  {
+   "title": "Ad: let Rodec provide the good vibrations",
+   "kind": "ad",
+   "pages": [
+    {
+     "src": "/media/press/box-ad-let-rodec-provide-the-good-vibrations-001.webp",
+     "thumb": "/media/press/box-ad-let-rodec-provide-the-good-vibrations-001.thumb.webp",
+     "w": 2000,
+     "h": 959,
+     "alt": "Ad: let Rodec provide the good vibrations, page 1"
+    }
+   ]
+  },
+  {
+   "title": "Ads Japan: SM200, MF100M and SM300 (Imai & Co)",
+   "kind": "ad",
+   "pages": [
+    {
+     "src": "/media/press/box-ads-japan-sm200-mf100m-and-sm300-imai-co-001.webp",
+     "thumb": "/media/press/box-ads-japan-sm200-mf100m-and-sm300-imai-co-001.thumb.webp",
+     "w": 2000,
+     "h": 1434,
+     "alt": "Ads Japan: SM200, MF100M and SM300 (Imai & Co), page 1"
+    },
+    {
+     "src": "/media/press/box-ads-japan-sm200-mf100m-and-sm300-imai-co-002.webp",
+     "thumb": "/media/press/box-ads-japan-sm200-mf100m-and-sm300-imai-co-002.thumb.webp",
+     "w": 2000,
+     "h": 1436,
+     "alt": "Ads Japan: SM200, MF100M and SM300 (Imai & Co), page 2"
+    }
+   ]
+  },
+  {
+   "title": "Allo, Allo… June/July 1996",
+   "kind": "review",
+   "pages": [
+    {
+     "src": "/media/press/box-allo-allo-june-july-1996-001.webp",
+     "thumb": "/media/press/box-allo-allo-june-july-1996-001.thumb.webp",
+     "w": 1439,
+     "h": 2000,
+     "alt": "Allo, Allo… June/July 1996, page 1"
+    },
+    {
+     "src": "/media/press/box-allo-allo-june-july-1996-002.webp",
+     "thumb": "/media/press/box-allo-allo-june-july-1996-002.thumb.webp",
+     "w": 1437,
+     "h": 2000,
+     "alt": "Allo, Allo… June/July 1996, page 2"
     }
    ]
   },
@@ -1586,6 +1881,19 @@
    ]
   },
   {
+   "title": "Populær Elektronik 4/81 (Denmark): cover",
+   "kind": "press",
+   "pages": [
+    {
+     "src": "/media/press/box-populr-elektronik-4-81-denmark-cover-001.webp",
+     "thumb": "/media/press/box-populr-elektronik-4-81-denmark-cover-001.thumb.webp",
+     "w": 1436,
+     "h": 2000,
+     "alt": "Populær Elektronik 4/81 (Denmark): cover, page 1"
+    }
+   ]
+  },
+  {
    "title": "Rodec advertentie 1979",
    "kind": "press",
    "pages": [
@@ -1787,9 +2095,117 @@
      "alt": "Sound On Sound - MAR 2010, page 1"
     }
    ]
+  },
+  {
+   "title": "Stereo Technic, June 1979 (Japan): Disco-Mix",
+   "kind": "review",
+   "pages": [
+    {
+     "src": "/media/press/box-stereo-technic-june-1979-japan-disco-mix-001.webp",
+     "thumb": "/media/press/box-stereo-technic-june-1979-japan-disco-mix-001.thumb.webp",
+     "w": 1394,
+     "h": 2000,
+     "alt": "Stereo Technic, June 1979 (Japan): Disco-Mix, page 1"
+    },
+    {
+     "src": "/media/press/box-stereo-technic-june-1979-japan-disco-mix-002.webp",
+     "thumb": "/media/press/box-stereo-technic-june-1979-japan-disco-mix-002.thumb.webp",
+     "w": 1246,
+     "h": 2000,
+     "alt": "Stereo Technic, June 1979 (Japan): Disco-Mix, page 2"
+    }
+   ]
   }
  ],
  "history": [
+  {
+   "src": "/media/history/box-rodec-radio-lange-beeldekensstraat-32-antwerp-the-shop-at-ni.webp",
+   "thumb": "/media/history/box-rodec-radio-lange-beeldekensstraat-32-antwerp-the-shop-at-ni.thumb.webp",
+   "w": 1451,
+   "h": 1800,
+   "alt": "Rodec Radio, Lange Beeldekensstraat 32, Antwerp: the shop at night and the first business cards",
+   "caption": "Rodec Radio, Lange Beeldekensstraat 32, Antwerp: the shop at night and the first business cards"
+  },
+  {
+   "src": "/media/history/box-radio-stand-shop-front.webp",
+   "thumb": "/media/history/box-radio-stand-shop-front.thumb.webp",
+   "w": 1800,
+   "h": 1248,
+   "alt": "Radio Stand shop front",
+   "caption": "Radio Stand shop front"
+  },
+  {
+   "src": "/media/history/box-in-the-rodec-workshop.webp",
+   "thumb": "/media/history/box-in-the-rodec-workshop.thumb.webp",
+   "w": 1800,
+   "h": 1232,
+   "alt": "In the Rodec workshop",
+   "caption": "In the Rodec workshop"
+  },
+  {
+   "src": "/media/history/box-studio-photo-of-the-late-1970s-range.webp",
+   "thumb": "/media/history/box-studio-photo-of-the-late-1970s-range.thumb.webp",
+   "w": 1800,
+   "h": 1253,
+   "alt": "Studio photo of the late-1970s range",
+   "caption": "Studio photo of the late-1970s range"
+  },
+  {
+   "src": "/media/history/box-double-dutch.webp",
+   "thumb": "/media/history/box-double-dutch.thumb.webp",
+   "w": 1800,
+   "h": 1308,
+   "alt": "Double Dutch",
+   "caption": "Double Dutch"
+  },
+  {
+   "src": "/media/history/box-rodec-stand-at-a-trade-fair-in-antwerp.webp",
+   "thumb": "/media/history/box-rodec-stand-at-a-trade-fair-in-antwerp.thumb.webp",
+   "w": 822,
+   "h": 1162,
+   "alt": "Rodec stand at a trade fair in Antwerp",
+   "caption": "Rodec stand at a trade fair in Antwerp"
+  },
+  {
+   "src": "/media/history/box-at-the-test-bench-1980s-from-a-contact-sheet.webp",
+   "thumb": "/media/history/box-at-the-test-bench-1980s-from-a-contact-sheet.thumb.webp",
+   "w": 750,
+   "h": 483,
+   "alt": "At the test bench, 1980s (from a contact sheet)",
+   "caption": "At the test bench, 1980s (from a contact sheet)"
+  },
+  {
+   "src": "/media/history/box-in-the-rodec-lab-1980s-from-a-contact-sheet.webp",
+   "thumb": "/media/history/box-in-the-rodec-lab-1980s-from-a-contact-sheet.thumb.webp",
+   "w": 738,
+   "h": 487,
+   "alt": "In the Rodec lab, 1980s (from a contact sheet)",
+   "caption": "In the Rodec lab, 1980s (from a contact sheet)"
+  },
+  {
+   "src": "/media/history/box-component-stock-1980s-from-a-contact-sheet.webp",
+   "thumb": "/media/history/box-component-stock-1980s-from-a-contact-sheet.thumb.webp",
+   "w": 730,
+   "h": 483,
+   "alt": "Component stock, 1980s (from a contact sheet)",
+   "caption": "Component stock, 1980s (from a contact sheet)"
+  },
+  {
+   "src": "/media/history/box-showing-a-front-panel-1980s-from-a-contact-sheet.webp",
+   "thumb": "/media/history/box-showing-a-front-panel-1980s-from-a-contact-sheet.thumb.webp",
+   "w": 738,
+   "h": 483,
+   "alt": "Showing a front panel, 1980s (from a contact sheet)",
+   "caption": "Showing a front panel, 1980s (from a contact sheet)"
+  },
+  {
+   "src": "/media/history/box-assembly-1980s-from-a-contact-sheet.webp",
+   "thumb": "/media/history/box-assembly-1980s-from-a-contact-sheet.thumb.webp",
+   "w": 730,
+   "h": 495,
+   "alt": "Assembly, 1980s (from a contact sheet)",
+   "caption": "Assembly, 1980s (from a contact sheet)"
+  },
   {
    "src": "/media/history/dealerdays-anno-1979.webp",
    "thumb": "/media/history/dealerdays-anno-1979.thumb.webp",

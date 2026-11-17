@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { LINKS } from '../data/site';
 import { archive, models } from '../lib/data';
 
 const modelBrochures = models.flatMap((m) => m.brochures.map((b) => ({ ...b, model: m })));
@@ -10,12 +11,20 @@ const books = [
   ...(catalogue ? [{ id: 'catalogue', title: '55 years of passion', sub: 'Rodec catalogue 2010', year: 2010, pages: catalogue.pages, caption: 'Rodec catalogue 2010 · 55 years', pdf: '/docs/rodec-catalogue-2010.pdf' }] : []),
 ];
 const press = archive.press;
+// Scans from the paper archive boxes carry "/box-" in their media path.
+const isBox = (b: { pages: { src: string }[] }) => b.pages.some((p) => p.src.includes('/box-'));
+const boxItems = [...general, ...modelBrochures, ...press].filter(isBox).length;
 ---
 <Base title="Archive" description="The Rodec 50 years book, original brochures from 1961 onwards, adverts and magazine reviews.">
   <section class="wrap page-head">
     <p class="label red">Archive</p>
     <h1>Paper trail</h1>
     <p class="lede">Original brochures, adverts, magazine reviews and the 50th-anniversary book, scanned from the Rodec archive.</p>
+    <aside class="boxnote" id="boxes">
+      <p class="label red">New · out of the boxes</p>
+      <p>We went through the Rodec archive boxes and scanned everything worth sharing: original press photos with their typed spec sheets, 1970s Beglec and Transtel-Sabima folders, the 1979 jubilee folder, Japanese and Danish press, and complete service manuals for the 1364 and 1385. Most of it only existed on paper until now. The {boxItems} brochures and articles from the boxes are marked <span class="boxtag">Original scan</span> below; the photos are on the <a href="/history/">History</a> and model pages, the manuals under <a href="/manuals/">Manuals</a>.</p>
+      <p class="boxnote__thanks">With thanks to the <a href={LINKS.huisVanAlijn} rel="noopener">Huis van Alijn</a> in Ghent for browsing the boxes and doing the scanning.</p>
+    </aside>
     <nav class="jump">
       <a class="chip" href="#book">Books & catalogues · {books.length}</a>
       <a class="chip" href="#brochures">Brochures · {modelBrochures.length + general.length}</a>
@@ -53,10 +62,12 @@ const press = archive.press;
         <figure class="leaf">
           <a href={b.pages[0].src} data-lightbox={`br-${b.title}`} data-caption={b.title}>
             <img src={b.pages[0].thumb} alt={b.pages[0].alt} loading="lazy" />
+            {isBox(b) && <span class="boxtag boxtag--on">Original scan</span>}
           </a>
           {b.pages.slice(1).map((p) => <a hidden href={p.src} data-lightbox={`br-${b.title}`} data-caption={b.title}><img alt={p.alt} /></a>)}
           <figcaption>
             <span>{b.model ? b.model.name : b.title}</span>
+            {b.model && b.model.brochures.length > 1 && <span class="leaf__sub">{b.title}</span>}
             <span class="label">{b.model ? b.model.year : 'Range'} · {b.pages.length} p</span>
           </figcaption>
         </figure>
@@ -65,12 +76,13 @@ const press = archive.press;
   </section>
 
   <section class="wrap block" id="press">
-    <div class="block__head"><div><p class="label red">1981 – 2010</p><h2>Ads & reviews</h2></div></div>
+    <div class="block__head"><div><p class="label red">1979 – 2010</p><h2>Ads & reviews</h2></div></div>
     <div class="shelf">
       {press.map((b) => (
         <figure class="leaf">
           <a href={b.pages[0].src} data-lightbox={`pr-${b.title}`} data-caption={b.title}>
             <img src={b.pages[0].thumb} alt={b.pages[0].alt} loading="lazy" />
+            {isBox(b) && <span class="boxtag boxtag--on">Original scan</span>}
           </a>
           {b.pages.slice(1).map((p) => <a hidden href={p.src} data-lightbox={`pr-${b.title}`} data-caption={b.title}><img alt={p.alt} /></a>)}
           <figcaption><span>{b.title}</span><span class="label">{b.kind} · {b.pages.length} p</span></figcaption>
@@ -107,8 +119,16 @@ const press = archive.press;
   .block__head h2 { margin-top: 10px; font-size: clamp(1.8rem, 4vw, 3rem); }
   .shelf { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 190px), 1fr)); gap: 28px 18px; }
   .leaf { margin: 0; }
+  .leaf > a:first-child { position: relative; }
+  .boxnote { max-width: 760px; margin: 8px 0 28px; padding: 18px 22px; border: 1px solid var(--line-2); border-left: 3px solid var(--red); border-radius: var(--radius); background: var(--ink-2); display: grid; gap: 8px; scroll-margin-top: 96px; }
+  .boxnote p { margin: 0; color: var(--cream-2); }
+  .boxnote .label { color: var(--red); }
+  .boxnote__thanks { font-size: .88rem; color: var(--cream-3) !important; }
+  .boxtag { font-family: var(--mono); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; padding: 3px 7px; border-radius: 3px; background: var(--red); color: var(--cream); white-space: nowrap; }
+  .boxtag--on { position: absolute; left: 8px; top: 8px; }
   .leaf > a:first-child { display: block; aspect-ratio: 3 / 4; background: #e9e4d8; border-radius: 3px; overflow: hidden; box-shadow: 0 18px 30px -16px rgba(0,0,0,.9); transition: transform .4s var(--ease); }
   .leaf > a:first-child:hover { transform: translateY(-6px) rotate(-1deg); }
   .leaf img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
   .leaf figcaption { display: grid; gap: 2px; margin-top: 12px; font-weight: 600; font-size: .95rem; }
+  .leaf__sub { font-weight: 400; font-size: .82rem; color: var(--cream-2); line-height: 1.3; }
 </style>

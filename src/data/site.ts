@@ -5,6 +5,8 @@ export const LINKS = {
   bekafun: 'https://bekafun.com',
   keepRodecAlive: 'https://www.facebook.com/groups/1090028267683718/',
   rodec: 'https://rodec.com',
+  // Museum in Ghent that browsed and scanned the Rodec archive boxes.
+  huisVanAlijn: 'https://www.huisvanalijn.be',
   github: 'https://github.com/',
 };
 

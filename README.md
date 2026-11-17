@@ -6,7 +6,7 @@ The site covers:
 
 - **History**: from ROger DE Clercq's radio shop in Antwerp to the last Rodec in 2014, with a year-by-year timeline.
 - **Models**: every Rodec in the original product register, 86 units from the 1961 Stereofan to the 2010 Patch Live. Each model has photos, the original brochure, its launch price, key features and downloads.
-- **Archive**: the 50-years book *Perpetual Music Makers* (2004), the 2010 catalogue, brochures from 1961 onwards, adverts and magazine reviews.
+- **Archive**: the 50-years book *Perpetual Music Makers* (2004), the 2010 catalogue, brochures from 1961 onwards, adverts and magazine reviews, including high-resolution scans from the Rodec archive boxes (browsed and scanned with the Huis van Alijn, Ghent).
 - **Manuals & schematics**: user manuals, service manuals and schematics as free PDFs.
 - **DJs & clubs**: photos of DJs and clubs using Rodec, and news from the archive.
 - **Useful sources**: where to find spare parts and help with servicing classic units.
@@ -54,6 +54,7 @@ scripts/
 | Which manual belongs to which model, document titles | `DOC_LIST` in `scripts/build_assets.py` |
 | Extra models not in the product register | `EXTRA_MODELS` in `scripts/build_assets.py` |
 | Photos taken from the 2010 catalogue | `CATALOGUE_IMAGES` in `scripts/build_assets.py` |
+| What each archive-box scan is and where it goes | `scripts/box_scans.py` |
 
 ## Rebuilding assets from the archive
 
