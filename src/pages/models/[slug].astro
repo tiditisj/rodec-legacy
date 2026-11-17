@@ -22,8 +22,31 @@ const specs: [string, string][] = [
   ['Launched with', m.launchDoc ?? '—'],
 ];
 const description = m.note ?? `Rodec ${m.name}, ${m.type ?? m.category.toLowerCase()} from ${dateLabel(m)}. Photos, brochures and manuals.`;
+const abs = (p: string) => new URL(p, Astro.site).href;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Rodec Legacy', item: abs('/') },
+      { '@type': 'ListItem', position: 2, name: 'Models', item: abs('/models/') },
+      { '@type': 'ListItem', position: 3, name: m.name, item: abs(`/models/${m.slug}/`) },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: `Rodec ${m.name}`,
+    about: { '@type': 'Thing', name: `Rodec ${m.name}`, description: m.type ?? m.category },
+    description,
+    url: abs(`/models/${m.slug}/`),
+    ...(m.year ? { temporalCoverage: String(m.year) } : {}),
+    ...(hero ? { image: abs(hero.src) } : {}),
+    isPartOf: { '@type': 'WebSite', name: 'Rodec Legacy', url: abs('/') },
+  },
+];
 ---
-<Base title={`${m.name}`} description={description} image={hero?.src}>
+<Base title={`${m.name}`} description={description} image={hero?.src} jsonLd={jsonLd}>
   <nav class="wrap crumbs label" aria-label="Breadcrumb">
     <a href="/models/">Models</a> <span>/</span> <a href={`/models/#${m.era.key}`}>{m.era.title}</a> <span>/</span> <span aria-current="page">{m.name}</span>
   </nav>

@@ -31,7 +31,28 @@ const xfModels = models.filter((m) => !m.curiosity && !m.name.startsWith('Donalb
   .map((m) => ({ src: m.photos[0].thumb, year: m.year, name: m.name, slug: m.slug }));
 const xfFirst = xfModels[0], xfLast = xfModels[xfModels.length - 1];
 ---
-<Base>
+<Base jsonLd={[
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': 'https://rodec.com/#organization',
+    name: 'Rodec',
+    url: LINKS.rodec,
+    logo: new URL('/brand/rodec-wordmark.svg', Astro.site).href,
+    foundingDate: '1954',
+    foundingLocation: { '@type': 'Place', name: 'Antwerp, Belgium' },
+    founder: { '@type': 'Person', name: 'Roger De Clercq' },
+    slogan: 'Serving DJs since 1954',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Rodec Legacy',
+    url: new URL('/', Astro.site).href,
+    inLanguage: 'en',
+    publisher: { '@id': 'https://rodec.com/#organization' },
+  },
+]}>
   <!-- HERO -->
   <section class="hero">
     <div class="hero__img" aria-hidden="true">

@@ -3,11 +3,12 @@ import '../styles/global.css';
 import Logo from '../components/Logo.astro';
 import { NAV, LINKS } from '../data/site';
 
-interface Props { title?: string; description?: string; image?: string }
+interface Props { title?: string; description?: string; image?: string; jsonLd?: object | object[] }
 const {
   title,
   description = 'The archive of Rodec, the Belgian brand that has been serving DJs since 1954: history, every model, original brochures and all the manuals and schematics we could find.',
   image = '/media/book/ro-000.webp',
+  jsonLd,
 } = Astro.props;
 const fullTitle = title ? `${title} · Rodec Legacy` : 'Rodec Legacy · Serving DJs since 1954';
 const path = Astro.url.pathname;
@@ -30,6 +31,7 @@ const analytics = import.meta.env.PROD; // no tracking in local dev
     <meta property="og:image" content={new URL(image, Astro.site)} />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     {analytics && (
       <script is:inline>
         window.dataLayer = window.dataLayer || [];
