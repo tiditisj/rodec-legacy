@@ -152,8 +152,8 @@ p { margin: 0 0 1em; }
 .card:hover { transform: translateY(-4px); border-color: var(--line-2); background: var(--ink-3); }
 /* "studio paper" backdrop: white product shots melt into it via multiply */
 .paper { background: radial-gradient(120% 100% at 50% 20%, #f6f4ef, #dedad2 70%, #cfcbc2); }
-.card__media { aspect-ratio: 4 / 3; display: grid; place-items: center; overflow: hidden; background: radial-gradient(120% 100% at 50% 20%, #f6f4ef, #dedad2 70%, #cfcbc2); }
-.card__media img { width: 100%; height: 100%; object-fit: contain; padding: 9%; mix-blend-mode: multiply; transition: transform .6s var(--ease); }
+.card__media { position: relative; aspect-ratio: 4 / 3; display: grid; place-items: center; overflow: hidden; background: radial-gradient(120% 100% at 50% 20%, #f6f4ef, #dedad2 70%, #cfcbc2); }
+.card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 9%; mix-blend-mode: multiply; transition: transform .6s var(--ease); }
 .card__media img.cover { object-fit: cover; padding: 0; filter: none; }
 .card:hover .card__media img { transform: scale(1.05); }
 .card__media .placeholder { font-family: var(--display); font-stretch: 125%; font-weight: 800; font-size: 1.6rem; color: #c3beb4; text-transform: uppercase; text-align: center; padding: 1rem; }
@@ -165,8 +165,8 @@ p { margin: 0 0 1em; }
 
 /* ------------------------------------------------------------------ gallery / lightbox */
 .gallery { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr)); }
-.gallery a { display: block; aspect-ratio: 1; overflow: hidden; border-radius: 4px; background: var(--ink-2); border: 1px solid var(--line); }
-.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease), filter .5s; filter: saturate(.9); }
+.gallery a { position: relative; display: block; aspect-ratio: 1; overflow: hidden; border-radius: 4px; background: var(--ink-2); border: 1px solid var(--line); }
+.gallery img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease), filter .5s; filter: saturate(.9); }
 .gallery a:hover img { transform: scale(1.06); filter: saturate(1.1); }
 .gallery--contain a { background: radial-gradient(120% 100% at 50% 20%, #f6f4ef, #dedad2 70%, #cfcbc2); border-color: transparent; }
 .gallery--contain img { object-fit: contain; padding: 8%; mix-blend-mode: multiply; filter: none; }
