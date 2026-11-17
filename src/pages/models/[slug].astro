@@ -1,0 +1,128 @@
+---
+import Base from '../../layouts/Base.astro';
+import Gallery from '../../components/Gallery.astro';
+import DocCard from '../../components/DocCard.astro';
+import ModelCard from '../../components/ModelCard.astro';
+import { models, docById, dateLabel, priceLabel, coverPhoto, type Model } from '../../lib/data';
+
+export function getStaticPaths() {
+  return models.map((m, i) => ({ params: { slug: m.slug }, props: { m, prev: models[i - 1], next: models[i + 1] } }));
+}
+interface Props { m: Model; prev?: Model; next?: Model }
+const { m, prev, next } = Astro.props;
+const hero = coverPhoto(m);
+const docs = m.docs.map((id) => docById.get(id)!).filter(Boolean);
+const siblings = models.filter((x) => x.era.key === m.era.key && x.slug !== m.slug && x.category === m.category).slice(0, 4);
+const specs: [string, string][] = [
+  ['Introduced', dateLabel(m)],
+  ['Type', m.type ?? m.category],
+  ['Series', m.series ?? '—'],
+  ['Era', `${m.era.title}`],
+  ['Launch price', priceLabel(m.price)],
+  ['Launched with', m.launchDoc ?? '—'],
+];
+const description = m.note ?? `Rodec ${m.name}, ${m.type ?? m.category.toLowerCase()} from ${dateLabel(m)}. Photos, brochures and manuals.`;
+---
+<Base title={`${m.name}`} description={description} image={hero?.src}>
+  <nav class="wrap crumbs label" aria-label="Breadcrumb">
+    <a href="/models/">Models</a> <span>/</span> <a href={`/models/#${m.era.key}`}>{m.era.title}</a> <span>/</span> <span aria-current="page">{m.name}</span>
+  </nav>
+
+  <section class="wrap mhead">
+    <div class="mhead__text">
+      <p class="label red">{dateLabel(m)} · {m.type ?? m.category}</p>
+      <h1>{m.name}</h1>
+      {m.note && <p class="lede">{m.note}</p>}
+      {m.curiosity && <p class="warn label"><span class="led led--amber"></span> Not an original Rodec</p>}
+    </div>
+    <div class="mhead__stage">
+      {hero
+        ? <a href={hero.src} data-lightbox="model" data-caption={hero.caption ?? hero.alt}><img src={hero.src} alt={hero.alt} width={hero.w} height={hero.h} fetchpriority="high" /></a>
+        : <div class="noimg"><span class="display">{m.name}</span><span class="label">No photo yet. Do you have one?</span></div>}
+    </div>
+  </section>
+
+  <section class="wrap specs-wrap">
+    <dl class="specs alu screws">
+      {specs.map(([k, v]) => (<div><dt class="label">{k}</dt><dd>{v}</dd></div>))}
+    </dl>
+    {m.price && <p class="label note">Launch prices as recorded in the Rodec archive, converted to euro.</p>}
+  </section>
+
+  {m.features && m.features.length > 0 && (
+    <section class="wrap block">
+      <h2 class="block__title">Key features</h2>
+      <ul class="feat">{m.features.map((f, i) => <li><span class="label">{String(i + 1).padStart(2, '0')}</span>{f}</li>)}</ul>
+    </section>
+  )}
+
+  {m.photos.length > 1 && (
+    <section class="wrap block">
+      <h2 class="block__title">Photos <span class="label">{m.photos.length}</span></h2>
+      <Gallery photos={m.photos.slice(1)} group="model" variant="contain" />
+    </section>
+  )}
+
+  {m.brochures.length > 0 && (
+    <section class="wrap block">
+      <h2 class="block__title">Original brochure <span class="label">{m.brochures.reduce((n, b) => n + b.pages.length, 0)} pages</span></h2>
+      {m.brochures.map((b) => <Gallery photos={b.pages} group={`brochure-${b.title}`} variant="tall" />)}
+    </section>
+  )}
+
+  {docs.length > 0 && (
+    <section class="wrap block">
+      <h2 class="block__title">Manuals & downloads <span class="label">{docs.length}</span></h2>
+      <div class="grid grid--docs">{docs.map((d) => <DocCard doc={d} />)}</div>
+    </section>
+  )}
+
+
+  {siblings.length > 0 && (
+    <section class="wrap block">
+      <h2 class="block__title">Same era</h2>
+      <div class="grid grid--models">{siblings.map((s) => <ModelCard model={s} />)}</div>
+    </section>
+  )}
+
+  <nav class="wrap pager" aria-label="Previous and next model">
+    {prev ? <a href={`/models/${prev.slug}/`}><span class="label">← Previous</span><span class="display">{prev.name}</span></a> : <span></span>}
+    {next ? <a class="next" href={`/models/${next.slug}/`}><span class="label">Next →</span><span class="display">{next.name}</span></a> : <span></span>}
+  </nav>
+</Base>
+
+<style>
+  .crumbs { padding-top: 28px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .crumbs a { text-decoration: none; color: var(--cream-2); }
+  .crumbs a:hover { color: var(--cream); }
+  .mhead { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(24px, 5vw, 72px); align-items: center; padding-block: 32px 48px; }
+  .mhead h1 { font-size: clamp(2.4rem, 5.6vw, 6rem); margin: 14px 0 24px; text-wrap: balance; }
+  .mhead__stage { position: relative; aspect-ratio: 4 / 3; border-radius: 10px; background: radial-gradient(120% 100% at 50% 20%, #f6f4ef, #dedad2 70%, #cfcbc2); display: grid; place-items: center; overflow: hidden; border: 1px solid var(--line); }
+    .mhead__stage a { display: contents; }
+  .mhead__stage img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; padding: 6%; mix-blend-mode: multiply; cursor: zoom-in; }
+  .noimg { display: grid; gap: 12px; text-align: center; place-items: center; }
+  .noimg .display { font-size: clamp(2rem, 6vw, 5rem); color: #c3beb4; }
+  .noimg .label { color: #8a857b; }
+  .warn { display: flex; gap: 10px; align-items: center; color: var(--amber); }
+  .specs-wrap { margin-bottom: 24px; }
+  .specs { margin: 0; border-radius: 10px; padding: 34px clamp(18px, 3vw, 36px) 24px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; }
+  .specs div { padding: 6px 16px; border-left: 1px solid rgba(0,0,0,.18); }
+  .specs div:first-child { border-left: 0; padding-left: 0; }
+  .specs dt { margin-bottom: 6px; font-size: .64rem; }
+  .specs dd { margin: 0; font-family: var(--display); font-stretch: 110%; font-weight: 700; font-size: 1.05rem; line-height: 1.2; color: #151413; }
+  .note { margin-top: 10px; }
+  @media (max-width: 960px) { .specs { grid-template-columns: repeat(3, 1fr); row-gap: 18px; } .specs div:nth-child(4) { border-left: 0; padding-left: 0; } }
+  @media (max-width: 860px) { .mhead { grid-template-columns: 1fr; } .mhead__stage { order: -1; } }
+  @media (max-width: 520px) { .specs { grid-template-columns: 1fr 1fr; } .specs div { border-left: 0; padding-left: 0; } }
+  .block { padding-top: 56px; }
+  .block__title { font-size: clamp(1.4rem, 3vw, 2.2rem); margin-bottom: 24px; display: flex; align-items: baseline; gap: 14px; }
+  .block :global(.gallery + .gallery) { margin-top: 10px; }
+  .feat { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 0 32px; }
+  .feat li { display: grid; grid-template-columns: 36px 1fr; gap: 8px; padding: 14px 0; border-top: 1px solid var(--line); color: var(--cream-2); }
+  .feat .label { color: var(--red); padding-top: 3px; }
+  .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding-top: 80px; }
+  .pager a { display: grid; gap: 6px; padding: 24px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; transition: border-color .3s, background .3s; }
+  .pager a:hover { border-color: var(--line-2); background: var(--ink-2); }
+  .pager .display { font-size: clamp(1.2rem, 3vw, 2rem); }
+  .pager .next { text-align: right; }
+</style>

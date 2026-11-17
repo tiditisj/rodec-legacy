@@ -1,0 +1,210 @@
+---
+import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
+import ModelCard from '../components/ModelCard.astro';
+import { models, docs, archive, bySlug } from '../lib/data';
+import { MILESTONES } from '../data/content';
+
+const featured = ['cu881', 'mixfan', 'mx18', 'mx180', 'mx180-mkiii', 'mixbox', 'scratchbox', 'restyler']
+  .map((s) => bySlug.get(s)!).filter(Boolean);
+const brochureCount = models.reduce((n, m) => n + m.brochures.length, 0) + archive.brochures.length;
+const stats = [
+  { n: '1954', l: 'Founded in Antwerp' },
+  { n: String(models.filter((m) => !m.curiosity).length), l: 'Models in the archive' },
+  { n: String(docs.length), l: 'Manuals & schematics' },
+  { n: String(brochureCount + archive.press.length), l: 'Brochures, ads & reviews' },
+];
+const xfA = { src: '/media/models/cu881/cu-881-front-bw.webp', year: 1970, name: 'CU881', slug: 'cu881' };
+const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-wereldwijd-met-aparte-toonregeling-per-kanaal-1986.webp', year: 1986, name: 'MX18', slug: 'mx18' };
+---
+<Base>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__img" aria-hidden="true">
+      <img src="/media/models/mx240-mkiii/mx240-mkiii-front-grey-004.webp" alt="" fetchpriority="high" />
+    </div>
+    <div class="wrap hero__inner">
+      <p class="label hero__kicker"><span class="led"></span>&nbsp; The Rodec archive · 1954 – 2014</p>
+      <h1 class="hero__title">
+        <span>Serving</span>
+        <span>DJ’s since</span>
+        <span class="hero__year">1954<sup>®</sup></span>
+      </h1>
+      <p class="lede">From a radio shop in Antwerp to the booths of Fuse, Cocoon and Amnesia: this is the story of the Belgian brand that gave every channel its own EQ.</p>
+      <div class="hero__cta">
+        <a class="btn btn--red" href="/models/">Explore all models →</a>
+        <a class="btn" href="/manuals/">Manuals & schematics</a>
+      </div>
+    </div>
+    <div class="hero__strip wrap">
+      {stats.map((s) => (
+        <div class="stat"><span class="stat__n display">{s.n}</span><span class="label">{s.l}</span></div>
+      ))}
+    </div>
+  </section>
+
+  <!-- CROSSFADER -->
+  <section class="section">
+    <div class="wrap xf-wrap">
+      <div class="xf__text reveal">
+        <p class="label red">Crossfade through time</p>
+        <h2>Sixteen years. One revolution.</h2>
+        <p class="lede">In 1970 the CU881 put slide faders on a mixing panel. In 1986 the MX18 gave every channel its own three-band EQ, and the rest of the industry followed. Grab the crossfader.</p>
+      </div>
+      <div class="xf reveal alu screws" style="--x:0">
+        <div class="xf__screen">
+          <img class="xf__a" src={xfA.src} alt={`Rodec ${xfA.name}, ${xfA.year}`} loading="lazy" />
+          <img class="xf__b" src={xfB.src} alt={`Rodec ${xfB.name}, ${xfB.year}`} loading="lazy" />
+          <a class="xf__tag xf__tag--a" href={`/models/${xfA.slug}/`}>{xfA.year} · {xfA.name}</a>
+          <a class="xf__tag xf__tag--b" href={`/models/${xfB.slug}/`}>{xfB.year} · {xfB.name}</a>
+        </div>
+        <div class="xf__deck">
+          <span class="label">A</span>
+          <div class="xf__track">
+            <input type="range" min="0" max="100" value="0" aria-label="Crossfade between 1970 and 1986" />
+            <div class="xf__ticks"></div>
+          </div>
+          <span class="label">B</span>
+        </div>
+        <p class="label xf__silk">Crossfader · curve: smooth</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section tl">
+    <div class="wrap tl__head">
+      <div>
+        <p class="label red">Timeline</p>
+        <h2>Six decades<br />on the faders</h2>
+      </div>
+      <a class="btn" href="/history/">Read the full story →</a>
+    </div>
+    <div class="tl__rail" tabindex="0" aria-label="Rodec timeline, scroll horizontally">
+      {MILESTONES.map((m) => {
+        const model = m.model ? bySlug.get(m.model) : undefined;
+        const img = model?.photos[0] ?? model?.brochures[0]?.pages[0];
+        return (
+          <article class="tl__item">
+            <span class="tl__year display">{m.year}</span>
+            <div class="tl__card">
+              {img && <img src={img.thumb} alt={img.alt} loading="lazy" />}
+              <h3>{m.title}</h3>
+              <p>{m.text}</p>
+              {model && <a class="label" href={`/models/${model.slug}/`}>{model.name} →</a>}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="label red">Hall of fame</p><h2>Icons</h2></div>
+        <a class="btn" href="/models/">All {models.length} models →</a>
+      </div>
+      <div class="grid grid--models reveal">
+        {featured.map((m) => <ModelCard model={m} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="section">
+    <div class="wrap book">
+      <a class="book__cover reveal" href="/archive/#book">
+        <img src={archive.book[0]?.src} alt="Cover of the Rodec 50 years book, Perpetual Music Makers" loading="lazy" />
+      </a>
+      <div class="reveal">
+        <p class="label red">From the archive</p>
+        <h2>Perpetual<br />music makers</h2>
+        <p class="lede">The 50th-anniversary book: {archive.book.length} pages with every model, original specs and launch prices. Plus decades of brochures, adverts and magazine reviews.</p>
+        <div class="hero__cta">
+          <a class="btn btn--red" href="/archive/#book">Leaf through the book</a>
+          <a class="btn" href="/archive/#brochures">Brochures & press</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>
+
+<script>
+  const xf = document.querySelector<HTMLElement>('.xf');
+  const range = xf?.querySelector<HTMLInputElement>('input[type=range]');
+  range?.addEventListener('input', () => xf!.style.setProperty('--x', String(Number(range.value) / 100)));
+</script>
+
+<style>
+  /* hero */
+  .hero { position: relative; min-height: min(92vh, 900px); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; padding-top: 80px; }
+  .hero__img { position: absolute; inset: 0; }
+  .hero__img img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 40%; opacity: .55; transform: scale(1.06); animation: drift 24s ease-in-out infinite alternate; }
+  .hero__img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--ink) 15%, rgba(13,12,11,.6) 50%, rgba(13,12,11,.15)), linear-gradient(0deg, var(--ink) 4%, transparent 45%); }
+  @keyframes drift { to { transform: scale(1.14) translate(-1.5%, -1%); } }
+  .hero__inner { position: relative; padding-bottom: 48px; }
+  .hero__kicker { display: flex; align-items: center; margin-bottom: 28px; }
+  .hero__title { display: grid; font-size: clamp(3rem, 10.5vw, 9.5rem); line-height: .86; margin-bottom: 32px; }
+  .hero__title span { display: block; animation: rise 1s var(--ease) both; }
+  .hero__title span:nth-child(2) { animation-delay: .08s; }
+  .hero__title span:nth-child(3) { animation-delay: .16s; }
+  .hero__year { color: transparent; -webkit-text-stroke: 2px var(--cream); }
+  .hero__year sup { font-size: .22em; vertical-align: top; -webkit-text-stroke: 0; color: var(--red); margin-left: .1em; }
+  @keyframes rise { from { opacity: 0; transform: translateY(40px); } }
+  .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .hero__strip { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line-2); }
+  .stat { padding: 22px 16px 26px 0; display: grid; gap: 6px; border-right: 1px solid var(--line); }
+  .stat:not(:first-child) { padding-left: 20px; }
+  .stat:last-child { border-right: 0; }
+  .stat__n { font-size: clamp(1.8rem, 4vw, 3rem); }
+  @media (max-width: 720px) { .hero__strip { grid-template-columns: 1fr 1fr; } .stat:nth-child(2) { border-right: 0; } .stat:nth-child(n+3) { border-top: 1px solid var(--line); } .stat:nth-child(3) { padding-left: 0; } }
+
+  /* crossfader */
+  .xf-wrap { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 6vw, 96px); align-items: center; }
+  .xf__text h2 { margin: 12px 0 24px; }
+  .xf { border-radius: 10px; padding: clamp(18px, 3vw, 32px); padding-top: 36px; }
+  .xf__screen { position: relative; aspect-ratio: 16 / 10; border-radius: 4px; overflow: hidden; background: #0b0b0a; box-shadow: inset 0 2px 12px rgba(0,0,0,.8), 0 0 0 1px rgba(0,0,0,.4); }
+  .xf__screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 6%; transition: opacity .08s linear; }
+  .xf__a { opacity: calc(1 - var(--x)); filter: grayscale(1) contrast(1.05); background: #e8e6e1; }
+  .xf__b { opacity: var(--x); background: #f2f0ec; }
+  .xf__tag { position: absolute; bottom: 12px; font-family: var(--mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; padding: 5px 9px; border-radius: 3px; background: var(--ink); color: var(--cream); text-decoration: none; }
+  .xf__tag--a { left: 12px; opacity: calc(1 - var(--x) * .7); }
+  .xf__tag--b { right: 12px; opacity: calc(.3 + var(--x) * .7); background: var(--red); }
+  .xf__deck { display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: center; margin-top: 24px; }
+  .xf__track { position: relative; height: 44px; display: grid; align-items: center; }
+  .xf__ticks { position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(90deg, #4a4740 0 1px, transparent 1px 10%) center / 100% 30px no-repeat; opacity: .5; }
+  .xf input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; background: transparent; position: relative; z-index: 1; margin: 0; cursor: ew-resize; }
+  .xf input[type=range]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: #1b1a18; box-shadow: inset 0 1px 2px #000, 0 1px 0 rgba(255,255,255,.5); }
+  .xf input[type=range]::-moz-range-track { height: 6px; border-radius: 3px; background: #1b1a18; }
+  .xf input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 30px; height: 40px; margin-top: -17px; border-radius: 4px; background: linear-gradient(90deg, #111 0 46%, #eee 46% 54%, #111 54%), #111; box-shadow: 0 6px 10px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.2); border: 1px solid #000; }
+  .xf input[type=range]::-moz-range-thumb { width: 30px; height: 40px; border-radius: 4px; background: linear-gradient(90deg, #111 0 46%, #eee 46% 54%, #111 54%); border: 1px solid #000; }
+  .xf__silk { text-align: center; margin: 10px 0 0; }
+  @media (max-width: 860px) { .xf-wrap { grid-template-columns: 1fr; } }
+
+  /* timeline */
+  .tl__head, .sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 40px; }
+  .tl__head h2, .sec-head h2 { margin-top: 12px; }
+  .tl__rail { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(270px, 320px); gap: 0; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 0 24px; padding-inline: max(var(--gutter), (100vw - var(--max)) / 2); scroll-padding-inline: max(var(--gutter), (100vw - var(--max)) / 2); scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; position: relative; }
+  .tl__item { scroll-snap-align: start; position: relative; padding: 0 16px 0 0; }
+  .tl__item::before { content: ''; position: absolute; left: 0; right: 0; top: 74px; height: 1px; background: var(--line-2); }
+  .tl__item::after { content: ''; position: absolute; left: 0; top: 70px; width: 9px; height: 9px; border-radius: 50%; background: var(--red); box-shadow: 0 0 12px var(--red); }
+  .tl__year { display: block; font-size: 3.2rem; line-height: 1; color: transparent; -webkit-text-stroke: 1px var(--cream-3); height: 64px; transition: color .3s, -webkit-text-stroke-color .3s; }
+  .tl__item:hover .tl__year { color: var(--cream); -webkit-text-stroke-color: var(--cream); }
+  .tl__card { margin-top: 32px; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ink-2); min-height: 240px; display: flex; flex-direction: column; gap: 10px; }
+  .tl__card img { height: 120px; width: 100%; object-fit: contain; padding: 10px; margin-bottom: 4px; border-radius: 4px; background: radial-gradient(120% 100% at 50% 20%, #f6f4ef, #d8d4cb); }
+  .tl__card h3 { font-size: 1.05rem; }
+  .tl__card p { font-size: .92rem; color: var(--cream-2); margin: 0; flex: 1; }
+  .tl__card a { text-decoration: none; color: var(--cream); }
+
+  /* book */
+  .book { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 6vw, 96px); align-items: center; }
+  .book__cover { display: block; transform: rotate(-3deg); transition: transform .6s var(--ease); max-width: 440px; }
+  .book__cover:hover { transform: rotate(0) scale(1.02); }
+  .book__cover img { box-shadow: 30px 40px 60px -20px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.05); border-radius: 2px 6px 6px 2px; }
+  .book h2 { margin: 12px 0 24px; }
+  @media (max-width: 860px) { .book { grid-template-columns: 1fr; } .book__cover { max-width: 300px; } }
+
+</style>

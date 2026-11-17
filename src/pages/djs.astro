@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import { archive } from '../lib/data';
+import { NEWS } from '../data/content';
+
+const names = ['Jeff Mills', 'Sven Väth', 'Laurent Garnier', 'Ricardo Villalobos', 'Kevin Saunderson', 'Armin van Buuren', 'Boy George', 'Darren Emerson', 'Dave Angel', 'Blake Baxter', 'Judge Jules', 'Miss Djax', 'Mistress Barbara', 'David Morales', 'Robert Armani', 'Yves Deruyter', 'Pat Krimson'];
+---
+<Base title="DJs & clubs" description="Jeff Mills, Sven Väth, Laurent Garnier and the clubs from Fuse to Cocoon: DJs with Rodec mixers.">
+  <section class="wrap page-head">
+    <p class="label red">DJs & clubs</p>
+    <h1>Hands on<br />the faders</h1>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track display">
+      {[...names, ...names].map((n) => <span>{n}<i>●</i></span>)}
+    </div>
+  </div>
+
+  <section class="wrap">
+    <div class="masonry">
+      {archive.djs.map((p) => (
+        <a href={p.src} data-lightbox="djs" data-caption={p.caption} class="masonry__item">
+          <img src={p.thumb} alt={p.alt} loading="lazy" width={p.w} height={p.h} />
+          <span class="label">{p.caption}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label red">News from the archive</p>
+      <h2 class="h2">On the road</h2>
+      <div class="news">
+        {NEWS.map((n) => (
+          <article class="news__item reveal">
+            <span class="label">{n.date}</span>
+            <h3>{n.title}</h3>
+            <p>{n.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-head { padding-block: clamp(56px, 9vw, 120px) 32px; }
+  .page-head h1 { margin-top: 16px; }
+  .marquee { overflow: hidden; border-block: 1px solid var(--line); padding: 18px 0; margin-bottom: 48px; }
+  .marquee__track { display: flex; width: max-content; gap: 0; font-size: clamp(1.4rem, 3vw, 2.4rem); animation: scroll 60s linear infinite; }
+  .marquee__track span { display: inline-flex; align-items: center; white-space: nowrap; }
+  .marquee__track i { font-style: normal; color: var(--red); font-size: .4em; margin-inline: .9em; }
+  @keyframes scroll { to { transform: translateX(-50%); } }
+  .masonry { columns: 4 240px; column-gap: 14px; }
+  .masonry__item { display: block; break-inside: avoid; margin-bottom: 14px; position: relative; border-radius: 4px; overflow: hidden; text-decoration: none; }
+  .masonry__item img { width: 100%; filter: grayscale(.35) contrast(1.05); transition: filter .5s, transform .6s var(--ease); }
+  .masonry__item:hover img { filter: none; transform: scale(1.03); }
+  .masonry__item .label { position: absolute; left: 0; right: 0; bottom: 0; padding: 30px 12px 10px; background: linear-gradient(transparent, rgba(0,0,0,.85)); color: var(--cream); opacity: 0; transition: opacity .3s; }
+  .masonry__item:hover .label, .masonry__item:focus-visible .label { opacity: 1; }
+  .h2 { margin: 12px 0 40px; }
+  .news { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+  .news__item { padding: 22px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ink-2); }
+  .news__item h3 { margin: 10px 0; }
+  .news__item p { color: var(--cream-2); margin: 0; font-size: .95rem; }
+</style>

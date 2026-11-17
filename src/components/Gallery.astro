@@ -1,0 +1,13 @@
+---
+import type { Photo } from '../lib/data';
+interface Props { photos: Photo[]; group: string; variant?: '' | 'contain' | 'tall'; limit?: number }
+const { photos, group, variant = '', limit } = Astro.props;
+const list = limit ? photos.slice(0, limit) : photos;
+---
+<div class:list={['gallery', variant && `gallery--${variant}`]}>
+  {list.map((p) => (
+    <a href={p.src} data-lightbox={group} data-caption={p.caption ?? p.alt}>
+      <img src={p.thumb} alt={p.alt} loading="lazy" decoding="async" width={p.w} height={p.h} />
+    </a>
+  ))}
+</div>

@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import { LINKS } from '../data/site';
+
+const sources = [
+  { title: 'Spare parts', where: 'bekafun.com', href: LINKS.bekafun, text: 'The complete stock of vintage Rodec spare parts was bought up and is available here.' },
+  { title: 'Questions & servicing classic units', where: 'Keep Rodec Alive · Facebook group', href: LINKS.keepRodecAlive, text: 'The community of Rodec owners and technicians. The place to ask about repairing, servicing or identifying a classic Rodec.' },
+  { title: 'Manuals & schematics', where: 'This site', href: '/manuals/', text: 'User manuals, service manuals and schematics, free to download.' },
+  { title: 'Rodec today', where: 'rodec.com', href: LINKS.rodec, text: 'The current Rodec website.' },
+];
+---
+<Base title="Useful sources" description="Where to find vintage Rodec spare parts, service help for classic units, manuals and more.">
+  <section class="wrap page-head">
+    <p class="label red">Useful sources</p>
+    <h1>Useful sources</h1>
+    <p class="lede">A few good places to go for an old Rodec.</p>
+  </section>
+
+  <section class="wrap">
+    <ul class="src">
+      {sources.map((s) => {
+        const ext = s.href.startsWith('http');
+        return (
+          <li>
+            <a href={s.href} rel={ext ? 'noopener' : undefined}>
+              <span class="src__title">{s.title}</span>
+              <span class="src__text">{s.text}</span>
+              <span class="label src__where">{s.where} {ext ? '↗' : '→'}</span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .page-head { padding-block: clamp(56px, 9vw, 120px) 32px; }
+  .page-head h1 { margin: 16px 0 20px; font-size: clamp(2.4rem, 6vw, 5rem); }
+  .src { list-style: none; margin: 0; padding: 0; max-width: 900px; }
+  .src a { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 6px 32px; padding: 24px 0; border-top: 1px solid var(--line); text-decoration: none; }
+  .src li:last-child a { border-bottom: 1px solid var(--line); }
+  .src__title { font-weight: 650; font-size: 1.1rem; }
+  .src__text { color: var(--cream-2); grid-row: span 2; }
+  .src__where { color: var(--cream-3); transition: color .2s; }
+  .src a:hover .src__where { color: var(--red); }
+  @media (max-width: 640px) { .src a { grid-template-columns: 1fr; } .src__text { grid-row: auto; } }
+</style>

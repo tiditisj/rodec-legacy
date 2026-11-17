@@ -1,0 +1,126 @@
+---
+import Base from '../layouts/Base.astro';
+import Gallery from '../components/Gallery.astro';
+import { archive, bySlug } from '../lib/data';
+import { MILESTONES, BUILD_POINTS } from '../data/content';
+
+const pic = (needle: string) => archive.history.find((p) => p.alt.toLowerCase().includes(needle.toLowerCase()));
+const hero = (archive as any).historyHero ?? {};
+const shop = hero.shop ?? pic('RODEC RADIO');
+const roger = hero.roger ?? pic('De Clerck');
+const dealer = pic('Dealer days');
+---
+<Base title="History" description="From ROger DEClerck’s radio shop in Antwerp (1954) to the MX180 and beyond: the history of Rodec.">
+  <section class="wrap page-head">
+    <p class="label red">History · 1954 – 2014</p>
+    <h1>RO·DE·C</h1>
+    <p class="lede">ROger DEClerck. Three syllables, one name, and sixty years of sound.</p>
+  </section>
+
+  <article class="wrap story">
+    <div class="story__col">
+      <p class="dropcap">Back in 1954 the music industry, apart from a few big players, was a meeting place for music lovers and fanatics. They found it hard to buy what their ears really wanted: natural music reproduction. A handful of esoteric brands filled that gap with hand-built, one-off equipment, not too distracted by un-cool things like production economics or even profit.</p>
+      <p><strong>ROger DEClerck</strong>, born in Antwerp in 1930, was one of those engineers. He designed and built equipment for himself and a few close friends, and modified existing gear to make it sound better. Then he opened the RODEC RADIO store in the centre of Antwerp, where music addicts were more than welcome to live their passion.</p>
+    </div>
+    {shop && (
+      <figure class="story__fig reveal">
+        <a href={shop.src} data-lightbox="history"><img src={shop.src} alt={shop.alt} loading="lazy" /></a>
+        <figcaption class="label">Rodec Radio, Lange Beeldekensstraat 32, Antwerp. 1950s.</figcaption>
+      </figure>
+    )}
+    <div class="story__col">
+      <p>The name RODEC was born, at first with a small range of mono valve amplifiers and special one-off products built to order. Then came “mobile” units like the P418, used at presentations, shows and fancy fairs to reinforce public announcements.</p>
+      <blockquote class="pull display">“One source fades out, another fades in. The audio mixer, the workhorse of the DJ, was born.”</blockquote>
+      <p>Early production records don’t exist; what we know comes from the people who were there. Around 1970 Rodec decided to offer high-quality preamplifiers with a creative new feature: one source could be faded out while another faded in. The models were the CU881, CU882, CU888 and 1572, each offering more than the one before, with matching power amplifiers built on the same philosophy: immaculate sound and build quality.</p>
+    </div>
+    {roger && (
+      <figure class="story__fig story__fig--small reveal">
+        <a href={roger.src} data-lightbox="history"><img src={roger.src} alt="ROger DEClerck" loading="lazy" /></a>
+        <figcaption class="label">ROger DEClerck</figcaption>
+      </figure>
+    )}
+    <div class="story__col">
+      <p>Around 1975 the round RODEC emblem first appeared, on a sticker promoting the Rodec Sound Machines. In 1977 the <a href="/models/mixfan/">Mixfan</a> became the first mixer to carry it, and two Technics SL-1200s with a Rodec <a href="/models/mixetta/">Mixetta</a> were the standard European DJ setup. In 1979, at the top of the disco era, Rodec turned 25 and launched the <a href="/models/disco-mix/">Disco-Mix</a> and <a href="/models/disco-max/">Disco-Max</a>.</p>
+      <p>That reputation for sturdy equipment made Rodec a standard in fixed and mobile systems across the entertainment industry. Rodec was among the very first to introduce features that set the standard for everyone: talk-over, gain per channel and equalisation as early as the 1970s, leading to the <a href="/models/mx18/">MX18</a> with three-band tone control on every input channel. That feature has since been copied all over the world, down to nearly the same frequencies Rodec used.</p>
+      <p>The days of a lone engineering genius in a garage workshop were over, but the need to keep improving was not. Rodec’s R&D stayed in direct contact with professional DJs around the world, to keep designing what they wanted.</p>
+    </div>
+    {dealer && (
+      <figure class="story__fig reveal">
+        <a href={dealer.src} data-lightbox="history"><img src={dealer.src} alt={dealer.alt} loading="lazy" /></a>
+        <figcaption class="label">Dealer days, 1979</figcaption>
+      </figure>
+    )}
+  </article>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label red">Milestones</p>
+      <h2 class="h2">Year by year</h2>
+      <ol class="mile">
+        {MILESTONES.map((m) => {
+          const model = m.model ? bySlug.get(m.model) : undefined;
+          return (
+            <li class="reveal">
+              <span class="mile__y display">{m.year}</span>
+              <div><h3>{m.title}</h3><p>{m.text}</p>{model && <a class="label" href={`/models/${model.slug}/`}>See the {model.name} →</a>}</div>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="built">
+    <div class="wrap">
+      <p class="label red">Built like a Rodec</p>
+      <h2 class="h2">Why they still work</h2>
+      <div class="build">
+        {BUILD_POINTS.map((b) => (
+          <div class="build__item alu screws reveal">
+            <span class="build__k display">{b.k}</span>
+            <h3>{b.title}</h3>
+            <p>{b.text}</p>
+          </div>
+        ))}
+      </div>
+      {archive.production.length > 0 && <div class="prod"><Gallery photos={archive.production} group="production" /></div>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label red">Family album</p>
+      <h2 class="h2">Old pictures</h2>
+      <Gallery photos={archive.history} group="history" />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-head { padding-block: clamp(56px, 9vw, 120px) 24px; }
+  .page-head h1 { font-size: clamp(4rem, 16vw, 14rem); margin: 12px 0 16px; letter-spacing: -.02em; }
+  .story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px clamp(32px, 6vw, 96px); align-items: start; padding-block: 40px 0; }
+  .story__col { font-size: 1.12rem; line-height: 1.7; color: var(--cream-2); }
+  .story__col strong { color: var(--cream); }
+  .story__fig { margin: 0; }
+  .story__fig img { width: 100%; border-radius: 4px; filter: sepia(.2) contrast(1.05); box-shadow: 0 30px 60px -20px rgba(0,0,0,.8); }
+  .story__fig figcaption { margin-top: 10px; }
+  .story__fig--small { max-width: 380px; justify-self: center; }
+  .dropcap::first-letter { float: left; font-family: var(--display); font-stretch: 125%; font-weight: 800; font-size: 4.4em; line-height: .8; margin: .06em .1em 0 0; color: var(--red); }
+  .pull { font-size: clamp(1.4rem, 2.6vw, 2.1rem); line-height: 1.05; color: var(--cream); margin: 32px 0; padding-left: 20px; border-left: 3px solid var(--red); text-transform: none; font-stretch: 112%; }
+  @media (max-width: 860px) { .story { grid-template-columns: 1fr; } }
+  .h2 { margin: 12px 0 40px; }
+  .mile { list-style: none; padding: 0; margin: 0; display: grid; }
+  .mile li { display: grid; grid-template-columns: minmax(110px, 200px) 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--line); }
+  .mile__y { font-size: clamp(2.2rem, 5vw, 3.6rem); color: transparent; -webkit-text-stroke: 1px var(--cream-2); line-height: .9; }
+  .mile li:hover .mile__y { color: var(--red); -webkit-text-stroke-color: var(--red); }
+  .mile h3 { margin-bottom: 8px; }
+  .mile p { color: var(--cream-2); max-width: 60ch; margin-bottom: 6px; }
+  .mile a { text-decoration: none; color: var(--cream); }
+  .build { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+  .build__item { border-radius: 10px; padding: 40px 26px 26px; }
+  .build__k { font-size: 2.6rem; color: var(--red-deep); display: block; margin-bottom: 14px; }
+  .build__item h3 { color: #141312; margin-bottom: 10px; }
+  .build__item p { color: #3c3a35; margin: 0; font-size: .95rem; }
+  .prod { margin-top: 24px; }
+</style>

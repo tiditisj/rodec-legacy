@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import { archive, models } from '../lib/data';
+
+const modelBrochures = models.flatMap((m) => m.brochures.map((b) => ({ ...b, model: m })));
+const catalogue = archive.brochures.find((b) => b.title.startsWith('Catalogue'));
+const general = archive.brochures.filter((b) => b !== catalogue);
+const books = [
+  { id: 'book', title: 'Perpetual Music Makers', sub: 'Rodec 50 years book', year: 2004, pages: archive.book, caption: 'Perpetual Music Makers · Rodec 50 years book', pdf: '/docs/rodec-book-50-years.pdf' },
+  ...(catalogue ? [{ id: 'catalogue', title: '55 years of passion', sub: 'Rodec catalogue 2010', year: 2010, pages: catalogue.pages, caption: 'Rodec catalogue 2010 · 55 years', pdf: '/docs/rodec-catalogue-2010.pdf' }] : []),
+];
+const press = archive.press;
+---
+<Base title="Archive" description="The Rodec 50 years book, original brochures from 1961 onwards, adverts and magazine reviews.">
+  <section class="wrap page-head">
+    <p class="label red">Archive</p>
+    <h1>Paper trail</h1>
+    <p class="lede">Original brochures, adverts, magazine reviews and the 50th-anniversary book, scanned from the Rodec archive.</p>
+    <nav class="jump">
+      <a class="chip" href="#book">Books & catalogues · {books.length}</a>
+      <a class="chip" href="#brochures">Brochures · {modelBrochures.length + general.length}</a>
+      <a class="chip" href="#press">Ads & reviews · {press.length}</a>
+    </nav>
+  </section>
+
+  <section class="wrap block" id="book">
+    <div class="block__head"><div><p class="label red">2004 – 2010</p><h2>Books & catalogues</h2></div></div>
+    <div class="books">
+      {books.map((b) => (
+        <figure class="bookitem">
+          <a class="bookitem__cover" href={b.pages[0].src} data-lightbox={b.id} data-caption={b.caption}>
+            <img src={b.pages[0].thumb} alt={`Cover of ${b.sub}`} loading="lazy" width={b.pages[0].w} height={b.pages[0].h} />
+          </a>
+          {b.pages.slice(1).map((p) => <a hidden href={p.src} data-lightbox={b.id} data-caption={b.caption}><img alt={p.alt} /></a>)}
+          <figcaption>
+            <span class="label red">{b.year} · {b.pages.length} pages</span>
+            <span class="bookitem__title">{b.title}</span>
+            <span class="bookitem__sub">{b.sub}</span>
+            <span class="bookitem__actions">
+              <button class="btn btn--red" type="button" data-open={b.id}>Read →</button>
+              {b.pdf && <a class="btn" href={b.pdf} target="_blank" rel="noopener">PDF</a>}
+            </span>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap block" id="brochures">
+    <div class="block__head"><div><p class="label red">1961 – 2003</p><h2>Brochures</h2></div></div>
+    <div class="shelf">
+      {[...general.map((b) => ({ ...b, model: undefined })), ...modelBrochures].map((b) => (
+        <figure class="leaf">
+          <a href={b.pages[0].src} data-lightbox={`br-${b.title}`} data-caption={b.title}>
+            <img src={b.pages[0].thumb} alt={b.pages[0].alt} loading="lazy" />
+          </a>
+          {b.pages.slice(1).map((p) => <a hidden href={p.src} data-lightbox={`br-${b.title}`} data-caption={b.title}><img alt={p.alt} /></a>)}
+          <figcaption>
+            <span>{b.model ? b.model.name : b.title}</span>
+            <span class="label">{b.model ? b.model.year : 'Range'} · {b.pages.length} p</span>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap block" id="press">
+    <div class="block__head"><div><p class="label red">1981 – 2010</p><h2>Ads & reviews</h2></div></div>
+    <div class="shelf">
+      {press.map((b) => (
+        <figure class="leaf">
+          <a href={b.pages[0].src} data-lightbox={`pr-${b.title}`} data-caption={b.title}>
+            <img src={b.pages[0].thumb} alt={b.pages[0].alt} loading="lazy" />
+          </a>
+          {b.pages.slice(1).map((p) => <a hidden href={p.src} data-lightbox={`pr-${b.title}`} data-caption={b.title}><img alt={p.alt} /></a>)}
+          <figcaption><span>{b.title}</span><span class="label">{b.kind} · {b.pages.length} p</span></figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>
+
+</Base>
+
+<script>
+  // "Read" opens the first page of the matching lightbox group.
+  document.querySelectorAll<HTMLButtonElement>('[data-open]').forEach((b) =>
+    b.addEventListener('click', () => document.querySelector<HTMLAnchorElement>(`a[data-lightbox="${b.dataset.open}"]`)?.click()));
+</script>
+
+<style>
+  .books { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 32px; }
+  .bookitem { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: end; }
+  .bookitem__cover { display: block; transform: rotate(-2deg); transition: transform .5s var(--ease); }
+  .bookitem__cover:hover { transform: rotate(0) translateY(-4px); }
+  .bookitem__cover img { width: 100%; max-height: 360px; object-fit: contain; object-position: left bottom; box-shadow: 20px 30px 50px -20px rgba(0,0,0,.9); border-radius: 2px 5px 5px 2px; }
+  .bookitem figcaption { display: grid; gap: 8px; }
+  .bookitem__title { font-family: var(--display); font-stretch: 120%; font-weight: 800; text-transform: uppercase; font-size: clamp(1.3rem, 2.4vw, 1.9rem); line-height: 1; }
+  .bookitem__sub { color: var(--cream-2); }
+  .bookitem__actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  @media (max-width: 520px) { .bookitem { grid-template-columns: 1fr; } }
+  .page-head { padding-block: clamp(56px, 9vw, 120px) 24px; }
+  .page-head h1 { margin: 16px 0 24px; }
+  .jump { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 32px; }
+  .jump a { text-decoration: none; }
+  .block { padding-top: 80px; scroll-margin-top: 80px; }
+  .block__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .block__head h2 { margin-top: 10px; font-size: clamp(1.8rem, 4vw, 3rem); }
+  .shelf { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 190px), 1fr)); gap: 28px 18px; }
+  .leaf { margin: 0; }
+  .leaf > a:first-child { display: block; aspect-ratio: 3 / 4; background: #e9e4d8; border-radius: 3px; overflow: hidden; box-shadow: 0 18px 30px -16px rgba(0,0,0,.9); transition: transform .4s var(--ease); }
+  .leaf > a:first-child:hover { transform: translateY(-6px) rotate(-1deg); }
+  .leaf img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .leaf figcaption { display: grid; gap: 2px; margin-top: 12px; font-weight: 600; font-size: .95rem; }
+</style>

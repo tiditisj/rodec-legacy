@@ -1,0 +1,21 @@
+---
+import { coverPhoto, yearLabel, type Model } from '../lib/data';
+interface Props { model: Model; loading?: 'lazy' | 'eager' }
+const { model: m, loading = 'lazy' } = Astro.props;
+const cover = coverPhoto(m);
+const isBrochure = !m.photos.length && !!cover;
+---
+<a class="card model-card" href={`/models/${m.slug}/`}
+   data-era={m.era.key} data-cat={m.category} data-name={m.name.toLowerCase()}>
+  <div class="card__media">
+    {cover
+      ? <img src={cover.thumb} alt={cover.alt} width={cover.w} height={cover.h} loading={loading} decoding="async" class={isBrochure ? 'cover' : ''} />
+      : <span class="placeholder">{m.name}</span>}
+  </div>
+  <span class="card__year">{yearLabel(m)}</span>
+  {m.curiosity && <span class="card__flag label" title="Not a real Rodec"><span class="led led--amber"></span></span>}
+  <div class="card__body">
+    <span class="card__title">{m.name}</span>
+    <span class="card__meta label"><span>{m.type ?? m.category}</span><span>{m.docs.length ? `${m.docs.length} doc${m.docs.length > 1 ? 's' : ''}` : ''}</span></span>
+  </div>
+</a>

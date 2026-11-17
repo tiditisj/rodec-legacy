@@ -1,0 +1,27 @@
+---
+import { docUrl, sizeLabel, KIND_LABEL, bySlug, type Doc } from '../lib/data';
+interface Props { doc: Doc }
+const { doc: d } = Astro.props;
+const search = [d.title, ...d.models.map((s) => bySlug.get(s)?.name ?? s)].join(' ').toLowerCase();
+---
+<a class="doc" href={docUrl(d)} target="_blank" rel="noopener" data-kind={d.kind} data-title={search}>
+  <div class="doc__cover">
+    {d.cover && <img src={d.cover.src} alt="" loading="lazy" width={d.cover.w} height={d.cover.h} />}
+    <span class="doc__kind">{KIND_LABEL[d.kind]}</span>
+  </div>
+  <div class="doc__body">
+    <span class="doc__title">{d.title}</span>
+    <span class="label">PDF · {d.pages} p · {sizeLabel(d.size)}</span>
+  </div>
+</a>
+<style>
+  .doc { display: flex; flex-direction: column; text-decoration: none; border-radius: var(--radius); overflow: hidden; background: var(--ink-2); border: 1px solid var(--line); transition: transform .35s var(--ease), border-color .35s; }
+  .doc:hover { transform: translateY(-4px) rotate(-.4deg); border-color: var(--line-2); }
+  .doc__cover { position: relative; aspect-ratio: 210 / 297; background: #e9e4d8; overflow: hidden; }
+  .doc__cover img { width: 100%; height: 100%; object-fit: cover; object-position: top; filter: sepia(.15) contrast(1.05); }
+  .doc__kind { position: absolute; left: 10px; bottom: 10px; font-family: var(--mono); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; padding: 4px 8px; border-radius: 3px; background: var(--ink); color: var(--cream); }
+  .doc[data-kind='service'] .doc__kind { background: var(--red); }
+  .doc[data-kind='schematic'] .doc__kind { background: var(--amber); color: var(--ink); }
+  .doc__body { padding: 12px 14px 14px; display: grid; gap: 6px; }
+  .doc__title { font-weight: 600; line-height: 1.25; font-size: .95rem; }
+</style>

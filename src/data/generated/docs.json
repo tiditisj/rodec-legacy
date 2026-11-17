@@ -1,0 +1,879 @@
+[
+ {
+  "id": "1385-manual",
+  "title": "1385 manual",
+  "kind": "service",
+  "models": [
+   "1385"
+  ],
+  "note": "",
+  "pages": 7,
+  "size": 2611949,
+  "cover": {
+   "src": "/media/docs/1385-manual.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mixfan-schematic",
+  "title": "Mixfan schematic",
+  "kind": "schematic",
+  "models": [
+   "mixfan"
+  ],
+  "note": "",
+  "pages": 1,
+  "size": 308694,
+  "cover": {
+   "src": "/media/docs/mixfan-schematic.webp",
+   "w": 510,
+   "h": 363
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "discomix-schematic",
+  "title": "Disco-Mix schematic",
+  "kind": "schematic",
+  "models": [
+   "disco-mix"
+  ],
+  "note": "",
+  "pages": 1,
+  "size": 378670,
+  "cover": {
+   "src": "/media/docs/discomix-schematic.webp",
+   "w": 481,
+   "h": 258
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "discomax-service",
+  "title": "Disco-Max service manual",
+  "kind": "service",
+  "models": [
+   "disco-max"
+  ],
+  "note": "",
+  "pages": 5,
+  "size": 1309551,
+  "cover": {
+   "src": "/media/docs/discomax-service.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "hda340-service",
+  "title": "HDA340 / Disco-Max service manual",
+  "kind": "service",
+  "models": [
+   "hda340",
+   "disco-max"
+  ],
+  "note": "",
+  "pages": 9,
+  "size": 3501783,
+  "cover": {
+   "src": "/media/docs/hda340-service.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "sm200-service",
+  "title": "SM200 service manual",
+  "kind": "service",
+  "models": [
+   "sm200"
+  ],
+  "note": "",
+  "pages": 12,
+  "size": 4344690,
+  "cover": {
+   "src": "/media/docs/sm200-service.webp",
+   "w": 380,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "sm300-service",
+  "title": "SM300 service manual",
+  "kind": "service",
+  "models": [
+   "sm300"
+  ],
+  "note": "",
+  "pages": 16,
+  "size": 3448881,
+  "cover": {
+   "src": "/media/docs/sm300-service.webp",
+   "w": 359,
+   "h": 514
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "sm300-user",
+  "title": "SM300 user manual",
+  "kind": "user",
+  "models": [
+   "sm300"
+  ],
+  "note": "",
+  "pages": 4,
+  "size": 1479046,
+  "cover": {
+   "src": "/media/docs/sm300-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "hda450sl-service",
+  "title": "HDA450SL service manual",
+  "kind": "service",
+  "models": [
+   "hda450sl"
+  ],
+  "note": "",
+  "pages": 6,
+  "size": 1771791,
+  "cover": {
+   "src": "/media/docs/hda450sl-service.webp",
+   "w": 371,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "hda450sl-user",
+  "title": "HDA450SL user manual",
+  "kind": "user",
+  "models": [
+   "hda450sl"
+  ],
+  "note": "",
+  "pages": 17,
+  "size": 5287687,
+  "cover": {
+   "src": "/media/docs/hda450sl-user.webp",
+   "w": 369,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx10-mx100-service",
+  "title": "MX10 / MX100 service manual",
+  "kind": "service",
+  "models": [
+   "mx10",
+   "mx100"
+  ],
+  "note": "",
+  "pages": 4,
+  "size": 228507,
+  "cover": {
+   "src": "/media/docs/mx10-mx100-service.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx18-mx180-mx34-service",
+  "title": "MX18 / MX180 / MX180 MKII / MX34 service manual",
+  "kind": "service",
+  "models": [
+   "mx18",
+   "mx180",
+   "mx180-mkii",
+   "mx34"
+  ],
+  "note": "",
+  "pages": 26,
+  "size": 649369,
+  "cover": {
+   "src": "/media/docs/mx18-mx180-mx34-service.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx130-manual",
+  "title": "MX130 manual & schematics",
+  "kind": "service",
+  "models": [
+   "mx130"
+  ],
+  "note": "",
+  "pages": 11,
+  "size": 316226,
+  "cover": {
+   "src": "/media/docs/mx130-manual.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx230-user",
+  "title": "MX230 user manual",
+  "kind": "user",
+  "models": [
+   "mx230"
+  ],
+  "note": "",
+  "pages": 13,
+  "size": 127217,
+  "cover": {
+   "src": "/media/docs/mx230-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx180-mkii-user",
+  "title": "MX180 MKII user manual",
+  "kind": "user",
+  "models": [
+   "mx180-mkii"
+  ],
+  "note": "",
+  "pages": 27,
+  "size": 688366,
+  "cover": {
+   "src": "/media/docs/mx180-mkii-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx120-mx126-user",
+  "title": "MX120 / MX126 user manual",
+  "kind": "user",
+  "models": [
+   "mx120",
+   "mx126"
+  ],
+  "note": "",
+  "pages": 24,
+  "size": 1086514,
+  "cover": {
+   "src": "/media/docs/mx120-mx126-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx180-mkiii-user",
+  "title": "MX180 MKIII user manual",
+  "kind": "user",
+  "models": [
+   "mx180-mkiii"
+  ],
+  "note": "",
+  "pages": 28,
+  "size": 913692,
+  "cover": {
+   "src": "/media/docs/mx180-mkiii-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx240-mkiii-user",
+  "title": "MX240 MKIII user manual",
+  "kind": "user",
+  "models": [
+   "mx240-mkiii"
+  ],
+  "note": "",
+  "pages": 24,
+  "size": 962758,
+  "cover": {
+   "src": "/media/docs/mx240-mkiii-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx300-mkiii-user",
+  "title": "MX300 MKIII user manual",
+  "kind": "user",
+  "models": [
+   "mx300-mkiii"
+  ],
+  "note": "",
+  "pages": 28,
+  "size": 1071122,
+  "cover": {
+   "src": "/media/docs/mx300-mkiii-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mkiii-service",
+  "title": "MX180 / MX240 / MX300 MKIII service manual",
+  "kind": "service",
+  "models": [
+   "mx180-mkiii",
+   "mx240-mkiii",
+   "mx300-mkiii"
+  ],
+  "note": "",
+  "pages": 36,
+  "size": 32391700,
+  "cover": {
+   "src": "/media/docs/mkiii-service.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "alc-01-user",
+  "title": "ALC-01 user manual",
+  "kind": "user",
+  "models": [
+   "alc-01"
+  ],
+  "note": "",
+  "pages": 19,
+  "size": 570718,
+  "cover": {
+   "src": "/media/docs/alc-01-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "multi-source-ii-user",
+  "title": "Multi Source II user manual",
+  "kind": "user",
+  "models": [
+   "multi-source-ii"
+  ],
+  "note": "",
+  "pages": 23,
+  "size": 642259,
+  "cover": {
+   "src": "/media/docs/multi-source-ii-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mixbox-user",
+  "title": "miXboX user manual",
+  "kind": "user",
+  "models": [
+   "mixbox"
+  ],
+  "note": "",
+  "pages": 24,
+  "size": 531381,
+  "cover": {
+   "src": "/media/docs/mixbox-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mixbox-mkii-user",
+  "title": "miXboX MKII user manual",
+  "kind": "user",
+  "models": [
+   "mixbox-mkii"
+  ],
+  "note": "",
+  "pages": 24,
+  "size": 425271,
+  "cover": {
+   "src": "/media/docs/mixbox-mkii-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "cx-1100-user",
+  "title": "CX-1100 user manual",
+  "kind": "user",
+  "models": [
+   "cx-1100"
+  ],
+  "note": "",
+  "pages": 27,
+  "size": 1167022,
+  "cover": {
+   "src": "/media/docs/cx-1100-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "cx-1100-schematic",
+  "title": "CX-1100 schematics (incl. balanced XLR output)",
+  "kind": "schematic",
+  "models": [
+   "cx-1100"
+  ],
+  "note": "",
+  "pages": 25,
+  "size": 644834,
+  "cover": {
+   "src": "/media/docs/cx-1100-schematic.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "bx-user",
+  "title": "BX-9 / BX-14 user manual",
+  "kind": "user",
+  "models": [
+   "bx-9",
+   "bx-14"
+  ],
+  "note": "",
+  "pages": 23,
+  "size": 840942,
+  "cover": {
+   "src": "/media/docs/bx-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "bx-service",
+  "title": "BX-9 / BX-14 service manual",
+  "kind": "service",
+  "models": [
+   "bx-9",
+   "bx-14",
+   "bx9-original",
+   "bx14-original"
+  ],
+  "note": "",
+  "pages": 31,
+  "size": 762704,
+  "cover": {
+   "src": "/media/docs/bx-service.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "pa-user",
+  "title": "PA800 / PA1600 / PA2400 user manual",
+  "kind": "user",
+  "models": [
+   "pa800",
+   "pa1600",
+   "pa2400"
+  ],
+  "note": "",
+  "pages": 26,
+  "size": 782753,
+  "cover": {
+   "src": "/media/docs/pa-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx180-limited-user",
+  "title": "MX180 50th Anniversary user manual",
+  "kind": "user",
+  "models": [
+   "mx180-limited-edition"
+  ],
+  "note": "",
+  "pages": 28,
+  "size": 1090104,
+  "cover": {
+   "src": "/media/docs/mx180-limited-user.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx180-limited-frontplate",
+  "title": "MX180 50th Anniversary front panel drawings",
+  "kind": "drawing",
+  "models": [
+   "mx180-limited-edition"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 488494,
+  "cover": {
+   "src": "/media/docs/mx180-limited-frontplate.webp",
+   "w": 506,
+   "h": 358
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "scratchbox-schematic",
+  "title": "Scratchbox schematic (preliminary)",
+  "kind": "schematic",
+  "models": [
+   "scratchbox"
+  ],
+  "note": "",
+  "pages": 1,
+  "size": 66435,
+  "cover": {
+   "src": "/media/docs/scratchbox-schematic.webp",
+   "w": 520,
+   "h": 367
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "scratchbox-xlr",
+  "title": "Scratchbox XLR output option",
+  "kind": "schematic",
+  "models": [
+   "scratchbox"
+  ],
+  "note": "",
+  "pages": 1,
+  "size": 66940,
+  "cover": {
+   "src": "/media/docs/scratchbox-xlr.webp",
+   "w": 393,
+   "h": 228
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx00-service",
+  "title": "Progressive series service manual (MX00: MX1400 / MX1800 / MX2200 / MX3000)",
+  "kind": "service",
+  "models": [
+   "mx1400",
+   "mx1800",
+   "mx2200",
+   "mx3000"
+  ],
+  "note": "",
+  "pages": 154,
+  "size": 18165474,
+  "cover": {
+   "src": "/media/docs/mx00-service.webp",
+   "w": 402,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx00-modification",
+  "title": "Progressive series modification notes (MX00: MX1400 / MX1800 / MX2200 / MX3000)",
+  "kind": "service",
+  "models": [
+   "mx1400",
+   "mx1800",
+   "mx2200",
+   "mx3000"
+  ],
+  "note": "",
+  "pages": 13,
+  "size": 11847739,
+  "cover": {
+   "src": "/media/docs/mx00-modification.webp",
+   "w": 402,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx180-original-service",
+  "title": "MX180 Original service manual",
+  "kind": "service",
+  "models": [
+   "mx180-original"
+  ],
+  "note": "",
+  "pages": 35,
+  "size": 4978461,
+  "cover": {
+   "src": "/media/docs/mx180-original-service.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx180-original-user",
+  "title": "MX180 Original user manual",
+  "kind": "user",
+  "models": [
+   "mx180-original"
+  ],
+  "note": "",
+  "pages": 32,
+  "size": 1623985,
+  "cover": {
+   "src": "/media/docs/mx180-original-user.webp",
+   "w": 402,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "bx9-original-user",
+  "title": "BX9 Original user manual",
+  "kind": "user",
+  "models": [
+   "bx9-original"
+  ],
+  "note": "",
+  "pages": 27,
+  "size": 577386,
+  "cover": {
+   "src": "/media/docs/bx9-original-user.webp",
+   "w": 402,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "bx14-original-user",
+  "title": "BX14 Original user manual",
+  "kind": "user",
+  "models": [
+   "bx14-original"
+  ],
+  "note": "",
+  "pages": 27,
+  "size": 434761,
+  "cover": {
+   "src": "/media/docs/bx14-original-user.webp",
+   "w": 402,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx180-mkiii-leaflet",
+  "title": "MX180 MKIII leaflet",
+  "kind": "leaflet",
+  "models": [
+   "mx180-mkiii"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 448560,
+  "cover": {
+   "src": "/media/docs/mx180-mkiii-leaflet.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx240-mkiii-leaflet",
+  "title": "MX240 MKIII leaflet",
+  "kind": "leaflet",
+  "models": [
+   "mx240-mkiii"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 456241,
+  "cover": {
+   "src": "/media/docs/mx240-mkiii-leaflet.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mx300-mkiii-leaflet",
+  "title": "MX300 MKIII leaflet",
+  "kind": "leaflet",
+  "models": [
+   "mx300-mkiii"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 3301306,
+  "cover": {
+   "src": "/media/docs/mx300-mkiii-leaflet.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "alc-01-leaflet",
+  "title": "ALC-01 leaflet",
+  "kind": "leaflet",
+  "models": [
+   "alc-01"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 760945,
+  "cover": {
+   "src": "/media/docs/alc-01-leaflet.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "multi-source-ii-leaflet",
+  "title": "Multi Source II leaflet",
+  "kind": "leaflet",
+  "models": [
+   "multi-source-ii"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 151023,
+  "cover": {
+   "src": "/media/docs/multi-source-ii-leaflet.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "mixbox-leaflet",
+  "title": "miXboX leaflet",
+  "kind": "leaflet",
+  "models": [
+   "mixbox"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 3278185,
+  "cover": {
+   "src": "/media/docs/mixbox-leaflet.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "cx-1100-leaflet",
+  "title": "CX-1100 leaflet",
+  "kind": "leaflet",
+  "models": [
+   "cx-1100"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 2604542,
+  "cover": {
+   "src": "/media/docs/cx-1100-leaflet.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "bx-9-leaflet",
+  "title": "BX-9 leaflet",
+  "kind": "leaflet",
+  "models": [
+   "bx-9"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 2492769,
+  "cover": {
+   "src": "/media/docs/bx-9-leaflet.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "bx-14-leaflet",
+  "title": "BX-14 leaflet",
+  "kind": "leaflet",
+  "models": [
+   "bx-14"
+  ],
+  "note": "",
+  "pages": 2,
+  "size": 2514907,
+  "cover": {
+   "src": "/media/docs/bx-14-leaflet.webp",
+   "w": 368,
+   "h": 520
+  },
+  "max_px": 2400
+ },
+ {
+  "id": "book-50-years",
+  "title": "Perpetual Music Makers: Rodec 50 years book (2004)",
+  "kind": "book",
+  "models": [],
+  "note": "",
+  "pages": 124,
+  "size": 30272270,
+  "cover": {
+   "src": "/media/docs/book-50-years.webp",
+   "w": 367,
+   "h": 520
+  },
+  "max_px": 1754
+ },
+ {
+  "id": "catalogue-2010",
+  "title": "Rodec catalogue 2010: 55 years of passion",
+  "kind": "catalogue",
+  "models": [
+   "mx1400",
+   "mx1800",
+   "mx2200",
+   "mx3000",
+   "mx180-original",
+   "bx9-original",
+   "bx14-original",
+   "scratchbox",
+   "restyler",
+   "patch-live"
+  ],
+  "note": "",
+  "pages": 36,
+  "size": 4424340,
+  "cover": {
+   "src": "/media/docs/catalogue-2010.webp",
+   "w": 520,
+   "h": 372
+  },
+  "max_px": 2400
+ }
+]

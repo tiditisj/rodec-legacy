@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro';
+import ModelCard from '../../components/ModelCard.astro';
+import { models, eras } from '../../lib/data';
+
+const cats = ['Mixers', 'Amplifiers', 'Speakers', 'Tuners', 'Tools'].filter((c) => models.some((m) => m.category === c));
+const byEra = eras.map((e) => ({ ...e, models: models.filter((m) => m.era.key === e.key) }));
+---
+<Base title="All models" description="Every Rodec ever made, from the 1961 Stereofan to the 2010 Patch Live: photos, launch prices, brochures and manuals.">
+  <section class="wrap page-head">
+    <p class="label red">The complete line-up · 1961 – 2010</p>
+    <h1>Every Rodec<br />ever made</h1>
+    <p class="lede">{models.length} amplifiers, mixers, speakers and tools, drawn from the original product register. Pick a decade, or just scroll and enjoy the knobs.</p>
+  </section>
+
+  <div class="filters wrap" role="toolbar" aria-label="Filter models">
+    <div class="filters__row">
+      <button class="chip" aria-pressed="true" data-era="all">All eras</button>
+      {eras.map((e) => <button class="chip" aria-pressed="false" data-era={e.key}>{e.from}–{e.to}</button>)}
+    </div>
+    <div class="filters__row">
+      <button class="chip" aria-pressed="true" data-cat="all">All types</button>
+      {cats.map((c) => <button class="chip" aria-pressed="false" data-cat={c}>{c}</button>)}
+      <label class="search"><span class="visually-hidden">Search models</span><input type="search" placeholder="Search · e.g. MX180" /></label>
+    </div>
+  </div>
+
+  {byEra.map((e) => (
+    <section class="era wrap" data-era-section={e.key} id={e.key}>
+      <header class="era__head">
+        <span class="era__years display">{e.from}<span>–</span>{e.to}</span>
+        <div><h2>{e.title}</h2><p class="label">{e.models.length} models</p></div>
+      </header>
+      <div class="grid grid--models">
+        {e.models.map((m, i) => <ModelCard model={m} loading={i < 4 ? 'eager' : 'lazy'} />)}
+      </div>
+    </section>
+  ))}
+  <p class="wrap empty label" hidden>No models match this filter.</p>
+</Base>
+
+<script>
+  const state = { era: 'all', cat: 'all', q: '' };
+  const cards = [...document.querySelectorAll<HTMLElement>('.model-card')];
+  const sections = [...document.querySelectorAll<HTMLElement>('[data-era-section]')];
+  const empty = document.querySelector<HTMLElement>('.empty')!;
+  const apply = () => {
+    let shown = 0;
+    for (const c of cards) {
+      const ok = (state.era === 'all' || c.dataset.era === state.era)
+        && (state.cat === 'all' || c.dataset.cat === state.cat)
+        && (!state.q || c.dataset.name!.replace(/\s/g, '').includes(state.q));
+      c.hidden = !ok; if (ok) shown++;
+    }
+    for (const s of sections) s.hidden = !s.querySelector('.model-card:not([hidden])');
+    empty.hidden = shown > 0;
+  };
+  document.querySelectorAll<HTMLButtonElement>('.filters .chip').forEach((b) => b.addEventListener('click', () => {
+    const key = b.dataset.era ? 'era' : 'cat';
+    state[key] = (b.dataset.era ?? b.dataset.cat)!;
+    b.parentElement!.querySelectorAll('.chip').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    apply();
+  }));
+  document.querySelector<HTMLInputElement>('.search input')!.addEventListener('input', (e) => {
+    state.q = (e.target as HTMLInputElement).value.toLowerCase().replace(/\s/g, ''); apply();
+  });
+  const hash = location.hash.slice(1);
+  document.querySelector<HTMLButtonElement>(`.chip[data-era="${hash}"]`)?.click();
+</script>
+
+<style>
+  .page-head { padding-block: clamp(56px, 9vw, 120px) 40px; }
+  .page-head h1 { margin: 16px 0 24px; }
+  .filters { position: sticky; top: 65px; z-index: 10; display: grid; gap: 10px; padding-block: 14px; background: linear-gradient(var(--ink) 75%, transparent); }
+  .filters__row { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; align-items: center; }
+  .search { margin-left: auto; }
+  .search input { font: inherit; font-family: var(--mono); font-size: .8rem; background: var(--ink-2); color: var(--cream); border: 1px solid var(--line-2); border-radius: 999px; padding: .55em 1.1em; width: 220px; }
+  .search input:focus { outline: none; border-color: var(--amber); }
+  .era { padding-block: 56px 24px; }
+  .era__head { display: flex; align-items: flex-end; gap: 24px; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .era__years { font-size: clamp(2.4rem, 6vw, 5rem); color: transparent; -webkit-text-stroke: 1px var(--cream-3); line-height: .8; }
+  .era__years span { -webkit-text-stroke-color: var(--red); margin-inline: .05em; }
+  .era__head h2 { font-size: clamp(1.3rem, 2.5vw, 2rem); margin-bottom: 6px; }
+  .empty { padding: 60px 0; text-align: center; }
+  @media (max-width: 640px) { .era__head { flex-direction: column; align-items: flex-start; gap: 12px; } .search { margin-left: 0; } .search input { width: 180px; } }
+</style>

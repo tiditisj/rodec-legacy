@@ -1,0 +1,4543 @@
+[
+ {
+  "name": "Audiofan",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1961,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "slug": "audiofan",
+  "order": 0,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "Stereofan",
+  "type": "Amplifier",
+  "month": 7,
+  "year": 1961,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 50.0,
+  "slug": "stereofan",
+  "order": 1,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [
+   {
+    "title": "Stereofan July 1961",
+    "pages": [
+     {
+      "src": "/media/brochures/stereofan-july-1961-000.webp",
+      "thumb": "/media/brochures/stereofan-july-1961-000.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: Stereofan July 1961, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "P418",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1961,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "slug": "p418",
+  "order": 2,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/p418/p418-front-c.webp",
+    "thumb": "/media/models/p418/p418-front-c.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec P418",
+    "caption": "P418 Front"
+   },
+   {
+    "src": "/media/models/p418/p418-back-c.webp",
+    "thumb": "/media/models/p418/p418-back-c.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec P418",
+    "caption": "P418 Back"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "52S",
+  "type": "Phono Pre Amplifier",
+  "month": 7,
+  "year": 1961,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 40.0,
+  "slug": "52s",
+  "order": 3,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/52s/52s-front-bw.webp",
+    "thumb": "/media/models/52s/52s-front-bw.thumb.webp",
+    "w": 460,
+    "h": 240,
+    "alt": "Rodec 52S",
+    "caption": "52S Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "52S Preampli 1961",
+    "pages": [
+     {
+      "src": "/media/brochures/52s-preampli-1961-000.webp",
+      "thumb": "/media/brochures/52s-preampli-1961-000.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 52S Preampli 1961, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "514S",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1961,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "slug": "514s",
+  "order": 4,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/514s/514s-front-inner-bw.webp",
+    "thumb": "/media/models/514s/514s-front-inner-bw.thumb.webp",
+    "w": 574,
+    "h": 364,
+    "alt": "Rodec 514S",
+    "caption": "514S Front +inner"
+   },
+   {
+    "src": "/media/models/514s/514s-front-bw.webp",
+    "thumb": "/media/models/514s/514s-front-bw.thumb.webp",
+    "w": 544,
+    "h": 203,
+    "alt": "Rodec 514S",
+    "caption": "514S Front"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "614SM",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1961,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "slug": "614sm",
+  "order": 5,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "615SM",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1961,
+  "approx": true,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "615sm",
+  "order": 6,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/615sm/615sm-front-bw.webp",
+    "thumb": "/media/models/615sm/615sm-front-bw.thumb.webp",
+    "w": 987,
+    "h": 417,
+    "alt": "Rodec 615SM",
+    "caption": "615SM Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "615SM",
+    "pages": [
+     {
+      "src": "/media/brochures/615sm-001.webp",
+      "thumb": "/media/brochures/615sm-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 615SM, page 1"
+     },
+     {
+      "src": "/media/brochures/615sm-002.webp",
+      "thumb": "/media/brochures/615sm-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 615SM, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "615SMA",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1961,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "slug": "615sma",
+  "order": 7,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/615sma/615sma-front-c.webp",
+    "thumb": "/media/models/615sma/615sma-front-c.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec 615SMA",
+    "caption": "615SMA Front"
+   },
+   {
+    "src": "/media/models/615sma/615sma-back-c.webp",
+    "thumb": "/media/models/615sma/615sma-back-c.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec 615SMA",
+    "caption": "615SMA Back"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "Auditorium",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1965,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "extra": true,
+  "curiosity": false,
+  "note": "Valve amplifier from the 1960s. It is not in the official product list, but survives in colour photos inside and out.",
+  "slug": "auditorium",
+  "order": 8,
+  "category": "Amplifiers",
+  "era": {
+   "key": "radio",
+   "title": "The radio shop years",
+   "from": 1954,
+   "to": 1969
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/auditorium/auditorium-front-slanted-c.webp",
+    "thumb": "/media/models/auditorium/auditorium-front-slanted-c.thumb.webp",
+    "w": 1280,
+    "h": 1024,
+    "alt": "Rodec Auditorium",
+    "caption": "Auditorium Front Slanted"
+   },
+   {
+    "src": "/media/models/auditorium/auditorium-front-c.webp",
+    "thumb": "/media/models/auditorium/auditorium-front-c.thumb.webp",
+    "w": 1280,
+    "h": 1024,
+    "alt": "Rodec Auditorium",
+    "caption": "Auditorium Front"
+   },
+   {
+    "src": "/media/models/auditorium/auditorium-back-c.webp",
+    "thumb": "/media/models/auditorium/auditorium-back-c.thumb.webp",
+    "w": 1280,
+    "h": 1024,
+    "alt": "Rodec Auditorium",
+    "caption": "Auditorium Back"
+   },
+   {
+    "src": "/media/models/auditorium/auditorium-inner-1-c.webp",
+    "thumb": "/media/models/auditorium/auditorium-inner-1-c.thumb.webp",
+    "w": 1280,
+    "h": 1024,
+    "alt": "Rodec Auditorium",
+    "caption": "Auditorium Inner 1"
+   },
+   {
+    "src": "/media/models/auditorium/auditorium-inner-2-c.webp",
+    "thumb": "/media/models/auditorium/auditorium-inner-2-c.thumb.webp",
+    "w": 1280,
+    "h": 1024,
+    "alt": "Rodec Auditorium",
+    "caption": "Auditorium Inner 2"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "CU880",
+  "type": "Pre Amplifier",
+  "month": null,
+  "year": 1970,
+  "approx": true,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "cu880",
+  "order": 9,
+  "category": "Amplifiers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "CU series",
+  "photos": [
+   {
+    "src": "/media/models/cu880/cu-880-front-bw.webp",
+    "thumb": "/media/models/cu880/cu-880-front-bw.thumb.webp",
+    "w": 822,
+    "h": 297,
+    "alt": "Rodec CU880",
+    "caption": "CU 880 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "CU880",
+    "pages": [
+     {
+      "src": "/media/brochures/cu880-001.webp",
+      "thumb": "/media/brochures/cu880-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: CU880, page 1"
+     },
+     {
+      "src": "/media/brochures/cu880-002.webp",
+      "thumb": "/media/brochures/cu880-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: CU880, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "CU881",
+  "type": "Mixer",
+  "month": null,
+  "year": 1970,
+  "approx": true,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "cu881",
+  "order": 10,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "CU series",
+  "photos": [
+   {
+    "src": "/media/models/cu881/cu-881-eerste-mixer-met-schuif-faders-1970.webp",
+    "thumb": "/media/models/cu881/cu-881-eerste-mixer-met-schuif-faders-1970.thumb.webp",
+    "w": 1024,
+    "h": 690,
+    "alt": "Rodec CU881",
+    "caption": "CU 881 (eerste mixer met schuif faders 1970)"
+   },
+   {
+    "src": "/media/models/cu881/cu-881-front-bw.webp",
+    "thumb": "/media/models/cu881/cu-881-front-bw.thumb.webp",
+    "w": 1024,
+    "h": 690,
+    "alt": "Rodec CU881",
+    "caption": "CU 881 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "CU881",
+    "pages": [
+     {
+      "src": "/media/brochures/cu881-001.webp",
+      "thumb": "/media/brochures/cu881-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: CU881, page 1"
+     },
+     {
+      "src": "/media/brochures/cu881-002.webp",
+      "thumb": "/media/brochures/cu881-002.thumb.webp",
+      "w": 1349,
+      "h": 2000,
+      "alt": "Rodec brochure: CU881, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "CU882",
+  "type": "Mixer",
+  "month": null,
+  "year": 1970,
+  "approx": true,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "cu882",
+  "order": 11,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "CU series",
+  "photos": [
+   {
+    "src": "/media/models/cu882/cu-882-front-bw.webp",
+    "thumb": "/media/models/cu882/cu-882-front-bw.thumb.webp",
+    "w": 1013,
+    "h": 660,
+    "alt": "Rodec CU882",
+    "caption": "CU 882 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "CU882",
+    "pages": [
+     {
+      "src": "/media/brochures/cu882-001.webp",
+      "thumb": "/media/brochures/cu882-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: CU882, page 1"
+     },
+     {
+      "src": "/media/brochures/cu882-002.webp",
+      "thumb": "/media/brochures/cu882-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: CU882, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "CU888",
+  "type": "Mixer",
+  "month": null,
+  "year": 1970,
+  "approx": true,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "cu888",
+  "order": 12,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "CU series",
+  "photos": [
+   {
+    "src": "/media/models/cu888/cu-888-front-bw.webp",
+    "thumb": "/media/models/cu888/cu-888-front-bw.thumb.webp",
+    "w": 1058,
+    "h": 752,
+    "alt": "Rodec CU888",
+    "caption": "CU 888 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "CU888",
+    "pages": [
+     {
+      "src": "/media/brochures/cu888-001.webp",
+      "thumb": "/media/brochures/cu888-001.thumb.webp",
+      "w": 1379,
+      "h": 2000,
+      "alt": "Rodec brochure: CU888, page 1"
+     },
+     {
+      "src": "/media/brochures/cu888-002.webp",
+      "thumb": "/media/brochures/cu888-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: CU888, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "B840STA",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1970,
+  "approx": true,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "b840sta",
+  "order": 13,
+  "category": "Amplifiers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/b840sta/b-840-sta-front-bw.webp",
+    "thumb": "/media/models/b840sta/b-840-sta-front-bw.thumb.webp",
+    "w": 902,
+    "h": 368,
+    "alt": "Rodec B840STA",
+    "caption": "B 840 STA Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "B840STA",
+    "pages": [
+     {
+      "src": "/media/brochures/b840sta-001.webp",
+      "thumb": "/media/brochures/b840sta-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: B840STA, page 1"
+     },
+     {
+      "src": "/media/brochures/b840sta-002.webp",
+      "thumb": "/media/brochures/b840sta-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: B840STA, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "FADER",
+  "type": "Mixer",
+  "month": null,
+  "year": 1970,
+  "approx": true,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "fader",
+  "order": 14,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/fader/fader-front-side-bw.webp",
+    "thumb": "/media/models/fader/fader-front-side-bw.thumb.webp",
+    "w": 998,
+    "h": 638,
+    "alt": "Rodec FADER",
+    "caption": "Fader Front Side"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "The fader",
+    "pages": [
+     {
+      "src": "/media/brochures/the-fader-001.webp",
+      "thumb": "/media/brochures/the-fader-001.thumb.webp",
+      "w": 1374,
+      "h": 2000,
+      "alt": "Rodec brochure: The fader, page 1"
+     },
+     {
+      "src": "/media/brochures/the-fader-002.webp",
+      "thumb": "/media/brochures/the-fader-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: The fader, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "1572",
+  "type": "Amplifier",
+  "month": 8,
+  "year": 1971,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "1572",
+  "order": 15,
+  "category": "Amplifiers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/1572/1572-front-bw.webp",
+    "thumb": "/media/models/1572/1572-front-bw.thumb.webp",
+    "w": 1024,
+    "h": 632,
+    "alt": "Rodec 1572",
+    "caption": "1572 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "1572",
+    "pages": [
+     {
+      "src": "/media/brochures/1572-001.webp",
+      "thumb": "/media/brochures/1572-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1572, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "1372",
+  "type": "Microphone Mixer",
+  "month": null,
+  "year": 1971,
+  "approx": true,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "1372",
+  "order": 16,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "13xx series",
+  "photos": [
+   {
+    "src": "/media/models/1372/1372-front-bw.webp",
+    "thumb": "/media/models/1372/1372-front-bw.thumb.webp",
+    "w": 1015,
+    "h": 660,
+    "alt": "Rodec 1372",
+    "caption": "1372 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "1372",
+    "pages": [
+     {
+      "src": "/media/brochures/1372-001.webp",
+      "thumb": "/media/brochures/1372-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1372, page 1"
+     },
+     {
+      "src": "/media/brochures/1372-002.webp",
+      "thumb": "/media/brochures/1372-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1372, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "2560",
+  "type": "Amplifier",
+  "month": 7,
+  "year": 1972,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "2560",
+  "order": 17,
+  "category": "Amplifiers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/2560/2560-front-bw.webp",
+    "thumb": "/media/models/2560/2560-front-bw.thumb.webp",
+    "w": 1090,
+    "h": 741,
+    "alt": "Rodec 2560",
+    "caption": "2560 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "2560",
+    "pages": [
+     {
+      "src": "/media/brochures/2560-001.webp",
+      "thumb": "/media/brochures/2560-001.thumb.webp",
+      "w": 1422,
+      "h": 2000,
+      "alt": "Rodec brochure: 2560, page 1"
+     },
+     {
+      "src": "/media/brochures/2560-002.webp",
+      "thumb": "/media/brochures/2560-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 2560, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "T800",
+  "type": "Tuner",
+  "month": 7,
+  "year": 1972,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "t800",
+  "order": 18,
+  "category": "Tuners",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/t800/t800-front-bw.webp",
+    "thumb": "/media/models/t800/t800-front-bw.thumb.webp",
+    "w": 1067,
+    "h": 259,
+    "alt": "Rodec T800",
+    "caption": "T800 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "T800",
+    "pages": [
+     {
+      "src": "/media/brochures/t800-001.webp",
+      "thumb": "/media/brochures/t800-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: T800, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "1361 / 1371",
+  "type": "Mixer",
+  "month": 11,
+  "year": 1973,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "1361-1371",
+  "order": 19,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "13xx series",
+  "photos": [
+   {
+    "src": "/media/models/1361-1371/1361-front-bw.webp",
+    "thumb": "/media/models/1361-1371/1361-front-bw.thumb.webp",
+    "w": 1056,
+    "h": 765,
+    "alt": "Rodec 1361 / 1371",
+    "caption": "1361 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "1361-71",
+    "pages": [
+     {
+      "src": "/media/brochures/1361-71-001.webp",
+      "thumb": "/media/brochures/1361-71-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1361-71, page 1"
+     },
+     {
+      "src": "/media/brochures/1361-71-002.webp",
+      "thumb": "/media/brochures/1361-71-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1361-71, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "1364 / 1374",
+  "type": "Mixer",
+  "month": 2,
+  "year": 1973,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "1364-1374",
+  "order": 20,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "13xx series",
+  "photos": [
+   {
+    "src": "/media/models/1364-1374/1364-front-slanted-bw.webp",
+    "thumb": "/media/models/1364-1374/1364-front-slanted-bw.thumb.webp",
+    "w": 651,
+    "h": 632,
+    "alt": "Rodec 1364 / 1374",
+    "caption": "1364 Front Slanted"
+   },
+   {
+    "src": "/media/models/1364-1374/1374-back-c.webp",
+    "thumb": "/media/models/1364-1374/1374-back-c.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec 1364 / 1374",
+    "caption": "1374 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "1364-74",
+    "pages": [
+     {
+      "src": "/media/brochures/1364-74-001.webp",
+      "thumb": "/media/brochures/1364-74-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1364-74, page 1"
+     },
+     {
+      "src": "/media/brochures/1364-74-002.webp",
+      "thumb": "/media/brochures/1364-74-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1364-74, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "1363 / 1373",
+  "type": "Mixer",
+  "month": 4,
+  "year": 1973,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "1363-1373",
+  "order": 21,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "13xx series",
+  "photos": [
+   {
+    "src": "/media/models/1363-1373/1363-front-bw.webp",
+    "thumb": "/media/models/1363-1373/1363-front-bw.thumb.webp",
+    "w": 1039,
+    "h": 741,
+    "alt": "Rodec 1363 / 1373",
+    "caption": "1363 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "1363-73",
+    "pages": [
+     {
+      "src": "/media/brochures/1363-73-001.webp",
+      "thumb": "/media/brochures/1363-73-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1363-73, page 1"
+     },
+     {
+      "src": "/media/brochures/1363-73-002.webp",
+      "thumb": "/media/brochures/1363-73-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1363-73, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "1061 / 1071",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1973,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "1061-1071",
+  "order": 22,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/1061-1071/1061-front-slanted-bw.webp",
+    "thumb": "/media/models/1061-1071/1061-front-slanted-bw.thumb.webp",
+    "w": 1052,
+    "h": 754,
+    "alt": "Rodec 1061 / 1071",
+    "caption": "1061 Front Slanted"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "The fader 1061",
+    "pages": [
+     {
+      "src": "/media/brochures/the-fader-1061-001.webp",
+      "thumb": "/media/brochures/the-fader-1061-001.thumb.webp",
+      "w": 1391,
+      "h": 2000,
+      "alt": "Rodec brochure: The fader 1061, page 1"
+     },
+     {
+      "src": "/media/brochures/the-fader-1061-002.webp",
+      "thumb": "/media/brochures/the-fader-1061-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: The fader 1061, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "1362",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1973,
+  "approx": false,
+  "launchDoc": null,
+  "price": null,
+  "slug": "1362",
+  "order": 23,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": "13xx series",
+  "photos": [],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "P860",
+  "type": "Pre Amplifier",
+  "month": 11,
+  "year": 1973,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "p860",
+  "order": 24,
+  "category": "Amplifiers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/p860/p860-front-bw.webp",
+    "thumb": "/media/models/p860/p860-front-bw.thumb.webp",
+    "w": 1065,
+    "h": 250,
+    "alt": "Rodec P860",
+    "caption": "P860 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "P860",
+    "pages": [
+     {
+      "src": "/media/brochures/p860-000.webp",
+      "thumb": "/media/brochures/p860-000.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: P860, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "1385",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1974,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": null,
+  "slug": "1385",
+  "order": 25,
+  "category": "Mixers",
+  "era": {
+   "key": "fader",
+   "title": "Birth of the DJ mixer",
+   "from": 1970,
+   "to": 1976
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/1385/1385-front-bw.webp",
+    "thumb": "/media/models/1385/1385-front-bw.thumb.webp",
+    "w": 906,
+    "h": 555,
+    "alt": "Rodec 1385",
+    "caption": "1385 Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "1385",
+    "pages": [
+     {
+      "src": "/media/brochures/1385-001.webp",
+      "thumb": "/media/brochures/1385-001.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1385, page 1"
+     },
+     {
+      "src": "/media/brochures/1385-002.webp",
+      "thumb": "/media/brochures/1385-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: 1385, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "1385-manual"
+  ]
+ },
+ {
+  "name": "MIXFAN",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1977,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 250.0,
+  "slug": "mixfan",
+  "order": 26,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mixfan/mixfan-front-bw.webp",
+    "thumb": "/media/models/mixfan/mixfan-front-bw.thumb.webp",
+    "w": 441,
+    "h": 167,
+    "alt": "Rodec MIXFAN",
+    "caption": "Mixfan Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Mixfan",
+    "pages": [
+     {
+      "src": "/media/brochures/mixfan-001.webp",
+      "thumb": "/media/brochures/mixfan-001.thumb.webp",
+      "w": 2000,
+      "h": 1403,
+      "alt": "Rodec brochure: Mixfan, page 1"
+     },
+     {
+      "src": "/media/brochures/mixfan-002.webp",
+      "thumb": "/media/brochures/mixfan-002.thumb.webp",
+      "w": 1397,
+      "h": 2000,
+      "alt": "Rodec brochure: Mixfan, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "mixfan-schematic"
+  ]
+ },
+ {
+  "name": "MIXETTA",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1977,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 350.0,
+  "slug": "mixetta",
+  "order": 27,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mixetta/mixetta-front-bw.webp",
+    "thumb": "/media/models/mixetta/mixetta-front-bw.thumb.webp",
+    "w": 1026,
+    "h": 698,
+    "alt": "Rodec MIXETTA",
+    "caption": "Mixetta Front"
+   },
+   {
+    "src": "/media/models/mixetta/mixetta-back-c.webp",
+    "thumb": "/media/models/mixetta/mixetta-back-c.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MIXETTA",
+    "caption": "Mixetta Back"
+   },
+   {
+    "src": "/media/models/mixetta/mixetta-back-slanted-bw.webp",
+    "thumb": "/media/models/mixetta/mixetta-back-slanted-bw.thumb.webp",
+    "w": 1024,
+    "h": 696,
+    "alt": "Rodec MIXETTA",
+    "caption": "Mixetta Back Slanted"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Mixetta",
+    "pages": [
+     {
+      "src": "/media/brochures/mixetta-001.webp",
+      "thumb": "/media/brochures/mixetta-001.thumb.webp",
+      "w": 1424,
+      "h": 2000,
+      "alt": "Rodec brochure: Mixetta, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "MIXMASTER",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1977,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 510.0,
+  "slug": "mixmaster",
+  "order": 28,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mixmaster/mixmaster-front-bw.webp",
+    "thumb": "/media/models/mixmaster/mixmaster-front-bw.thumb.webp",
+    "w": 441,
+    "h": 229,
+    "alt": "Rodec MIXMASTER",
+    "caption": "Mixmaster Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Mixmaster",
+    "pages": [
+     {
+      "src": "/media/brochures/mixmaster-001.webp",
+      "thumb": "/media/brochures/mixmaster-001.thumb.webp",
+      "w": 1425,
+      "h": 2000,
+      "alt": "Rodec brochure: Mixmaster, page 1"
+     },
+     {
+      "src": "/media/brochures/mixmaster-002.webp",
+      "thumb": "/media/brochures/mixmaster-002.thumb.webp",
+      "w": 1555,
+      "h": 2000,
+      "alt": "Rodec brochure: Mixmaster, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "POWER PROJECT 100",
+  "type": "Amplifier",
+  "month": 9,
+  "year": 1978,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 355.0,
+  "slug": "power-project-100",
+  "order": 29,
+  "category": "Amplifiers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": "Power Project",
+  "photos": [
+   {
+    "src": "/media/models/power-project-100/power-project-100-big-vu-front-bw.webp",
+    "thumb": "/media/models/power-project-100/power-project-100-big-vu-front-bw.thumb.webp",
+    "w": 947,
+    "h": 267,
+    "alt": "Rodec POWER PROJECT 100",
+    "caption": "Power project 100 Big VU Front"
+   },
+   {
+    "src": "/media/models/power-project-100/power-project-100-small-vu-front-bw.webp",
+    "thumb": "/media/models/power-project-100/power-project-100-small-vu-front-bw.thumb.webp",
+    "w": 437,
+    "h": 132,
+    "alt": "Rodec POWER PROJECT 100",
+    "caption": "Power project 100 Small VU Front"
+   },
+   {
+    "src": "/media/models/power-project-100/power-project-100-back-c.webp",
+    "thumb": "/media/models/power-project-100/power-project-100-back-c.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec POWER PROJECT 100",
+    "caption": "Power project 100 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Power Project 100",
+    "pages": [
+     {
+      "src": "/media/brochures/power-project-100-001.webp",
+      "thumb": "/media/brochures/power-project-100-001.thumb.webp",
+      "w": 2000,
+      "h": 1405,
+      "alt": "Rodec brochure: Power Project 100, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "OLYMPUS / OLYMPUS2",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1978,
+  "approx": false,
+  "launchDoc": null,
+  "price": 390.0,
+  "slug": "olympus-olympus2",
+  "order": 30,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/olympus-olympus2/olympus-2-front-bw.webp",
+    "thumb": "/media/models/olympus-olympus2/olympus-2-front-bw.thumb.webp",
+    "w": 767,
+    "h": 387,
+    "alt": "Rodec OLYMPUS / OLYMPUS2",
+    "caption": "OLYMPUS 2 Front"
+   },
+   {
+    "src": "/media/models/olympus-olympus2/olympus-front-bw.webp",
+    "thumb": "/media/models/olympus-olympus2/olympus-front-bw.thumb.webp",
+    "w": 834,
+    "h": 383,
+    "alt": "Rodec OLYMPUS / OLYMPUS2",
+    "caption": "OLYMPUS Front"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "DISCO-MIX",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1978,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 590.0,
+  "slug": "disco-mix",
+  "order": 31,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/disco-mix/disco-mix-aluminium-front-c.webp",
+    "thumb": "/media/models/disco-mix/disco-mix-aluminium-front-c.thumb.webp",
+    "w": 627,
+    "h": 368,
+    "alt": "Rodec DISCO-MIX",
+    "caption": "DISCO MIX Aluminium Front"
+   },
+   {
+    "src": "/media/models/disco-mix/disco-mix-black-front-bw.webp",
+    "thumb": "/media/models/disco-mix/disco-mix-black-front-bw.thumb.webp",
+    "w": 1392,
+    "h": 1054,
+    "alt": "Rodec DISCO-MIX",
+    "caption": "DISCO MIX Black Front"
+   },
+   {
+    "src": "/media/models/disco-mix/disco-mix-back-slanted-bw.webp",
+    "thumb": "/media/models/disco-mix/disco-mix-back-slanted-bw.thumb.webp",
+    "w": 420,
+    "h": 231,
+    "alt": "Rodec DISCO-MIX",
+    "caption": "DISCO MIX Back Slanted"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Disco mix",
+    "pages": [
+     {
+      "src": "/media/brochures/disco-mix-001.webp",
+      "thumb": "/media/brochures/disco-mix-001.thumb.webp",
+      "w": 1380,
+      "h": 2000,
+      "alt": "Rodec brochure: Disco mix, page 1"
+     },
+     {
+      "src": "/media/brochures/disco-mix-002.webp",
+      "thumb": "/media/brochures/disco-mix-002.thumb.webp",
+      "w": 2000,
+      "h": 1405,
+      "alt": "Rodec brochure: Disco mix, page 2"
+     }
+    ]
+   },
+   {
+    "title": "Disco-Mix & Disco-Max - 25 years Rodec",
+    "pages": [
+     {
+      "src": "/media/brochures/disco-mix-disco-max-25-years-rodec-001.webp",
+      "thumb": "/media/brochures/disco-mix-disco-max-25-years-rodec-001.thumb.webp",
+      "w": 2000,
+      "h": 932,
+      "alt": "Rodec brochure: Disco-Mix & Disco-Max - 25 years Rodec, page 1"
+     },
+     {
+      "src": "/media/brochures/disco-mix-disco-max-25-years-rodec-002.webp",
+      "thumb": "/media/brochures/disco-mix-disco-max-25-years-rodec-002.thumb.webp",
+      "w": 2000,
+      "h": 925,
+      "alt": "Rodec brochure: Disco-Mix & Disco-Max - 25 years Rodec, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "discomix-schematic"
+  ]
+ },
+ {
+  "name": "FADER MKII",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1978,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 75.0,
+  "slug": "fader-mkii",
+  "order": 32,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/fader-mkii/fader-mkii-front-bw.webp",
+    "thumb": "/media/models/fader-mkii/fader-mkii-front-bw.thumb.webp",
+    "w": 109,
+    "h": 242,
+    "alt": "Rodec FADER MKII",
+    "caption": "FADER MKII Front"
+   },
+   {
+    "src": "/media/models/fader-mkii/fader-mkii-back-c.webp",
+    "thumb": "/media/models/fader-mkii/fader-mkii-back-c.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec FADER MKII",
+    "caption": "FADER MKII Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Fader MKII",
+    "pages": [
+     {
+      "src": "/media/brochures/fader-mkii-001.webp",
+      "thumb": "/media/brochures/fader-mkii-001.thumb.webp",
+      "w": 1403,
+      "h": 2000,
+      "alt": "Rodec brochure: Fader MKII, page 1"
+     },
+     {
+      "src": "/media/brochures/fader-mkii-002.webp",
+      "thumb": "/media/brochures/fader-mkii-002.thumb.webp",
+      "w": 1415,
+      "h": 2000,
+      "alt": "Rodec brochure: Fader MKII, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "POWER PROJECT 200",
+  "type": "Amplifier",
+  "month": 4,
+  "year": 1978,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 560.0,
+  "slug": "power-project-200",
+  "order": 33,
+  "category": "Amplifiers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": "Power Project",
+  "photos": [
+   {
+    "src": "/media/models/power-project-200/power-project-200-front-c.webp",
+    "thumb": "/media/models/power-project-200/power-project-200-front-c.thumb.webp",
+    "w": 866,
+    "h": 326,
+    "alt": "Rodec POWER PROJECT 200",
+    "caption": "Power project 200 Front"
+   },
+   {
+    "src": "/media/models/power-project-200/power-project-200-back-c.webp",
+    "thumb": "/media/models/power-project-200/power-project-200-back-c.thumb.webp",
+    "w": 870,
+    "h": 337,
+    "alt": "Rodec POWER PROJECT 200",
+    "caption": "Power project 200 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Power Project 200",
+    "pages": [
+     {
+      "src": "/media/brochures/power-project-200-001.webp",
+      "thumb": "/media/brochures/power-project-200-001.thumb.webp",
+      "w": 2000,
+      "h": 1414,
+      "alt": "Rodec brochure: Power Project 200, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "DISCO-MAX",
+  "type": "Amplifier",
+  "month": 12,
+  "year": 1980,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 645.0,
+  "slug": "disco-max",
+  "order": 34,
+  "category": "Amplifiers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/disco-max/disco-max-aluminium-front-bw.webp",
+    "thumb": "/media/models/disco-max/disco-max-aluminium-front-bw.thumb.webp",
+    "w": 711,
+    "h": 525,
+    "alt": "Rodec DISCO-MAX",
+    "caption": "DISCO MAX Aluminium Front"
+   },
+   {
+    "src": "/media/models/disco-max/disco-max-black-front-bw.webp",
+    "thumb": "/media/models/disco-max/disco-max-black-front-bw.thumb.webp",
+    "w": 1388,
+    "h": 1050,
+    "alt": "Rodec DISCO-MAX",
+    "caption": "DISCO MAX Black Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Disco max",
+    "pages": [
+     {
+      "src": "/media/brochures/disco-max-001.webp",
+      "thumb": "/media/brochures/disco-max-001.thumb.webp",
+      "w": 1393,
+      "h": 2000,
+      "alt": "Rodec brochure: Disco max, page 1"
+     },
+     {
+      "src": "/media/brochures/disco-max-002.webp",
+      "thumb": "/media/brochures/disco-max-002.thumb.webp",
+      "w": 1379,
+      "h": 2000,
+      "alt": "Rodec brochure: Disco max, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "discomax-service",
+   "hda340-service"
+  ]
+ },
+ {
+  "name": "DYNAMIX",
+  "type": "Mixer",
+  "month": 12,
+  "year": 1980,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 410.0,
+  "slug": "dynamix",
+  "order": 35,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/dynamix/dynamix-black-front-bw.webp",
+    "thumb": "/media/models/dynamix/dynamix-black-front-bw.thumb.webp",
+    "w": 1390,
+    "h": 1050,
+    "alt": "Rodec DYNAMIX",
+    "caption": "DYNAMIX Black Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Dynamix",
+    "pages": [
+     {
+      "src": "/media/brochures/dynamix-001.webp",
+      "thumb": "/media/brochures/dynamix-001.thumb.webp",
+      "w": 1376,
+      "h": 2000,
+      "alt": "Rodec brochure: Dynamix, page 1"
+     },
+     {
+      "src": "/media/brochures/dynamix-002.webp",
+      "thumb": "/media/brochures/dynamix-002.thumb.webp",
+      "w": 2000,
+      "h": 1392,
+      "alt": "Rodec brochure: Dynamix, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "MF100M",
+  "type": "Mixer",
+  "month": 10,
+  "year": 1981,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 295.0,
+  "slug": "mf100m",
+  "order": 36,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mf100m/mf100m-front-slanted-bw.webp",
+    "thumb": "/media/models/mf100m/mf100m-front-slanted-bw.thumb.webp",
+    "w": 930,
+    "h": 608,
+    "alt": "Rodec MF100M",
+    "caption": "MF100M Front Slanted"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MF100M",
+    "pages": [
+     {
+      "src": "/media/brochures/mf100m-001.webp",
+      "thumb": "/media/brochures/mf100m-001.thumb.webp",
+      "w": 1403,
+      "h": 2000,
+      "alt": "Rodec brochure: MF100M, page 1"
+     },
+     {
+      "src": "/media/brochures/mf100m-002.webp",
+      "thumb": "/media/brochures/mf100m-002.thumb.webp",
+      "w": 1392,
+      "h": 2000,
+      "alt": "Rodec brochure: MF100M, page 2"
+     },
+     {
+      "src": "/media/brochures/mf100m-003.webp",
+      "thumb": "/media/brochures/mf100m-003.thumb.webp",
+      "w": 1169,
+      "h": 819,
+      "alt": "Rodec brochure: MF100M, page 3"
+     },
+     {
+      "src": "/media/brochures/mf100m-004.webp",
+      "thumb": "/media/brochures/mf100m-004.thumb.webp",
+      "w": 1169,
+      "h": 816,
+      "alt": "Rodec brochure: MF100M, page 4"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "RED BARON",
+  "type": "Loudspeaker box",
+  "month": 1,
+  "year": 1981,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 645.0,
+  "slug": "red-baron",
+  "order": 37,
+  "category": "Speakers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/red-baron/red-baron-front-c.webp",
+    "thumb": "/media/models/red-baron/red-baron-front-c.thumb.webp",
+    "w": 227,
+    "h": 308,
+    "alt": "Rodec RED BARON",
+    "caption": "RED BARON Front"
+   },
+   {
+    "src": "/media/models/red-baron/red-baron-mkii-front-c.webp",
+    "thumb": "/media/models/red-baron/red-baron-mkii-front-c.thumb.webp",
+    "w": 699,
+    "h": 463,
+    "alt": "Rodec RED BARON",
+    "caption": "RED BARON MKII Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "Red Baron W150",
+    "pages": [
+     {
+      "src": "/media/brochures/red-baron-w150-000.webp",
+      "thumb": "/media/brochures/red-baron-w150-000.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: Red Baron W150, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "Donalbi PAM 100",
+  "type": "Amplifier",
+  "month": null,
+  "year": 1981,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "extra": true,
+  "curiosity": false,
+  "note": "Donalbi-branded amplifier kept in the Rodec photo archive.",
+  "slug": "donalbi-pam-100",
+  "order": 38,
+  "category": "Amplifiers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/donalbi-pam-100/donalbi-pam-100-front-slanted-bw.webp",
+    "thumb": "/media/models/donalbi-pam-100/donalbi-pam-100-front-slanted-bw.thumb.webp",
+    "w": 1002,
+    "h": 687,
+    "alt": "Rodec Donalbi PAM 100",
+    "caption": "Donalbi PAM 100 Front Slanted"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "Donalbi Alpha Centauri",
+  "type": "Mixer",
+  "month": null,
+  "year": 1981,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "extra": true,
+  "curiosity": false,
+  "note": "Donalbi-branded mixer kept in the Rodec photo archive.",
+  "slug": "donalbi-alpha-centauri",
+  "order": 39,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/donalbi-alpha-centauri/donalbi-alpha-centauri-front-slanted-bw.webp",
+    "thumb": "/media/models/donalbi-alpha-centauri/donalbi-alpha-centauri-front-slanted-bw.thumb.webp",
+    "w": 983,
+    "h": 698,
+    "alt": "Rodec Donalbi Alpha Centauri",
+    "caption": "Donalbi Alpha centauri Front Slanted"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "Mixus 103",
+  "type": "Mixer",
+  "month": null,
+  "year": 1981,
+  "approx": true,
+  "launchDoc": null,
+  "price": null,
+  "extra": true,
+  "curiosity": true,
+  "note": "Not a Rodec at all. This is a counterfeit built in Canada, and the best proof the brand was worth copying.",
+  "slug": "mixus-103",
+  "order": 40,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mixus-103/mixus-front.webp",
+    "thumb": "/media/models/mixus-103/mixus-front.thumb.webp",
+    "w": 400,
+    "h": 301,
+    "alt": "Rodec Mixus 103",
+    "caption": "Mixus front"
+   },
+   {
+    "src": "/media/models/mixus-103/mixus-back.webp",
+    "thumb": "/media/models/mixus-103/mixus-back.thumb.webp",
+    "w": 400,
+    "h": 301,
+    "alt": "Rodec Mixus 103",
+    "caption": "Mixus back"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "DISCOTECH 285A",
+  "type": "Loudspeaker box",
+  "month": 7,
+  "year": 1982,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 247.0,
+  "slug": "discotech-285a",
+  "order": 41,
+  "category": "Speakers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [
+   {
+    "title": "Discotech W285",
+    "pages": [
+     {
+      "src": "/media/brochures/discotech-w285-000.webp",
+      "thumb": "/media/brochures/discotech-w285-000.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: Discotech W285, page 1"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "DISCOTECH W50",
+  "type": "Loudspeaker box",
+  "month": 7,
+  "year": 1982,
+  "approx": false,
+  "launchDoc": null,
+  "price": 365.0,
+  "slug": "discotech-w50",
+  "order": 42,
+  "category": "Speakers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "HDA340",
+  "type": "Amplifier",
+  "month": 7,
+  "year": 1982,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 685.0,
+  "slug": "hda340",
+  "order": 43,
+  "category": "Amplifiers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": "HDA amplifiers",
+  "photos": [
+   {
+    "src": "/media/models/hda340/hda340-front-slanted-c.webp",
+    "thumb": "/media/models/hda340/hda340-front-slanted-c.thumb.webp",
+    "w": 945,
+    "h": 396,
+    "alt": "Rodec HDA340",
+    "caption": "HDA340 Front Slanted"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "HDA340",
+    "pages": [
+     {
+      "src": "/media/brochures/hda340-001.webp",
+      "thumb": "/media/brochures/hda340-001.thumb.webp",
+      "w": 1387,
+      "h": 2000,
+      "alt": "Rodec brochure: HDA340, page 1"
+     },
+     {
+      "src": "/media/brochures/hda340-002.webp",
+      "thumb": "/media/brochures/hda340-002.thumb.webp",
+      "w": 1388,
+      "h": 2000,
+      "alt": "Rodec brochure: HDA340, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "hda340-service"
+  ]
+ },
+ {
+  "name": "SM200",
+  "type": "Mixer",
+  "month": 7,
+  "year": 1982,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 470.0,
+  "slug": "sm200",
+  "order": 44,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": "SM series",
+  "photos": [
+   {
+    "src": "/media/models/sm200/sm200-front-bw.webp",
+    "thumb": "/media/models/sm200/sm200-front-bw.thumb.webp",
+    "w": 1067,
+    "h": 488,
+    "alt": "Rodec SM200",
+    "caption": "SM200 Front"
+   },
+   {
+    "src": "/media/models/sm200/sm200-back-detail-bw.webp",
+    "thumb": "/media/models/sm200/sm200-back-detail-bw.thumb.webp",
+    "w": 1227,
+    "h": 362,
+    "alt": "Rodec SM200",
+    "caption": "SM200 Back Detail"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "SM200",
+    "pages": [
+     {
+      "src": "/media/brochures/sm200-001.webp",
+      "thumb": "/media/brochures/sm200-001.thumb.webp",
+      "w": 1404,
+      "h": 2000,
+      "alt": "Rodec brochure: SM200, page 1"
+     },
+     {
+      "src": "/media/brochures/sm200-002.webp",
+      "thumb": "/media/brochures/sm200-002.thumb.webp",
+      "w": 1401,
+      "h": 2000,
+      "alt": "Rodec brochure: SM200, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "sm200-service"
+  ]
+ },
+ {
+  "name": "SM300",
+  "type": "Mixer",
+  "month": 7,
+  "year": 1982,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 715.0,
+  "slug": "sm300",
+  "order": 45,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": "SM series",
+  "photos": [
+   {
+    "src": "/media/models/sm300/sm300-black-front-c.webp",
+    "thumb": "/media/models/sm300/sm300-black-front-c.thumb.webp",
+    "w": 843,
+    "h": 460,
+    "alt": "Rodec SM300",
+    "caption": "SM300 Black Front"
+   },
+   {
+    "src": "/media/models/sm300/sm300-front-bw.webp",
+    "thumb": "/media/models/sm300/sm300-front-bw.thumb.webp",
+    "w": 1062,
+    "h": 600,
+    "alt": "Rodec SM300",
+    "caption": "SM300 Front"
+   },
+   {
+    "src": "/media/models/sm300/sm300-back-c.webp",
+    "thumb": "/media/models/sm300/sm300-back-c.thumb.webp",
+    "w": 865,
+    "h": 217,
+    "alt": "Rodec SM300",
+    "caption": "SM300 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "SM300",
+    "pages": [
+     {
+      "src": "/media/brochures/sm300-001.webp",
+      "thumb": "/media/brochures/sm300-001.thumb.webp",
+      "w": 1407,
+      "h": 2000,
+      "alt": "Rodec brochure: SM300, page 1"
+     },
+     {
+      "src": "/media/brochures/sm300-002.webp",
+      "thumb": "/media/brochures/sm300-002.thumb.webp",
+      "w": 1402,
+      "h": 2000,
+      "alt": "Rodec brochure: SM300, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "sm300-service",
+   "sm300-user"
+  ]
+ },
+ {
+  "name": "QS4",
+  "type": "Quickstart",
+  "month": 7,
+  "year": 1982,
+  "approx": false,
+  "launchDoc": null,
+  "price": 145.0,
+  "slug": "qs4",
+  "order": 46,
+  "category": "Tools",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/qs4/qs4-front-slanted-bw.webp",
+    "thumb": "/media/models/qs4/qs4-front-slanted-bw.thumb.webp",
+    "w": 754,
+    "h": 437,
+    "alt": "Rodec QS4",
+    "caption": "QS4 Front Slanted"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "HDA450",
+  "type": "Amplifier",
+  "month": 8,
+  "year": 1984,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 740.0,
+  "slug": "hda450",
+  "order": 47,
+  "category": "Amplifiers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": "HDA amplifiers",
+  "photos": [
+   {
+    "src": "/media/models/hda450/hda450-front-slanted-bw.webp",
+    "thumb": "/media/models/hda450/hda450-front-slanted-bw.thumb.webp",
+    "w": 837,
+    "h": 525,
+    "alt": "Rodec HDA450",
+    "caption": "HDA450 Front Slanted"
+   },
+   {
+    "src": "/media/models/hda450/hda450-back-bw.webp",
+    "thumb": "/media/models/hda450/hda450-back-bw.thumb.webp",
+    "w": 885,
+    "h": 606,
+    "alt": "Rodec HDA450",
+    "caption": "HDA450 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "HDA450",
+    "pages": [
+     {
+      "src": "/media/brochures/hda450-001.webp",
+      "thumb": "/media/brochures/hda450-001.thumb.webp",
+      "w": 1409,
+      "h": 2000,
+      "alt": "Rodec brochure: HDA450, page 1"
+     },
+     {
+      "src": "/media/brochures/hda450-002.webp",
+      "thumb": "/media/brochures/hda450-002.thumb.webp",
+      "w": 1390,
+      "h": 2000,
+      "alt": "Rodec brochure: HDA450, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "MX7",
+  "type": "Mixer",
+  "month": 8,
+  "year": 1984,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 345.0,
+  "slug": "mx7",
+  "order": 48,
+  "category": "Mixers",
+  "era": {
+   "key": "sound-machines",
+   "title": "Sound Machines",
+   "from": 1977,
+   "to": 1985
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx7/mx7-front-slanted-c.webp",
+    "thumb": "/media/models/mx7/mx7-front-slanted-c.thumb.webp",
+    "w": 1050,
+    "h": 724,
+    "alt": "Rodec MX7",
+    "caption": "MX7 Front slanted"
+   },
+   {
+    "src": "/media/models/mx7/mx7-front-c.webp",
+    "thumb": "/media/models/mx7/mx7-front-c.thumb.webp",
+    "w": 447,
+    "h": 207,
+    "alt": "Rodec MX7",
+    "caption": "MX7 Front"
+   },
+   {
+    "src": "/media/models/mx7/mx7-back-bw.webp",
+    "thumb": "/media/models/mx7/mx7-back-bw.thumb.webp",
+    "w": 717,
+    "h": 289,
+    "alt": "Rodec MX7",
+    "caption": "MX7 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MX7",
+    "pages": [
+     {
+      "src": "/media/brochures/mx7-001.webp",
+      "thumb": "/media/brochures/mx7-001.thumb.webp",
+      "w": 1409,
+      "h": 2000,
+      "alt": "Rodec brochure: MX7, page 1"
+     },
+     {
+      "src": "/media/brochures/mx7-002.webp",
+      "thumb": "/media/brochures/mx7-002.thumb.webp",
+      "w": 1398,
+      "h": 2000,
+      "alt": "Rodec brochure: MX7, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": []
+ },
+ {
+  "name": "MX18",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1986,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 950.0,
+  "slug": "mx18",
+  "order": 49,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx18/mx18-front-slanted-bw.webp",
+    "thumb": "/media/models/mx18/mx18-front-slanted-bw.thumb.webp",
+    "w": 1403,
+    "h": 1146,
+    "alt": "Rodec MX18",
+    "caption": "MX18 Front slanted"
+   },
+   {
+    "src": "/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-wereldwijd-met-aparte-toonregeling-per-kanaal-1986.webp",
+    "thumb": "/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-wereldwijd-met-aparte-toonregeling-per-kanaal-1986.thumb.webp",
+    "w": 1195,
+    "h": 793,
+    "alt": "Rodec MX18",
+    "caption": "Rodec MX18 - eerste mixer (waarschijnlijk wereldwijd) met aparte toonregeling per kanaal (1986)"
+   },
+   {
+    "src": "/media/models/mx18/mx18-back-bw.webp",
+    "thumb": "/media/models/mx18/mx18-back-bw.thumb.webp",
+    "w": 1399,
+    "h": 1150,
+    "alt": "Rodec MX18",
+    "caption": "MX18 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MX18",
+    "pages": [
+     {
+      "src": "/media/brochures/mx18-001.webp",
+      "thumb": "/media/brochures/mx18-001.thumb.webp",
+      "w": 1402,
+      "h": 2000,
+      "alt": "Rodec brochure: MX18, page 1"
+     },
+     {
+      "src": "/media/brochures/mx18-002.webp",
+      "thumb": "/media/brochures/mx18-002.thumb.webp",
+      "w": 1394,
+      "h": 2000,
+      "alt": "Rodec brochure: MX18, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "mx18-mx180-mx34-service"
+  ]
+ },
+ {
+  "name": "MX10",
+  "type": "Mixer",
+  "month": 6,
+  "year": 1987,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 620.0,
+  "slug": "mx10",
+  "order": 50,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx10/mx10-front-slanted-c.webp",
+    "thumb": "/media/models/mx10/mx10-front-slanted-c.thumb.webp",
+    "w": 1052,
+    "h": 730,
+    "alt": "Rodec MX10",
+    "caption": "MX10 Front slanted"
+   },
+   {
+    "src": "/media/models/mx10/mx10-back-bw.webp",
+    "thumb": "/media/models/mx10/mx10-back-bw.thumb.webp",
+    "w": 1041,
+    "h": 355,
+    "alt": "Rodec MX10",
+    "caption": "MX10 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MX10",
+    "pages": [
+     {
+      "src": "/media/brochures/mx10-001.webp",
+      "thumb": "/media/brochures/mx10-001.thumb.webp",
+      "w": 1393,
+      "h": 2000,
+      "alt": "Rodec brochure: MX10, page 1"
+     },
+     {
+      "src": "/media/brochures/mx10-002.webp",
+      "thumb": "/media/brochures/mx10-002.thumb.webp",
+      "w": 1396,
+      "h": 2000,
+      "alt": "Rodec brochure: MX10, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "mx10-mx100-service"
+  ]
+ },
+ {
+  "name": "MX34",
+  "type": "Mixer",
+  "month": 5,
+  "year": 1989,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1440.0,
+  "slug": "mx34",
+  "order": 51,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx34/mx34-front-black-bw.webp",
+    "thumb": "/media/models/mx34/mx34-front-black-bw.thumb.webp",
+    "w": 580,
+    "h": 289,
+    "alt": "Rodec MX34",
+    "caption": "MX34 Front Black"
+   },
+   {
+    "src": "/media/models/mx34/mx34frontgrey001.webp",
+    "thumb": "/media/models/mx34/mx34frontgrey001.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34FrontGrey001"
+   },
+   {
+    "src": "/media/models/mx34/mx34frontgrey002.webp",
+    "thumb": "/media/models/mx34/mx34frontgrey002.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34FrontGrey002"
+   },
+   {
+    "src": "/media/models/mx34/mx34frontgrey003.webp",
+    "thumb": "/media/models/mx34/mx34frontgrey003.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34FrontGrey003"
+   },
+   {
+    "src": "/media/models/mx34/mx34frontgrey004.webp",
+    "thumb": "/media/models/mx34/mx34frontgrey004.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34FrontGrey004"
+   },
+   {
+    "src": "/media/models/mx34/mx34frontgrey005.webp",
+    "thumb": "/media/models/mx34/mx34frontgrey005.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34FrontGrey005"
+   },
+   {
+    "src": "/media/models/mx34/mx34frontgrey006.webp",
+    "thumb": "/media/models/mx34/mx34frontgrey006.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34FrontGrey006"
+   },
+   {
+    "src": "/media/models/mx34/mx34frontgrey007.webp",
+    "thumb": "/media/models/mx34/mx34frontgrey007.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34FrontGrey007"
+   },
+   {
+    "src": "/media/models/mx34/mx34-back-bw.webp",
+    "thumb": "/media/models/mx34/mx34-back-bw.thumb.webp",
+    "w": 1041,
+    "h": 720,
+    "alt": "Rodec MX34",
+    "caption": "MX34 Back"
+   },
+   {
+    "src": "/media/models/mx34/mx34back001.webp",
+    "thumb": "/media/models/mx34/mx34back001.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34Back001"
+   },
+   {
+    "src": "/media/models/mx34/mx34back002.webp",
+    "thumb": "/media/models/mx34/mx34back002.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34Back002"
+   },
+   {
+    "src": "/media/models/mx34/mx34back003.webp",
+    "thumb": "/media/models/mx34/mx34back003.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34Back003"
+   },
+   {
+    "src": "/media/models/mx34/mx34back004.webp",
+    "thumb": "/media/models/mx34/mx34back004.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX34",
+    "caption": "MX34Back004"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MX34",
+    "pages": [
+     {
+      "src": "/media/brochures/mx34-001.webp",
+      "thumb": "/media/brochures/mx34-001.thumb.webp",
+      "w": 1395,
+      "h": 2000,
+      "alt": "Rodec brochure: MX34, page 1"
+     },
+     {
+      "src": "/media/brochures/mx34-002.webp",
+      "thumb": "/media/brochures/mx34-002.thumb.webp",
+      "w": 1395,
+      "h": 2000,
+      "alt": "Rodec brochure: MX34, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "mx18-mx180-mx34-service"
+  ]
+ },
+ {
+  "name": "MX180",
+  "type": "Mixer",
+  "month": 6,
+  "year": 1990,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1090.0,
+  "slug": "mx180",
+  "order": 52,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx180/mx180-black-front-slanted-bw.webp",
+    "thumb": "/media/models/mx180/mx180-black-front-slanted-bw.thumb.webp",
+    "w": 1086,
+    "h": 1069,
+    "alt": "Rodec MX180",
+    "caption": "MX180 Black Front slanted"
+   },
+   {
+    "src": "/media/models/mx180/mx180-dark-grey-front-c.webp",
+    "thumb": "/media/models/mx180/mx180-dark-grey-front-c.thumb.webp",
+    "w": 837,
+    "h": 531,
+    "alt": "Rodec MX180",
+    "caption": "MX180 Dark grey Front"
+   },
+   {
+    "src": "/media/models/mx180/mx180-back-bw.webp",
+    "thumb": "/media/models/mx180/mx180-back-bw.thumb.webp",
+    "w": 1109,
+    "h": 1090,
+    "alt": "Rodec MX180",
+    "caption": "MX180 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MX180",
+    "pages": [
+     {
+      "src": "/media/brochures/mx180-001.webp",
+      "thumb": "/media/brochures/mx180-001.thumb.webp",
+      "w": 1411,
+      "h": 2000,
+      "alt": "Rodec brochure: MX180, page 1"
+     },
+     {
+      "src": "/media/brochures/mx180-002.webp",
+      "thumb": "/media/brochures/mx180-002.thumb.webp",
+      "w": 1405,
+      "h": 2000,
+      "alt": "Rodec brochure: MX180, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "mx18-mx180-mx34-service"
+  ]
+ },
+ {
+  "name": "MX100",
+  "type": "Mixer",
+  "month": 6,
+  "year": 1990,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 705.0,
+  "slug": "mx100",
+  "order": 53,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx100/mx100-black-front-c.webp",
+    "thumb": "/media/models/mx100/mx100-black-front-c.thumb.webp",
+    "w": 580,
+    "h": 323,
+    "alt": "Rodec MX100",
+    "caption": "MX100 Black Front"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MX100",
+    "pages": [
+     {
+      "src": "/media/brochures/mx100-001.webp",
+      "thumb": "/media/brochures/mx100-001.thumb.webp",
+      "w": 1404,
+      "h": 2000,
+      "alt": "Rodec brochure: MX100, page 1"
+     },
+     {
+      "src": "/media/brochures/mx100-002.webp",
+      "thumb": "/media/brochures/mx100-002.thumb.webp",
+      "w": 1400,
+      "h": 2000,
+      "alt": "Rodec brochure: MX100, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "mx10-mx100-service"
+  ]
+ },
+ {
+  "name": "HDA450SL",
+  "type": "Amplifier",
+  "month": 11,
+  "year": 1992,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 865.0,
+  "slug": "hda450sl",
+  "order": 54,
+  "category": "Amplifiers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": "HDA amplifiers",
+  "photos": [
+   {
+    "src": "/media/models/hda450sl/hda450sl-front-slanted-bw.webp",
+    "thumb": "/media/models/hda450sl/hda450sl-front-slanted-bw.thumb.webp",
+    "w": 1050,
+    "h": 415,
+    "alt": "Rodec HDA450SL",
+    "caption": "HDA450SL Front Slanted"
+   },
+   {
+    "src": "/media/models/hda450sl/hda450sl-back-bw.webp",
+    "thumb": "/media/models/hda450sl/hda450sl-back-bw.thumb.webp",
+    "w": 1043,
+    "h": 430,
+    "alt": "Rodec HDA450SL",
+    "caption": "HDA450SL Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "HDA450 SL",
+    "pages": [
+     {
+      "src": "/media/brochures/hda450-sl-001.webp",
+      "thumb": "/media/brochures/hda450-sl-001.thumb.webp",
+      "w": 1412,
+      "h": 2000,
+      "alt": "Rodec brochure: HDA450 SL, page 1"
+     },
+     {
+      "src": "/media/brochures/hda450-sl-002.webp",
+      "thumb": "/media/brochures/hda450-sl-002.thumb.webp",
+      "w": 1414,
+      "h": 2000,
+      "alt": "Rodec brochure: HDA450 SL, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "hda450sl-service",
+   "hda450sl-user"
+  ]
+ },
+ {
+  "name": "MX130",
+  "type": "Mixer",
+  "month": 11,
+  "year": 1992,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1220.0,
+  "slug": "mx130",
+  "order": 55,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx130/mx130-front-slanted-bw.webp",
+    "thumb": "/media/models/mx130/mx130-front-slanted-bw.thumb.webp",
+    "w": 1152,
+    "h": 484,
+    "alt": "Rodec MX130",
+    "caption": "MX130 Front slanted"
+   },
+   {
+    "src": "/media/models/mx130/mx130-back-bw.webp",
+    "thumb": "/media/models/mx130/mx130-back-bw.thumb.webp",
+    "w": 1062,
+    "h": 741,
+    "alt": "Rodec MX130",
+    "caption": "MX130 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MX130",
+    "pages": [
+     {
+      "src": "/media/brochures/mx130-001.webp",
+      "thumb": "/media/brochures/mx130-001.thumb.webp",
+      "w": 1412,
+      "h": 2000,
+      "alt": "Rodec brochure: MX130, page 1"
+     },
+     {
+      "src": "/media/brochures/mx130-002.webp",
+      "thumb": "/media/brochures/mx130-002.thumb.webp",
+      "w": 1410,
+      "h": 2000,
+      "alt": "Rodec brochure: MX130, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "mx130-manual"
+  ]
+ },
+ {
+  "name": "MX230",
+  "type": "Mixer",
+  "month": 11,
+  "year": 1995,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1390.0,
+  "slug": "mx230",
+  "order": 56,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx230/mx230-front-c.webp",
+    "thumb": "/media/models/mx230/mx230-front-c.thumb.webp",
+    "w": 852,
+    "h": 612,
+    "alt": "Rodec MX230",
+    "caption": "MX230 Front"
+   },
+   {
+    "src": "/media/models/mx230/mx230-back-bw.webp",
+    "thumb": "/media/models/mx230/mx230-back-bw.thumb.webp",
+    "w": 1489,
+    "h": 1201,
+    "alt": "Rodec MX230",
+    "caption": "MX230 Back"
+   }
+  ],
+  "brochures": [
+   {
+    "title": "MX230",
+    "pages": [
+     {
+      "src": "/media/brochures/mx230-001.webp",
+      "thumb": "/media/brochures/mx230-001.thumb.webp",
+      "w": 1409,
+      "h": 2000,
+      "alt": "Rodec brochure: MX230, page 1"
+     },
+     {
+      "src": "/media/brochures/mx230-002.webp",
+      "thumb": "/media/brochures/mx230-002.thumb.webp",
+      "w": 1398,
+      "h": 2000,
+      "alt": "Rodec brochure: MX230, page 2"
+     }
+    ]
+   }
+  ],
+  "docs": [
+   "mx230-user"
+  ]
+ },
+ {
+  "name": "MX180 Limited (1996)",
+  "type": "Mixer",
+  "month": 5,
+  "year": 1996,
+  "approx": false,
+  "launchDoc": null,
+  "price": null,
+  "extra": true,
+  "curiosity": false,
+  "note": "Red limited run of the MX180, built with the original rack handles.",
+  "slug": "mx180-limited-1996",
+  "order": 57,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx180-limited-1996/mx180-limited-front-c.webp",
+    "thumb": "/media/models/mx180-limited-1996/mx180-limited-front-c.thumb.webp",
+    "w": 887,
+    "h": 589,
+    "alt": "Rodec MX180 Limited (1996)",
+    "caption": "MX180 Limited Front"
+   },
+   {
+    "src": "/media/models/mx180-limited-1996/mx180-limited-edition-red-001.webp",
+    "thumb": "/media/models/mx180-limited-1996/mx180-limited-edition-red-001.thumb.webp",
+    "w": 1410,
+    "h": 993,
+    "alt": "Rodec MX180 Limited (1996)",
+    "caption": "MX180 limited Edition Red 001"
+   },
+   {
+    "src": "/media/models/mx180-limited-1996/mx180-limited-edition-red-002.webp",
+    "thumb": "/media/models/mx180-limited-1996/mx180-limited-edition-red-002.thumb.webp",
+    "w": 1163,
+    "h": 772,
+    "alt": "Rodec MX180 Limited (1996)",
+    "caption": "MX180 limited Edition Red 002"
+   },
+   {
+    "src": "/media/models/mx180-limited-1996/mx180-limited-edition-red-003.webp",
+    "thumb": "/media/models/mx180-limited-1996/mx180-limited-edition-red-003.thumb.webp",
+    "w": 709,
+    "h": 519,
+    "alt": "Rodec MX180 Limited (1996)",
+    "caption": "MX180 limited Edition Red 003"
+   },
+   {
+    "src": "/media/models/mx180-limited-1996/rodec-mx180-red-limited-met-originele-handgrepen.webp",
+    "thumb": "/media/models/mx180-limited-1996/rodec-mx180-red-limited-met-originele-handgrepen.thumb.webp",
+    "w": 1800,
+    "h": 1082,
+    "alt": "Rodec MX180 Limited (1996)",
+    "caption": "Rodec. MX180 Red Limited met originele handgrepen"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "MX180 MKII",
+  "type": "Mixer",
+  "month": 5,
+  "year": 1997,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1240.0,
+  "slug": "mx180-mkii",
+  "order": 58,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx180-mkii/mx180-mkii-grey-front-002.webp",
+    "thumb": "/media/models/mx180-mkii/mx180-mkii-grey-front-002.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX180 MKII",
+    "caption": "MX180 MKII Grey front 002"
+   },
+   {
+    "src": "/media/models/mx180-mkii/mx180-mkii-grey-front-004.webp",
+    "thumb": "/media/models/mx180-mkii/mx180-mkii-grey-front-004.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX180 MKII",
+    "caption": "MX180 MKII Grey front 004"
+   },
+   {
+    "src": "/media/models/mx180-mkii/mx180-mkii-grey-front-005.webp",
+    "thumb": "/media/models/mx180-mkii/mx180-mkii-grey-front-005.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX180 MKII",
+    "caption": "MX180 MKII Grey front 005"
+   },
+   {
+    "src": "/media/models/mx180-mkii/mx180box001.webp",
+    "thumb": "/media/models/mx180-mkii/mx180box001.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX180 MKII",
+    "caption": "MX180Box001"
+   },
+   {
+    "src": "/media/models/mx180-mkii/mx180box002.webp",
+    "thumb": "/media/models/mx180-mkii/mx180box002.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX180 MKII",
+    "caption": "MX180Box002"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx18-mx180-mx34-service",
+   "mx180-mkii-user"
+  ]
+ },
+ {
+  "name": "MX240",
+  "type": "Mixer",
+  "month": 5,
+  "year": 1997,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1415.0,
+  "slug": "mx240",
+  "order": 59,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx240/mx240front-grey001.webp",
+    "thumb": "/media/models/mx240/mx240front-grey001.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "MX240Front grey001"
+   },
+   {
+    "src": "/media/models/mx240/mx240front-grey003.webp",
+    "thumb": "/media/models/mx240/mx240front-grey003.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "MX240Front grey003"
+   },
+   {
+    "src": "/media/models/mx240/mx240front-grey005.webp",
+    "thumb": "/media/models/mx240/mx240front-grey005.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "MX240Front grey005"
+   },
+   {
+    "src": "/media/models/mx240/mx240front-grey006.webp",
+    "thumb": "/media/models/mx240/mx240front-grey006.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "MX240Front grey006"
+   },
+   {
+    "src": "/media/models/mx240/double-symm-out-001.webp",
+    "thumb": "/media/models/mx240/double-symm-out-001.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "Double symm out 001"
+   },
+   {
+    "src": "/media/models/mx240/double-symm-out-002.webp",
+    "thumb": "/media/models/mx240/double-symm-out-002.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "Double symm out 002"
+   },
+   {
+    "src": "/media/models/mx240/double-symm-out-003.webp",
+    "thumb": "/media/models/mx240/double-symm-out-003.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "Double symm out 003"
+   },
+   {
+    "src": "/media/models/mx240/double-symm-out-004.webp",
+    "thumb": "/media/models/mx240/double-symm-out-004.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "Double symm out 004"
+   },
+   {
+    "src": "/media/models/mx240/mx240back001.webp",
+    "thumb": "/media/models/mx240/mx240back001.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "MX240Back001"
+   },
+   {
+    "src": "/media/models/mx240/mx240back004.webp",
+    "thumb": "/media/models/mx240/mx240back004.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240",
+    "caption": "MX240Back004"
+   }
+  ],
+  "brochures": [],
+  "docs": []
+ },
+ {
+  "name": "MX120",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1997,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 745.0,
+  "slug": "mx120",
+  "order": 60,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx120/mx120-black-front-c.webp",
+    "thumb": "/media/models/mx120/mx120-black-front-c.thumb.webp",
+    "w": 841,
+    "h": 437,
+    "alt": "Rodec MX120",
+    "caption": "MX120 Black Front"
+   },
+   {
+    "src": "/media/models/mx120/mx120frontblack001.webp",
+    "thumb": "/media/models/mx120/mx120frontblack001.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX120",
+    "caption": "MX120FrontBlack001"
+   },
+   {
+    "src": "/media/models/mx120/mx120frontblack002.webp",
+    "thumb": "/media/models/mx120/mx120frontblack002.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX120",
+    "caption": "MX120FrontBlack002"
+   },
+   {
+    "src": "/media/models/mx120/mx120-test.webp",
+    "thumb": "/media/models/mx120/mx120-test.thumb.webp",
+    "w": 841,
+    "h": 437,
+    "alt": "Rodec MX120",
+    "caption": "MX120 Test"
+   },
+   {
+    "src": "/media/models/mx120/mx120back003.webp",
+    "thumb": "/media/models/mx120/mx120back003.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX120",
+    "caption": "MX120Back003"
+   },
+   {
+    "src": "/media/models/mx120/mx120back004.webp",
+    "thumb": "/media/models/mx120/mx120back004.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX120",
+    "caption": "MX120Back004"
+   },
+   {
+    "src": "/media/models/mx120/mx120back005.webp",
+    "thumb": "/media/models/mx120/mx120back005.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX120",
+    "caption": "MX120Back005"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx120-mx126-user"
+  ]
+ },
+ {
+  "name": "MX126",
+  "type": "Mixer",
+  "month": 9,
+  "year": 1997,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 915.0,
+  "slug": "mx126",
+  "order": 61,
+  "category": "Mixers",
+  "era": {
+   "key": "mx",
+   "title": "The MX legend",
+   "from": 1986,
+   "to": 1998
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mx126/mx126frontblue001.webp",
+    "thumb": "/media/models/mx126/mx126frontblue001.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX126",
+    "caption": "MX126FrontBlue001"
+   },
+   {
+    "src": "/media/models/mx126/mx126frontblue002.webp",
+    "thumb": "/media/models/mx126/mx126frontblue002.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX126",
+    "caption": "MX126FrontBlue002"
+   },
+   {
+    "src": "/media/models/mx126/mx126frontblue003.webp",
+    "thumb": "/media/models/mx126/mx126frontblue003.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX126",
+    "caption": "MX126FrontBlue003"
+   },
+   {
+    "src": "/media/models/mx126/mx126frontblue004.webp",
+    "thumb": "/media/models/mx126/mx126frontblue004.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX126",
+    "caption": "MX126FrontBlue004"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx120-mx126-user"
+  ]
+ },
+ {
+  "name": "MX180 MKIII",
+  "type": "Mixer",
+  "month": 4,
+  "year": 1999,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1240.0,
+  "slug": "mx180-mkiii",
+  "order": 62,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": "MKIII series",
+  "photos": [
+   {
+    "src": "/media/models/mx180-mkiii/mx180mkiii-front-cutout.webp",
+    "thumb": "/media/models/mx180-mkiii/mx180mkiii-front-cutout.thumb.webp",
+    "w": 1111,
+    "h": 711,
+    "alt": "Rodec MX180 MKIII",
+    "caption": "MX180MKIII_front cutout"
+   },
+   {
+    "src": "/media/models/mx180-mkiii/mx180mkiii-front.webp",
+    "thumb": "/media/models/mx180-mkiii/mx180mkiii-front.thumb.webp",
+    "w": 1284,
+    "h": 893,
+    "alt": "Rodec MX180 MKIII",
+    "caption": "MX180MKIII_front"
+   },
+   {
+    "src": "/media/models/mx180-mkiii/mx180mkiii-coloured-knobs.webp",
+    "thumb": "/media/models/mx180-mkiii/mx180mkiii-coloured-knobs.thumb.webp",
+    "w": 1800,
+    "h": 1434,
+    "alt": "Rodec MX180 MKIII",
+    "caption": "MX180MKIII coloured knobs"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx180-mkiii-user",
+   "mkiii-service",
+   "mx180-mkiii-leaflet"
+  ]
+ },
+ {
+  "name": "MX240 MKIII",
+  "type": "Mixer",
+  "month": 4,
+  "year": 1999,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1415.0,
+  "slug": "mx240-mkiii",
+  "order": 63,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": "MKIII series",
+  "photos": [
+   {
+    "src": "/media/models/mx240-mkiii/mx240mkiii-front-cutout.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240mkiii-front-cutout.thumb.webp",
+    "w": 1127,
+    "h": 714,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240MKIII_front cutout"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-003.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-003.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 003"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-003bis.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-003bis.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 003bis"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-004.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-004.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 004"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-004bis.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-004bis.thumb.webp",
+    "w": 800,
+    "h": 600,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 004bis"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-005.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-005.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 005"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-006.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-006.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 006"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-007.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-007.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 007"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-008.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-008.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 008"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-009.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-009.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 009"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-010.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-010.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 010"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-011.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-011.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 011"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-012.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240-mkiii-front-grey-012.thumb.webp",
+    "w": 1024,
+    "h": 768,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240 MKIII Front grey 012"
+   },
+   {
+    "src": "/media/models/mx240-mkiii/mx240mkiii-front.webp",
+    "thumb": "/media/models/mx240-mkiii/mx240mkiii-front.thumb.webp",
+    "w": 1296,
+    "h": 896,
+    "alt": "Rodec MX240 MKIII",
+    "caption": "MX240MKIII_front"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx240-mkiii-user",
+   "mkiii-service",
+   "mx240-mkiii-leaflet"
+  ]
+ },
+ {
+  "name": "ALC-01",
+  "type": "Level Controller",
+  "month": 9,
+  "year": 1999,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 535.0,
+  "slug": "alc-01",
+  "order": 64,
+  "category": "Tools",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "alc-01-user",
+   "alc-01-leaflet"
+  ]
+ },
+ {
+  "name": "Multi Source II",
+  "type": "Mixer - Pre Amplifier",
+  "month": 3,
+  "year": 2000,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 499.0,
+  "slug": "multi-source-ii",
+  "order": 65,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "multi-source-ii-user",
+   "multi-source-ii-leaflet"
+  ]
+ },
+ {
+  "name": "miXboX",
+  "type": "Mixer",
+  "month": 6,
+  "year": 2000,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 499.0,
+  "slug": "mixbox",
+  "order": 66,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mixbox/mixbox-front-darkgrey-cutout.webp",
+    "thumb": "/media/models/mixbox/mixbox-front-darkgrey-cutout.thumb.webp",
+    "w": 976,
+    "h": 1485,
+    "alt": "Rodec miXboX",
+    "caption": "MIXBOX_front_darkgrey cutout"
+   },
+   {
+    "src": "/media/models/mixbox/mixbox-front-silvergrey-cutout.webp",
+    "thumb": "/media/models/mixbox/mixbox-front-silvergrey-cutout.thumb.webp",
+    "w": 972,
+    "h": 1473,
+    "alt": "Rodec miXboX",
+    "caption": "MIXBOX_front_silvergrey cutout"
+   },
+   {
+    "src": "/media/models/mixbox/mixbox-front-silver-grey-1.webp",
+    "thumb": "/media/models/mixbox/mixbox-front-silver-grey-1.thumb.webp",
+    "w": 640,
+    "h": 480,
+    "alt": "Rodec miXboX",
+    "caption": "miXboX front silver grey 1"
+   },
+   {
+    "src": "/media/models/mixbox/mixbox-silver-grey-front-1.webp",
+    "thumb": "/media/models/mixbox/mixbox-silver-grey-front-1.thumb.webp",
+    "w": 640,
+    "h": 480,
+    "alt": "Rodec miXboX",
+    "caption": "miXboX Silver grey front 1"
+   },
+   {
+    "src": "/media/models/mixbox/mixbox-front-darkgrey.webp",
+    "thumb": "/media/models/mixbox/mixbox-front-darkgrey.thumb.webp",
+    "w": 1063,
+    "h": 1535,
+    "alt": "Rodec miXboX",
+    "caption": "MIXBOX_front_darkgrey"
+   },
+   {
+    "src": "/media/models/mixbox/mixbox-front-silver.webp",
+    "thumb": "/media/models/mixbox/mixbox-front-silver.thumb.webp",
+    "w": 1063,
+    "h": 1535,
+    "alt": "Rodec miXboX",
+    "caption": "MIXBOX_front_silver"
+   },
+   {
+    "src": "/media/models/mixbox/mixbox-silver-grey-front-detail-1.webp",
+    "thumb": "/media/models/mixbox/mixbox-silver-grey-front-detail-1.thumb.webp",
+    "w": 640,
+    "h": 480,
+    "alt": "Rodec miXboX",
+    "caption": "miXboX Silver grey front detail 1"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mixbox-user",
+   "mixbox-leaflet"
+  ]
+ },
+ {
+  "name": "MX300 MKIII",
+  "type": "Mixer",
+  "month": 9,
+  "year": 2000,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1859.0,
+  "slug": "mx300-mkiii",
+  "order": 67,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": "MKIII series",
+  "photos": [
+   {
+    "src": "/media/models/mx300-mkiii/mx300mkiii-front-cutout.webp",
+    "thumb": "/media/models/mx300-mkiii/mx300mkiii-front-cutout.thumb.webp",
+    "w": 1575,
+    "h": 1006,
+    "alt": "Rodec MX300 MKIII",
+    "caption": "MX300MKIII_front cutout"
+   },
+   {
+    "src": "/media/models/mx300-mkiii/mx300mkiii-front.webp",
+    "thumb": "/media/models/mx300-mkiii/mx300mkiii-front.thumb.webp",
+    "w": 1600,
+    "h": 1038,
+    "alt": "Rodec MX300 MKIII",
+    "caption": "MX300MKIII_front"
+   },
+   {
+    "src": "/media/models/mx300-mkiii/mx300-mkiii-front-detail-1.webp",
+    "thumb": "/media/models/mx300-mkiii/mx300-mkiii-front-detail-1.thumb.webp",
+    "w": 640,
+    "h": 480,
+    "alt": "Rodec MX300 MKIII",
+    "caption": "MX300 MKIII front detail 1"
+   },
+   {
+    "src": "/media/models/mx300-mkiii/mx300-mkiii-front-detail-2.webp",
+    "thumb": "/media/models/mx300-mkiii/mx300-mkiii-front-detail-2.thumb.webp",
+    "w": 640,
+    "h": 480,
+    "alt": "Rodec MX300 MKIII",
+    "caption": "MX300 MKIII front detail 2"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx300-mkiii-user",
+   "mkiii-service",
+   "mx300-mkiii-leaflet"
+  ]
+ },
+ {
+  "name": "CX-1100",
+  "type": "Mixer",
+  "month": 10,
+  "year": 2001,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 1075.0,
+  "slug": "cx-1100",
+  "order": 68,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "cx-1100-user",
+   "cx-1100-schematic",
+   "cx-1100-leaflet"
+  ]
+ },
+ {
+  "name": "BX-9",
+  "type": "Mixer",
+  "month": 7,
+  "year": 2002,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 699.0,
+  "slug": "bx-9",
+  "order": 69,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": "BX series",
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "bx-user",
+   "bx-service",
+   "bx-9-leaflet"
+  ]
+ },
+ {
+  "name": "BX-14",
+  "type": "Mixer",
+  "month": 7,
+  "year": 2002,
+  "approx": false,
+  "launchDoc": "Leaflet",
+  "price": 899.0,
+  "slug": "bx-14",
+  "order": 70,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": "BX series",
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "bx-user",
+   "bx-service",
+   "bx-14-leaflet"
+  ]
+ },
+ {
+  "name": "PA800",
+  "type": "Amplifier",
+  "month": 5,
+  "year": 2003,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1099.0,
+  "slug": "pa800",
+  "order": 71,
+  "category": "Amplifiers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": "PA amplifiers",
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "pa-user"
+  ]
+ },
+ {
+  "name": "PA1600",
+  "type": "Amplifier",
+  "month": 5,
+  "year": 2003,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1499.0,
+  "slug": "pa1600",
+  "order": 72,
+  "category": "Amplifiers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": "PA amplifiers",
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "pa-user"
+  ]
+ },
+ {
+  "name": "PA2400",
+  "type": "Amplifier",
+  "month": 5,
+  "year": 2003,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1999.0,
+  "slug": "pa2400",
+  "order": 73,
+  "category": "Amplifiers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": "PA amplifiers",
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "pa-user"
+  ]
+ },
+ {
+  "name": "miXboX MKII",
+  "type": "Mixer",
+  "month": 4,
+  "year": 2004,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 549.0,
+  "slug": "mixbox-mkii",
+  "order": 74,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/mixbox-mkii/mixbox-mkii-dark-grey.webp",
+    "thumb": "/media/models/mixbox-mkii/mixbox-mkii-dark-grey.thumb.webp",
+    "w": 894,
+    "h": 1358,
+    "alt": "Rodec miXboX MKII",
+    "caption": "MIXBOX MKII DARK GREY"
+   },
+   {
+    "src": "/media/models/mixbox-mkii/mixbox-mkii-gold-grey-white-text.webp",
+    "thumb": "/media/models/mixbox-mkii/mixbox-mkii-gold-grey-white-text.thumb.webp",
+    "w": 894,
+    "h": 1358,
+    "alt": "Rodec miXboX MKII",
+    "caption": "MIXBOX MKII GOLD GREY white text"
+   },
+   {
+    "src": "/media/models/mixbox-mkii/mixbox-mkii-siver-grey.webp",
+    "thumb": "/media/models/mixbox-mkii/mixbox-mkii-siver-grey.thumb.webp",
+    "w": 894,
+    "h": 1358,
+    "alt": "Rodec miXboX MKII",
+    "caption": "MIXBOX MKII SIVER GREY"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mixbox-mkii-user"
+  ]
+ },
+ {
+  "name": "MX180 Limited Edition",
+  "type": "Mixer",
+  "month": 2,
+  "year": 2004,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1650.0,
+  "slug": "mx180-limited-edition",
+  "order": 75,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": null,
+  "photos": [],
+  "brochures": [],
+  "docs": [
+   "mx180-limited-user",
+   "mx180-limited-frontplate"
+  ]
+ },
+ {
+  "name": "Scratchbox",
+  "type": "Mixer",
+  "month": 12,
+  "year": 2005,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 999.0,
+  "slug": "scratchbox",
+  "order": 76,
+  "category": "Mixers",
+  "era": {
+   "key": "mk3",
+   "title": "MKIII & beyond",
+   "from": 1999,
+   "to": 2007
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/scratchbox/scratchbox-perspectief1-flat-rgb.webp",
+    "thumb": "/media/models/scratchbox/scratchbox-perspectief1-flat-rgb.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Scratchbox",
+    "caption": "scratchbox_perspectief1_flat_rgb"
+   },
+   {
+    "src": "/media/models/scratchbox/scratchbox-perspectief2-flat-rgb.webp",
+    "thumb": "/media/models/scratchbox/scratchbox-perspectief2-flat-rgb.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Scratchbox",
+    "caption": "scratchbox_perspectief2_flat_rgb"
+   },
+   {
+    "src": "/media/models/scratchbox/scratchbox-frontpanel-flat-rgb.webp",
+    "thumb": "/media/models/scratchbox/scratchbox-frontpanel-flat-rgb.thumb.webp",
+    "w": 1122,
+    "h": 1800,
+    "alt": "Rodec Scratchbox",
+    "caption": "scratchbox_frontpanel_flat_rgb"
+   },
+   {
+    "src": "/media/models/scratchbox/scratchbox-achterkant-flat-rgb.webp",
+    "thumb": "/media/models/scratchbox/scratchbox-achterkant-flat-rgb.thumb.webp",
+    "w": 1800,
+    "h": 771,
+    "alt": "Rodec Scratchbox",
+    "caption": "scratchbox_achterkant_flat_rgb"
+   },
+   {
+    "src": "/media/models/scratchbox/scratchbox-voorkant-flat-rgb.webp",
+    "thumb": "/media/models/scratchbox/scratchbox-voorkant-flat-rgb.thumb.webp",
+    "w": 1800,
+    "h": 771,
+    "alt": "Rodec Scratchbox",
+    "caption": "scratchbox_voorkant_flat_rgb"
+   },
+   {
+    "src": "/media/models/scratchbox/catalogue-024-096.webp",
+    "thumb": "/media/models/scratchbox/catalogue-024-096.thumb.webp",
+    "w": 1106,
+    "h": 791,
+    "alt": "Rodec Scratchbox",
+    "caption": "Scratchbox, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "scratchbox-schematic",
+   "scratchbox-xlr",
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "MX1800",
+  "type": "Mixer",
+  "month": 3,
+  "year": 2008,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1499.0,
+  "slug": "mx1800",
+  "order": 77,
+  "category": "Mixers",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": "Progressive series",
+  "photos": [
+   {
+    "src": "/media/models/mx1800/catalogue-012-053.webp",
+    "thumb": "/media/models/mx1800/catalogue-012-053.thumb.webp",
+    "w": 717,
+    "h": 631,
+    "alt": "Rodec MX1800",
+    "caption": "MX1800, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/mx1800/catalogue-013-059.webp",
+    "thumb": "/media/models/mx1800/catalogue-013-059.thumb.webp",
+    "w": 331,
+    "h": 307,
+    "alt": "Rodec MX1800",
+    "caption": "MX1800, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx00-service",
+   "mx00-modification",
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "MX3000",
+  "type": "Mixer",
+  "month": 5,
+  "year": 2008,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1999.0,
+  "slug": "mx3000",
+  "order": 78,
+  "category": "Mixers",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": "Progressive series",
+  "photos": [
+   {
+    "src": "/media/models/mx3000/catalogue-008-037.webp",
+    "thumb": "/media/models/mx3000/catalogue-008-037.thumb.webp",
+    "w": 658,
+    "h": 592,
+    "alt": "Rodec MX3000",
+    "caption": "MX3000, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/mx3000/catalogue-009-041.webp",
+    "thumb": "/media/models/mx3000/catalogue-009-041.thumb.webp",
+    "w": 327,
+    "h": 279,
+    "alt": "Rodec MX3000",
+    "caption": "MX3000, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx00-service",
+   "mx00-modification",
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "MX1400",
+  "type": "Mixer",
+  "month": 9,
+  "year": 2008,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1099.0,
+  "slug": "mx1400",
+  "order": 79,
+  "category": "Mixers",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": "Progressive series",
+  "photos": [
+   {
+    "src": "/media/models/mx1400/catalogue-014-061.webp",
+    "thumb": "/media/models/mx1400/catalogue-014-061.thumb.webp",
+    "w": 583,
+    "h": 583,
+    "alt": "Rodec MX1400",
+    "caption": "MX1400, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/mx1400/catalogue-015-066.webp",
+    "thumb": "/media/models/mx1400/catalogue-015-066.thumb.webp",
+    "w": 266,
+    "h": 396,
+    "alt": "Rodec MX1400",
+    "caption": "MX1400, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/mx1400/catalogue-015-067.webp",
+    "thumb": "/media/models/mx1400/catalogue-015-067.thumb.webp",
+    "w": 336,
+    "h": 162,
+    "alt": "Rodec MX1400",
+    "caption": "MX1400, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx00-service",
+   "mx00-modification",
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "MX2200",
+  "type": "Mixer",
+  "month": 9,
+  "year": 2008,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1499.0,
+  "slug": "mx2200",
+  "order": 80,
+  "category": "Mixers",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": "Progressive series",
+  "photos": [
+   {
+    "src": "/media/models/mx2200/catalogue-010-045.webp",
+    "thumb": "/media/models/mx2200/catalogue-010-045.thumb.webp",
+    "w": 619,
+    "h": 565,
+    "alt": "Rodec MX2200",
+    "caption": "MX2200, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/mx2200/catalogue-011-050.webp",
+    "thumb": "/media/models/mx2200/catalogue-011-050.thumb.webp",
+    "w": 326,
+    "h": 360,
+    "alt": "Rodec MX2200",
+    "caption": "MX2200, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/mx2200/catalogue-011-051.webp",
+    "thumb": "/media/models/mx2200/catalogue-011-051.thumb.webp",
+    "w": 303,
+    "h": 150,
+    "alt": "Rodec MX2200",
+    "caption": "MX2200, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx00-service",
+   "mx00-modification",
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "MX180 Original",
+  "type": "Mixer",
+  "month": 9,
+  "year": 2008,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 1350.0,
+  "slug": "mx180-original",
+  "order": 81,
+  "category": "Mixers",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": "Original series",
+  "photos": [
+   {
+    "src": "/media/models/mx180-original/catalogue-018-072.webp",
+    "thumb": "/media/models/mx180-original/catalogue-018-072.thumb.webp",
+    "w": 549,
+    "h": 428,
+    "alt": "Rodec MX180 Original",
+    "caption": "MX180 Original, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/mx180-original/catalogue-019-075.webp",
+    "thumb": "/media/models/mx180-original/catalogue-019-075.thumb.webp",
+    "w": 399,
+    "h": 281,
+    "alt": "Rodec MX180 Original",
+    "caption": "MX180 Original, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/mx180-original/catalogue-019-077.webp",
+    "thumb": "/media/models/mx180-original/catalogue-019-077.thumb.webp",
+    "w": 370,
+    "h": 162,
+    "alt": "Rodec MX180 Original",
+    "caption": "MX180 Original, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "mx180-original-service",
+   "mx180-original-user",
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "BX9 Original",
+  "type": "Mixer",
+  "month": 12,
+  "year": 2009,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 749.0,
+  "slug": "bx9-original",
+  "order": 82,
+  "category": "Mixers",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": "Original series",
+  "photos": [
+   {
+    "src": "/media/models/bx9-original/catalogue-022-087.webp",
+    "thumb": "/media/models/bx9-original/catalogue-022-087.thumb.webp",
+    "w": 768,
+    "h": 510,
+    "alt": "Rodec BX9 Original",
+    "caption": "BX9 Original, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/bx9-original/catalogue-023-091.webp",
+    "thumb": "/media/models/bx9-original/catalogue-023-091.thumb.webp",
+    "w": 426,
+    "h": 248,
+    "alt": "Rodec BX9 Original",
+    "caption": "BX9 Original, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/bx9-original/catalogue-023-092.webp",
+    "thumb": "/media/models/bx9-original/catalogue-023-092.thumb.webp",
+    "w": 418,
+    "h": 185,
+    "alt": "Rodec BX9 Original",
+    "caption": "BX9 Original, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "bx-service",
+   "bx9-original-user",
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "BX14 Original",
+  "type": "Mixer",
+  "month": 12,
+  "year": 2009,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 849.0,
+  "slug": "bx14-original",
+  "order": 83,
+  "category": "Mixers",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": "Original series",
+  "photos": [
+   {
+    "src": "/media/models/bx14-original/catalogue-020-081.webp",
+    "thumb": "/media/models/bx14-original/catalogue-020-081.thumb.webp",
+    "w": 703,
+    "h": 493,
+    "alt": "Rodec BX14 Original",
+    "caption": "BX14 Original, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/bx14-original/catalogue-021-083.webp",
+    "thumb": "/media/models/bx14-original/catalogue-021-083.thumb.webp",
+    "w": 437,
+    "h": 253,
+    "alt": "Rodec BX14 Original",
+    "caption": "BX14 Original, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "bx-service",
+   "bx14-original-user",
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "Restyler",
+  "type": "Filterbank",
+  "month": 6,
+  "year": 2009,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 599.0,
+  "slug": "restyler",
+  "order": 84,
+  "category": "Tools",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/restyler/rodecre-4347-def.webp",
+    "thumb": "/media/models/restyler/rodecre-4347-def.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Restyler",
+    "caption": "RODECRe-4347-def"
+   },
+   {
+    "src": "/media/models/restyler/rodecre-4353-bewerkt-2.webp",
+    "thumb": "/media/models/restyler/rodecre-4353-bewerkt-2.thumb.webp",
+    "w": 1800,
+    "h": 1388,
+    "alt": "Rodec Restyler",
+    "caption": "RODECRe-4353-bewerkt 2"
+   },
+   {
+    "src": "/media/models/restyler/rodecre-4360-def.webp",
+    "thumb": "/media/models/restyler/rodecre-4360-def.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Restyler",
+    "caption": "RODECRe-4360-def"
+   },
+   {
+    "src": "/media/models/restyler/rodecre-4361-lb.webp",
+    "thumb": "/media/models/restyler/rodecre-4361-lb.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Restyler",
+    "caption": "RODECRe-4361-lb"
+   },
+   {
+    "src": "/media/models/restyler/rodecre-4361-lo.webp",
+    "thumb": "/media/models/restyler/rodecre-4361-lo.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Restyler",
+    "caption": "RODECRe-4361-lo"
+   },
+   {
+    "src": "/media/models/restyler/rodecre-4361-zl.webp",
+    "thumb": "/media/models/restyler/rodecre-4361-zl.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Restyler",
+    "caption": "RODECRe-4361-zl"
+   },
+   {
+    "src": "/media/models/restyler/rodecre-4364-lv.webp",
+    "thumb": "/media/models/restyler/rodecre-4364-lv.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Restyler",
+    "caption": "RODECRe-4364-lv"
+   },
+   {
+    "src": "/media/models/restyler/rodecre-4368-def.webp",
+    "thumb": "/media/models/restyler/rodecre-4368-def.thumb.webp",
+    "w": 1800,
+    "h": 1200,
+    "alt": "Rodec Restyler",
+    "caption": "RODECRe-4368-def"
+   },
+   {
+    "src": "/media/models/restyler/catalogue-026-104.webp",
+    "thumb": "/media/models/restyler/catalogue-026-104.thumb.webp",
+    "w": 948,
+    "h": 678,
+    "alt": "Rodec Restyler",
+    "caption": "Restyler, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/restyler/catalogue-027-106.webp",
+    "thumb": "/media/models/restyler/catalogue-027-106.thumb.webp",
+    "w": 409,
+    "h": 329,
+    "alt": "Rodec Restyler",
+    "caption": "Restyler, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/restyler/catalogue-027-105.webp",
+    "thumb": "/media/models/restyler/catalogue-027-105.thumb.webp",
+    "w": 332,
+    "h": 212,
+    "alt": "Rodec Restyler",
+    "caption": "Restyler, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/restyler/catalogue-027-107.webp",
+    "thumb": "/media/models/restyler/catalogue-027-107.thumb.webp",
+    "w": 399,
+    "h": 205,
+    "alt": "Rodec Restyler",
+    "caption": "Restyler, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "catalogue-2010"
+  ]
+ },
+ {
+  "name": "Patch Live",
+  "type": "Patchbay",
+  "month": 8,
+  "year": 2010,
+  "approx": false,
+  "launchDoc": "Catalogue",
+  "price": 249.0,
+  "slug": "patch-live",
+  "order": 85,
+  "category": "Tools",
+  "era": {
+   "key": "progressive",
+   "title": "Progressive & Original",
+   "from": 2008,
+   "to": 2014
+  },
+  "series": null,
+  "photos": [
+   {
+    "src": "/media/models/patch-live/catalogue-028-1025.webp",
+    "thumb": "/media/models/patch-live/catalogue-028-1025.thumb.webp",
+    "w": 1004,
+    "h": 595,
+    "alt": "Rodec Patch Live",
+    "caption": "Patch Live, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/patch-live/catalogue-029-1028.webp",
+    "thumb": "/media/models/patch-live/catalogue-029-1028.thumb.webp",
+    "w": 573,
+    "h": 236,
+    "alt": "Rodec Patch Live",
+    "caption": "Patch Live, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/patch-live/catalogue-029-1026.webp",
+    "thumb": "/media/models/patch-live/catalogue-029-1026.thumb.webp",
+    "w": 580,
+    "h": 189,
+    "alt": "Rodec Patch Live",
+    "caption": "Patch Live, Rodec catalogue 2010"
+   },
+   {
+    "src": "/media/models/patch-live/catalogue-028-112.webp",
+    "thumb": "/media/models/patch-live/catalogue-028-112.thumb.webp",
+    "w": 460,
+    "h": 320,
+    "alt": "Rodec Patch Live",
+    "caption": "Patch Live, Rodec catalogue 2010"
+   }
+  ],
+  "brochures": [],
+  "docs": [
+   "catalogue-2010"
+  ]
+ }
+]

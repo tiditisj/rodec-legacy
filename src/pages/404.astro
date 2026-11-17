@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Not found">
+  <section class="wrap nf">
+    <p class="label red"><span class="led"></span>&nbsp; Signal lost</p>
+    <h1>-∞ dB</h1>
+    <p class="lede">This channel is muted. The page you’re looking for doesn’t exist (anymore).</p>
+    <a class="btn btn--red" href="/">Back to the master →</a>
+  </section>
+</Base>
+<style>
+  .nf { padding-block: 18vh; }
+  .nf h1 { font-size: clamp(5rem, 20vw, 16rem); margin: 16px 0; }
+</style>

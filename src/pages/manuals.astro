@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import DocCard from '../components/DocCard.astro';
+import { docs, KIND_LABEL, bySlug } from '../lib/data';
+
+const kinds = (['user', 'service', 'schematic', 'leaflet', 'catalogue', 'book', 'drawing'] as const).filter((k) => docs.some((d) => d.kind === k));
+// Sort by the year of the first model the document belongs to.
+const sorted = [...docs].sort((a, b) => (bySlug.get(a.models[0])?.order ?? 0) - (bySlug.get(b.models[0])?.order ?? 0));
+const totalPages = docs.reduce((n, d) => n + d.pages, 0);
+---
+<Base title="Manuals & schematics" description="Free downloads: Rodec user manuals, service manuals, schematics and leaflets for mixers and amplifiers from 1974 to 2009.">
+  <section class="wrap page-head">
+    <p class="label red">Downloads · free</p>
+    <h1>Manuals &<br />schematics</h1>
+    <p class="lede">{docs.length} documents, {totalPages.toLocaleString('en')} pages. User manuals, service manuals and schematics for keeping these machines alive. All PDF, all free.</p>
+  </section>
+
+  <div class="wrap filters" role="toolbar" aria-label="Filter documents">
+    <button class="chip" aria-pressed="true" data-kind="all">All</button>
+    {kinds.map((k) => <button class="chip" aria-pressed="false" data-kind={k}>{KIND_LABEL[k]}s</button>)}
+    <label class="search"><span class="visually-hidden">Search documents</span><input type="search" placeholder="Model · e.g. MX180" /></label>
+  </div>
+
+  <section class="wrap">
+    <div class="grid grid--docs">{sorted.map((d) => <DocCard doc={d} />)}</div>
+  </section>
+
+  <section class="wrap missing">
+    <p class="label red">Missing something?</p>
+    <p>We are still looking for manuals for most pre-1980 models, the CX-1100 and MX300 MKIII service manuals in PDF, and the Progressive series user manuals (the 2010 catalogue has their full specifications). Have one? See <a href="/resources/">useful sources</a> for where to share it.</p>
+  </section>
+</Base>
+
+<script>
+  let kind = 'all', q = '';
+  const cards = [...document.querySelectorAll<HTMLElement>('.doc')];
+  const apply = () => cards.forEach((c) => {
+    c.hidden = !((kind === 'all' || c.dataset.kind === kind) && (!q || c.dataset.title!.replace(/[\s/-]/g, '').includes(q)));
+  });
+  document.querySelectorAll<HTMLButtonElement>('.filters .chip').forEach((b) => b.addEventListener('click', () => {
+    kind = b.dataset.kind!;
+    document.querySelectorAll('.filters .chip').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    apply();
+  }));
+  document.querySelector<HTMLInputElement>('.search input')!.addEventListener('input', (e) => {
+    q = (e.target as HTMLInputElement).value.toLowerCase().replace(/[\s/-]/g, ''); apply();
+  });
+</script>
+
+<style>
+  .page-head { padding-block: clamp(56px, 9vw, 120px) 32px; }
+  .page-head h1 { margin: 16px 0 24px; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 28px; }
+  .search { margin-left: auto; }
+  .search input { font: inherit; font-family: var(--mono); font-size: .8rem; background: var(--ink-2); color: var(--cream); border: 1px solid var(--line-2); border-radius: 999px; padding: .55em 1.1em; width: 220px; }
+  .search input:focus { outline: none; border-color: var(--amber); }
+  .missing { margin-top: 64px; padding: 28px; border: 1px dashed var(--line-2); border-radius: 10px; max-width: 760px; color: var(--cream-2); }
+  @media (max-width: 640px) { .search { margin-left: 0; } }
+</style>

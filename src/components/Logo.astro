@@ -1,0 +1,19 @@
+---
+// Inline Rodec wordmark / emblem (vector, traced from the original logo PDFs).
+import wordmark from '../../public/brand/rodec-wordmark.svg?raw';
+import emblem from '../../public/brand/rodec-emblem.svg?raw';
+
+interface Props { variant?: 'wordmark' | 'emblem'; class?: string; title?: string }
+const { variant = 'wordmark', class: cls = '', title = 'Rodec' } = Astro.props;
+let svg = (variant === 'wordmark' ? wordmark : emblem)
+  .replace(/<\?xml[^>]*>\s*/, '')
+  .replace('<svg ', `<svg role="img" aria-label="${title}" class="logo logo--${variant} ${cls}" `);
+// Unique glyph ids so the logo can appear more than once per page.
+const uid = Math.random().toString(36).slice(2, 7);
+svg = svg.replace(/id="(glyph-[^"]+)"/g, `id="$1-${uid}"`).replace(/href="#(glyph-[^"]+)"/g, `href="#$1-${uid}"`);
+---
+<Fragment set:html={svg} />
+<style is:global>
+  .logo { display: block; fill: currentColor; height: auto; }
+  .logo--wordmark { width: 132px; }
+</style>
