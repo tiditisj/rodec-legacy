@@ -12,6 +12,8 @@ const {
 const fullTitle = title ? `${title} · Rodec Legacy` : 'Rodec Legacy · Serving DJs since 1954';
 const path = Astro.url.pathname;
 const canonical = new URL(path, Astro.site);
+const GTM_ID = 'GTM-KPNSLV7M';
+const analytics = import.meta.env.PROD; // no tracking in local dev
 ---
 <!doctype html>
 <html lang="en">
@@ -28,8 +30,28 @@ const canonical = new URL(path, Astro.site);
     <meta property="og:image" content={new URL(image, Astro.site)} />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    {analytics && (
+      <script is:inline>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        var c = null; try { c = localStorage.getItem('rl-consent'); } catch (e) {}
+        gtag('consent', 'default', {
+          ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+          analytics_storage: c === 'yes' ? 'granted' : 'denied'
+        });
+      </script>
+      <script is:inline define:vars={{ GTM_ID }}>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer',GTM_ID);
+      </script>
+    )}
   </head>
   <body>
+    {analytics && (
+      <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`} height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    )}
     <a class="skip" href="#main">Skip to content</a>
     <header class="top">
       <div class="top__inner">
@@ -71,6 +93,7 @@ const canonical = new URL(path, Astro.site);
             <a href="/resources/">All sources</a>
             <a href="/manuals/">Manuals & schematics</a>
             <a href={LINKS.rodec} rel="noopener">rodec.com</a>
+            <button type="button" class="foot__cookie" data-cookie-settings>Cookie settings</button>
           </div>
           <div>
             <p class="label">Got something?</p>
@@ -145,10 +168,46 @@ const canonical = new URL(path, Astro.site);
         if (e.key === 'ArrowRight') show(idx + 1);
       });
     </script>
+
+    <div class="cookie" role="region" aria-label="Cookies" hidden>
+      <p>We use analytics cookies to see which parts of the archive people visit. Fine with you?</p>
+      <div class="cookie__btns">
+        <button type="button" data-cookie="no">No thanks</button>
+        <button type="button" data-cookie="yes" class="cookie__yes">OK</button>
+      </div>
+    </div>
+    <script is:inline>
+      (function () {
+        var box = document.querySelector('.cookie');
+        var get = function () { try { return localStorage.getItem('rl-consent'); } catch (e) { return null; } };
+        if (!get()) box.hidden = false;
+        box.addEventListener('click', function (e) {
+          var v = e.target.getAttribute && e.target.getAttribute('data-cookie');
+          if (!v) return;
+          try { localStorage.setItem('rl-consent', v); } catch (err) {}
+          if (typeof gtag === 'function') gtag('consent', 'update', { analytics_storage: v === 'yes' ? 'granted' : 'denied' });
+          box.hidden = true;
+        });
+        document.querySelectorAll('[data-cookie-settings]').forEach(function (b) {
+          b.addEventListener('click', function () { box.hidden = false; });
+        });
+      })();
+    </script>
   </body>
 </html>
 
 <style>
+  .cookie { position: fixed; z-index: 120; left: 16px; bottom: 16px; max-width: 340px; background: var(--ink-2); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 14px 16px; box-shadow: 0 10px 30px rgba(0,0,0,.45); font-size: 13px; line-height: 1.45; color: var(--cream-2); }
+  .cookie[hidden] { display: none; }
+  .cookie p { margin: 0 0 12px; }
+  .cookie__btns { display: flex; gap: 8px; justify-content: flex-end; }
+  .cookie button { font: 600 12px/1 var(--mono); letter-spacing: .04em; text-transform: uppercase; padding: 9px 14px; border-radius: 4px; cursor: pointer; background: transparent; color: var(--cream-2); border: 1px solid var(--line-2); }
+  .cookie button:hover { color: var(--cream); border-color: var(--cream-3); }
+  .cookie .cookie__yes { background: var(--red); border-color: var(--red); color: #fff; }
+  .cookie .cookie__yes:hover { background: var(--red-deep); border-color: var(--red-deep); color: #fff; }
+  @media (max-width: 480px) { .cookie { right: 16px; max-width: none; } }
+  .foot__cookie { display: block; background: none; border: 0; padding: 3px 0; font: inherit; font-size: .95rem; color: var(--cream-2); cursor: pointer; text-align: left; }
+  .foot__cookie:hover { color: var(--cream); }
   .skip { position: absolute; left: -9999px; top: 8px; z-index: 200; background: var(--amber); color: var(--ink); padding: 8px 14px; }
   .skip:focus { left: 8px; }
 
