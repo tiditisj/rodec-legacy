@@ -88,7 +88,9 @@ const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-we
           <article class="tl__item">
             <span class="tl__year display">{m.year}</span>
             <div class="tl__card">
-              {img && <img src={img.thumb} alt={img.alt} loading="lazy" />}
+              {m.image
+                ? <img src={m.image.src} alt={m.image.alt} loading="lazy" class:list={[m.image.cover && 'tl__img--cover']} style={m.image.position ? `object-position:${m.image.position}` : undefined} />
+                : img && <img src={img.thumb} alt={img.alt} loading="lazy" />}
               <h3>{m.title}</h3>
               <p>{m.text}</p>
               {model && <a class="label" href={`/models/${model.slug}/`}>{model.name} →</a>}
@@ -196,6 +198,7 @@ const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-we
   .tl__item:hover .tl__year { color: var(--cream); -webkit-text-stroke-color: var(--cream); }
   .tl__card { margin-top: 32px; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--ink-2); min-height: 240px; display: flex; flex-direction: column; gap: 10px; }
   .tl__card img { height: 120px; width: 100%; object-fit: contain; padding: 10px; margin-bottom: 4px; border-radius: 4px; background: radial-gradient(120% 100% at 50% 20%, #f6f4ef, #d8d4cb); }
+  .tl__card img.tl__img--cover { object-fit: cover; padding: 0; background: none; }
   .tl__card h3 { font-size: 1.05rem; }
   .tl__card p { font-size: .92rem; color: var(--cream-2); margin: 0; flex: 1; }
   .tl__card a { text-decoration: none; color: var(--cream); }

@@ -2,7 +2,7 @@
 // archive (RODEC HISTORY.doc, Tijdlijn historiek Rodec.xlsx, RODEC Intro, RODEC NEWS.doc,
 // production overview.doc, Rodec catalogue 2010 “55 years”). Keep it factual: when in doubt, leave it out.
 
-export const MILESTONES: { year: number; title: string; text: string; model?: string; link?: { href: string; label: string } }[] = [
+export const MILESTONES: { year: number; title: string; text: string; model?: string; link?: { href: string; label: string }; image?: { src: string; alt: string; cover?: boolean; position?: string } }[] = [
   { year: 1954, title: 'ROger DE Clercq founds RODEC', text: 'ROger DE Clercq, born in Antwerp in 1930, builds and modifies audio gear for himself and his friends, then opens the RODEC RADIO store in the city centre, where music lovers are always welcome.' },
   { year: 1961, title: 'Rodec amplifiers hit the market', text: 'Valve amplifiers like the Audiofan and Stereofan, plus the 52S phono preamp, sold under the Rodec name.', model: 'stereofan' },
   { year: 1970, title: 'A mixer with slide faders', text: 'The CU881 lets one source fade out while another fades in. The DJ mixer, the DJ’s workhorse, is born.', model: 'cu881' },
@@ -24,10 +24,10 @@ export const MILESTONES: { year: number; title: string; text: string; model?: st
   { year: 2010, title: '250,000 thank-yous', text: 'Rodec thanks more than 250,000 buyers and millions of users worldwide over 55 years.' },
   { year: 2014, title: 'Production ends', text: 'After sixty years the last Rodec leaves the factory.' },
   { year: 2021, title: 'Still alive', text: 'Parts and accessories remain available, and a worldwide community keeps the mixers running.' },
-  { year: 2022, title: 'The Rodec reboot', text: 'Tom De Ridder, producer and Rodec user for years, restarts the brand and begins work on a new generation of Rodec.' },
-  { year: 2024, title: 'MX Modular on sale', text: 'The first new Rodec console: an analog mixer you build around your own sound, with 500 series and Rodec 100 series modules.', link: { href: 'https://rodec.com', label: 'Rodec today' } },
-  { year: 2025, title: 'ONE and MiniStyler', text: 'The Rodec ONE, and the MiniStyler with Sherman: the Filterbank sound in a 16HP module.', link: { href: 'https://rodec.com', label: 'Rodec today' } },
-  { year: 2026, title: 'Expander and SideStepper', text: 'The Expander adds eight channels to the MX Modular, and the SideStepper ships: an analog gater and ducker with its own step sequencer.', link: { href: 'https://rodec.com', label: 'Rodec today' } },
+  { year: 2022, title: 'The Rodec reboot', text: 'Tom De Ridder, producer and Rodec user for years, restarts the brand and begins work on a new generation of Rodec.', image: { src: '/today/2022-tom-de-ridder.webp', alt: 'Tom De Ridder as a superhero, artwork by Julia (2018)', cover: true, position: '60% 32%' } },
+  { year: 2024, title: 'MX Modular on sale', text: 'The first new Rodec console: an analog mixer you build around your own sound, with 500 series and Rodec 100 series modules.', link: { href: 'https://rodec.com', label: 'Rodec today' }, image: { src: '/today/2024-mx-modular.webp', alt: 'Rodec MX Modular', cover: true, position: '50% 45%' } },
+  { year: 2025, title: 'ONE and MiniStyler', text: 'The Rodec ONE, and the MiniStyler with Sherman: the Filterbank sound in a 16HP module.', link: { href: 'https://rodec.com', label: 'Rodec today' }, image: { src: '/today/2025-one-ministyler.webp', alt: 'Rodec ONE and Rodec / Sherman MiniStyler' } },
+  { year: 2026, title: 'Expander and SideStepper', text: 'The Expander adds eight channels to the MX Modular, and the SideStepper ships: an analog gater and ducker with its own step sequencer.', link: { href: 'https://rodec.com', label: 'Rodec today' }, image: { src: '/today/2026-sidestepper.webp', alt: 'Rodec M 110 SideStepper' } },
 ];
 
 export const MODEL_NOTES: Record<string, string> = {
