@@ -4,7 +4,7 @@
 
 The site covers:
 
-- **History**: from ROger DEClerck's radio shop in Antwerp to the last Rodec in 2014, with a year-by-year timeline.
+- **History**: from ROger DE Clercq's radio shop in Antwerp to the last Rodec in 2014, with a year-by-year timeline.
 - **Models**: every Rodec in the original product register, 86 units from the 1961 Stereofan to the 2010 Patch Live. Each model has photos, the original brochure, its launch price, key features and downloads.
 - **Archive**: the 50-years book *Perpetual Music Makers* (2004), the 2010 catalogue, brochures from 1961 onwards, adverts and magazine reviews.
 - **Manuals & schematics**: user manuals, service manuals and schematics as free PDFs.

@@ -7,20 +7,20 @@ import { MILESTONES, BUILD_POINTS } from '../data/content';
 const pic = (needle: string) => archive.history.find((p) => p.alt.toLowerCase().includes(needle.toLowerCase()));
 const hero = (archive as any).historyHero ?? {};
 const shop = hero.shop ?? pic('RODEC RADIO');
-const roger = hero.roger ?? pic('De Clerck');
+const roger = hero.roger ?? pic('founder');
 const dealer = pic('Dealer days');
 ---
-<Base title="History" description="From ROger DEClerck’s radio shop in Antwerp (1954) to the MX180 and beyond: the history of Rodec.">
+<Base title="History" description="From ROger DE Clercq’s radio shop in Antwerp (1954) to the MX180 and beyond: the history of Rodec.">
   <section class="wrap page-head">
     <p class="label red">History · 1954 – today</p>
     <h1>RO·DE·C</h1>
-    <p class="lede">ROger DEClerck. Three syllables, one name, and seventy years of sound.</p>
+    <p class="lede">ROger DE Clercq. Three syllables, one name, and seventy years of sound.</p>
   </section>
 
   <article class="wrap story">
     <div class="story__col">
       <p class="dropcap">Back in 1954 the music industry, apart from a few big players, was a meeting place for music lovers and fanatics. They found it hard to buy what their ears really wanted: natural music reproduction. A handful of esoteric brands filled that gap with hand-built, one-off equipment, not too distracted by un-cool things like production economics or even profit.</p>
-      <p><strong>ROger DEClerck</strong>, born in Antwerp in 1930, was one of those engineers. He designed and built equipment for himself and a few close friends, and modified existing gear to make it sound better. Then he opened the RODEC RADIO store in the centre of Antwerp, where music addicts were more than welcome to live their passion.</p>
+      <p><strong>ROger DE Clercq</strong>, born in Antwerp in 1930, was one of those engineers. He designed and built equipment for himself and a few close friends, and modified existing gear to make it sound better. Then he opened the RODEC RADIO store in the centre of Antwerp, where music addicts were more than welcome to live their passion.</p>
     </div>
     {shop && (
       <figure class="story__fig reveal">
@@ -35,8 +35,8 @@ const dealer = pic('Dealer days');
     </div>
     {roger && (
       <figure class="story__fig story__fig--small reveal">
-        <a href={roger.src} data-lightbox="history"><img src={roger.src} alt="ROger DEClerck" loading="lazy" /></a>
-        <figcaption class="label">ROger DEClerck</figcaption>
+        <a href={roger.src} data-lightbox="history"><img src={roger.src} alt="ROger DE Clercq" loading="lazy" /></a>
+        <figcaption class="label">ROger DE Clercq</figcaption>
       </figure>
     )}
     <div class="story__col">

@@ -651,14 +651,15 @@ def main() -> None:
 
     # ---- history & production photos
     print("History photos …")
-    history = [Img(p, f"history/{slugify(p.stem)}", p.stem, p.stem).build()
+    # File names in the archive spell the founder "De Clerck"; the correct spelling is De Clercq.
+    history = [Img(p, f"history/{slugify(p.stem).replace('de-clerck', 'de-clercq')}", p.stem, p.stem).build()
                for p in images_in(INFO / "RODEC Old pictures" / "OLD PICTURES")]
     history += [Img(p, f"history/{slugify(p.stem)}", f"Rodec {p.stem}", p.stem).build()
                 for p in unmatched_photos if re.match(r"(?i)^rodec", p.stem)]
     # Captions for the best scans; then drop duplicates (same photo in BW / colour / re-scan).
     HISTORY_CAPTIONS = {
         r"^rodec - radio$": "RODEC RADIO, Lange Beeldekensstraat 32, Antwerp. 1950s",
-        r"^roger de clerck old 2$": "ROger DEClerck, founder of Rodec",
+        r"^roger de clerck old 2$": "ROger DE Clercq, founder of Rodec",
         r"^rodec address card 70's - 003$": "Export business card, 1970s",
         r"^roger & theo$": "Roger & Theo",
         r"^dealerdays anno 1979$": "Dealer days, 1979",
@@ -732,6 +733,17 @@ def main() -> None:
         "djs": djs,
         "eras": [{"from": a, "to": b, "key": k, "title": t} for a, b, k, t in ERAS],
     }, indent=1, ensure_ascii=False))
+
+    # Remove generated files that nothing references any more (dropped duplicates, renames).
+    referenced = set(re.findall(r'"(/media/[^"]+)"', "".join(
+        (DATA / f).read_text() for f in ("models.json", "docs.json", "archive.json"))))
+    removed = 0
+    for f in MEDIA.rglob("*.webp"):
+        if "/" + str(f.relative_to(PUBLIC)) not in referenced:
+            f.unlink()
+            removed += 1
+    if removed:
+        print(f"Removed {removed} unreferenced media files")
 
     with_photo = sum(1 for m in models if m["photos"])
     print(f"\n{len(models)} models ({with_photo} with photos), {len(docs_out)} documents, "
