@@ -76,7 +76,7 @@ const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-we
     <div class="wrap tl__head">
       <div>
         <p class="label red">Timeline</p>
-        <h2>Six decades<br />on the faders</h2>
+        <h2>Seven decades<br />on the faders</h2>
       </div>
       <a class="btn" href="/history/">Read the full story →</a>
     </div>
@@ -92,6 +92,7 @@ const xfB = { src: '/media/models/mx18/rodec-mx18-eerste-mixer-waarschijnlijk-we
               <h3>{m.title}</h3>
               <p>{m.text}</p>
               {model && <a class="label" href={`/models/${model.slug}/`}>{model.name} →</a>}
+              {m.link && <a class="label" href={m.link.href} rel="noopener">{m.link.label} ↗</a>}
             </div>
           </article>
         );

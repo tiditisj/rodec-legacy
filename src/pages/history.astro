@@ -12,9 +12,9 @@ const dealer = pic('Dealer days');
 ---
 <Base title="History" description="From ROger DEClerck’s radio shop in Antwerp (1954) to the MX180 and beyond: the history of Rodec.">
   <section class="wrap page-head">
-    <p class="label red">History · 1954 – 2014</p>
+    <p class="label red">History · 1954 – today</p>
     <h1>RO·DE·C</h1>
-    <p class="lede">ROger DEClerck. Three syllables, one name, and sixty years of sound.</p>
+    <p class="lede">ROger DEClerck. Three syllables, one name, and seventy years of sound.</p>
   </section>
 
   <article class="wrap story">
@@ -62,7 +62,7 @@ const dealer = pic('Dealer days');
           return (
             <li class="reveal">
               <span class="mile__y display">{m.year}</span>
-              <div><h3>{m.title}</h3><p>{m.text}</p>{model && <a class="label" href={`/models/${model.slug}/`}>See the {model.name} →</a>}</div>
+              <div><h3>{m.title}</h3><p>{m.text}</p>{model && <a class="label" href={`/models/${model.slug}/`}>See the {model.name} →</a>}{m.link && <a class="label" href={m.link.href} rel="noopener">{m.link.label} ↗</a>}</div>
             </li>
           );
         })}

@@ -2,7 +2,7 @@
 // archive (RODEC HISTORY.doc, Tijdlijn historiek Rodec.xlsx, RODEC Intro, RODEC NEWS.doc,
 // production overview.doc, Rodec catalogue 2010 “55 years”). Keep it factual: when in doubt, leave it out.
 
-export const MILESTONES: { year: number; title: string; text: string; model?: string }[] = [
+export const MILESTONES: { year: number; title: string; text: string; model?: string; link?: { href: string; label: string } }[] = [
   { year: 1954, title: 'ROger DEClerck founds RODEC', text: 'ROger DEClerck, born in Antwerp in 1930, builds and modifies audio gear for himself and his friends, then opens the RODEC RADIO store in the city centre, where music lovers are always welcome.' },
   { year: 1961, title: 'Rodec amplifiers hit the market', text: 'Valve amplifiers like the Audiofan and Stereofan, plus the 52S phono preamp, sold under the Rodec name.', model: 'stereofan' },
   { year: 1970, title: 'A mixer with slide faders', text: 'The CU881 lets one source fade out while another fades in. The DJ mixer, the DJ’s workhorse, is born.', model: 'cu881' },
@@ -24,6 +24,8 @@ export const MILESTONES: { year: number; title: string; text: string; model?: st
   { year: 2010, title: '250,000 thank-yous', text: 'Rodec thanks more than 250,000 buyers and millions of users worldwide over 55 years.' },
   { year: 2014, title: 'Production ends', text: 'After sixty years the last Rodec leaves the factory.' },
   { year: 2021, title: 'Still alive', text: 'Parts and accessories remain available, and a worldwide community keeps the mixers running.' },
+  { year: 2022, title: 'The Rodec reboot', text: 'Tom De Ridder starts the reboot of the brand and begins work on a new generation of Rodec.' },
+  { year: 2025, title: 'MX Modular ships', text: 'Three years after the reboot, the first MX Modulars leave the door: an analogue mixing console you build around your own sound, with 500-series and Rodec 100-series modules.', link: { href: 'https://rodec.com', label: 'Rodec today' } },
 ];
 
 export const MODEL_NOTES: Record<string, string> = {
