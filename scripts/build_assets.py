@@ -37,6 +37,9 @@ ARCHIVE = Path(os.environ.get(
 TRANSTEL = ARCHIVE / "RODEC_from transtel"
 INFO = TRANSTEL / "RODEC Info + history + boek"
 MANUALS = ARCHIVE / "RODEC Manuals + schemas"
+# Photos found online and approved by hand: one subfolder per model (folder name = model name),
+# each with a SOURCES.md recording where every image came from.
+WEB_APPROVED = ARCHIVE / "_Web fotos (goedgekeurd)"
 # The 2010 "55 years" catalogue (history + full product range) lives in the Marketing folder.
 CATALOGUE = Path(os.environ.get("RODEC_CATALOGUE", ARCHIVE.parent.parent / "Marketing/history/rodec_history.pdf"))
 CACHE = Path(__file__).resolve().parent.parent / ".cache"
@@ -119,7 +122,34 @@ def readable(src: Path) -> Path:
     return out
 
 
-def to_webp(src: Path, dst: Path, max_side: int, quality: int = 80) -> tuple[int, int]:
+def autotrim(im: Image.Image, margin: float = 0.05) -> Image.Image:
+    """Product shots on a plain light background: crop to the product, then add an even margin
+    so every unit sits centred in its card. Photos without a plain light border are left alone."""
+    from PIL import ImageChops, ImageStat
+    rgb = im.convert("RGB")
+    w, h = rgb.size
+    k = max(2, min(w, h) // 50)
+    border = [rgb.crop(b) for b in ((0, 0, w, k), (0, h - k, w, h), (0, 0, k, h), (w - k, 0, w, h))]
+    stats = [ImageStat.Stat(b) for b in border]
+    # Background = the brightest uniform border strip (products often touch one or two edges).
+    plain = [(st.mean, st.stddev) for st in stats if min(st.mean) > 215 and max(st.stddev) < 12]
+    if len(plain) < 2:
+        return im
+    bg = tuple(int(sum(m[i] for m, _ in plain) / len(plain)) for i in range(3))
+    diff = ImageChops.difference(rgb, Image.new("RGB", rgb.size, bg)).convert("L")
+    bbox = diff.point(lambda v: 255 if v > 22 else 0).getbbox()
+    if not bbox:
+        return im
+    x0, y0, x1, y1 = bbox
+    if (x1 - x0) * (y1 - y0) > 0.97 * w * h:  # nothing to trim
+        return im
+    pad = int(max(x1 - x0, y1 - y0) * margin)
+    out = Image.new("RGB", (x1 - x0 + 2 * pad, y1 - y0 + 2 * pad), bg)
+    out.paste(rgb.crop(bbox), (pad, pad))
+    return out
+
+
+def to_webp(src: Path, dst: Path, max_side: int, quality: int = 80, trim: bool = False) -> tuple[int, int]:
     dst.parent.mkdir(parents=True, exist_ok=True)
     if not stale(src, dst):
         with Image.open(dst) as im:
@@ -129,6 +159,8 @@ def to_webp(src: Path, dst: Path, max_side: int, quality: int = 80) -> tuple[int
         im = ImageOps.exif_transpose(im)
         if im.mode in ("1", "L", "P", "LA", "I;16", "I", "CMYK"):
             im = im.convert("RGBA" if "A" in im.mode or im.mode == "P" else "RGB")
+        if trim:
+            im = autotrim(im)
         im.thumbnail((max_side, max_side), Image.LANCZOS)
         im.save(dst, "WEBP", quality=quality, method=5)
         return im.size
@@ -142,10 +174,14 @@ class Img:
     caption: str = ""
     full: int = 1800
     thumb: int = 640
+    trim: bool = False
 
     def build(self) -> dict:
-        w, h = to_webp(self.src, MEDIA / f"{self.key}.webp", self.full)
-        to_webp(self.src, MEDIA / f"{self.key}.thumb.webp", self.thumb, 74)
+        if self.trim is None:
+            self.trim = False
+        trim = self.trim or self.key.startswith("models/")
+        w, h = to_webp(self.src, MEDIA / f"{self.key}.webp", self.full, trim=trim)
+        to_webp(self.src, MEDIA / f"{self.key}.thumb.webp", self.thumb, 74, trim=trim)
         out = {"src": f"/media/{self.key}.webp", "thumb": f"/media/{self.key}.thumb.webp",
                "w": w, "h": h, "alt": self.alt}
         if self.caption:
@@ -642,6 +678,17 @@ def main() -> None:
                            for i, p in enumerate(sorted(pagedir.glob("p-*.jpg")))]
     else:
         warn(f"catalogue not found: {CATALOGUE}")
+
+    # ---- approved web photos (models with no photo in the archive)
+    if WEB_APPROVED.exists():
+        print("Approved web photos …")
+        for folder in sorted(p for p in WEB_APPROVED.iterdir() if p.is_dir()):
+            m = match(folder.name)
+            if not m:
+                warn(f"web photo folder without model: {folder.name}")
+                continue
+            for f in images_in(folder):
+                m["photos"].append(Img(f, f"models/{m['slug']}/web-{slugify(f.stem)}", f"Rodec {m['name']}", m["name"]).build())
 
     # ---- book
     print("50 years book …")

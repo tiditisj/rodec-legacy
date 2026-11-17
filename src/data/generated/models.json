@@ -117,8 +117,8 @@
    {
     "src": "/media/models/52s/52s-front-bw.webp",
     "thumb": "/media/models/52s/52s-front-bw.thumb.webp",
-    "w": 460,
-    "h": 240,
+    "w": 499,
+    "h": 278,
     "alt": "Rodec 52S",
     "caption": "52S Front"
    }
@@ -161,8 +161,8 @@
    {
     "src": "/media/models/514s/514s-front-inner-bw.webp",
     "thumb": "/media/models/514s/514s-front-inner-bw.thumb.webp",
-    "w": 574,
-    "h": 364,
+    "w": 616,
+    "h": 414,
     "alt": "Rodec 514S",
     "caption": "514S Front +inner"
    },
@@ -1213,8 +1213,8 @@
    {
     "src": "/media/models/mixfan/mixfan-front-bw.webp",
     "thumb": "/media/models/mixfan/mixfan-front-bw.thumb.webp",
-    "w": 441,
-    "h": 167,
+    "w": 466,
+    "h": 198,
     "alt": "Rodec MIXFAN",
     "caption": "Mixfan Front"
    }
@@ -1385,8 +1385,8 @@
    {
     "src": "/media/models/power-project-100/power-project-100-small-vu-front-bw.webp",
     "thumb": "/media/models/power-project-100/power-project-100-small-vu-front-bw.thumb.webp",
-    "w": 437,
-    "h": 132,
+    "w": 471,
+    "h": 172,
     "alt": "Rodec POWER PROJECT 100",
     "caption": "Power project 100 Small VU Front"
    },
@@ -2543,8 +2543,8 @@
    {
     "src": "/media/models/mx34/mx34-front-black-bw.webp",
     "thumb": "/media/models/mx34/mx34-front-black-bw.thumb.webp",
-    "w": 580,
-    "h": 289,
+    "w": 625,
+    "h": 336,
     "alt": "Rodec MX34",
     "caption": "MX34 Front Black"
    },
@@ -2607,8 +2607,8 @@
    {
     "src": "/media/models/mx34/mx34-back-bw.webp",
     "thumb": "/media/models/mx34/mx34-back-bw.thumb.webp",
-    "w": 1041,
-    "h": 720,
+    "w": 1094,
+    "h": 633,
     "alt": "Rodec MX34",
     "caption": "MX34 Back"
    },
@@ -2761,8 +2761,8 @@
    {
     "src": "/media/models/mx100/mx100-black-front-c.webp",
     "thumb": "/media/models/mx100/mx100-black-front-c.thumb.webp",
-    "w": 580,
-    "h": 323,
+    "w": 622,
+    "h": 357,
     "alt": "Rodec MX100",
     "caption": "MX100 Black Front"
    }
@@ -3379,8 +3379,8 @@
    {
     "src": "/media/models/mx180-mkiii/mx180mkiii-front.webp",
     "thumb": "/media/models/mx180-mkiii/mx180mkiii-front.thumb.webp",
-    "w": 1284,
-    "h": 893,
+    "w": 1225,
+    "h": 822,
     "alt": "Rodec MX180 MKIII",
     "caption": "MX180MKIII_front"
    },
@@ -3526,8 +3526,8 @@
    {
     "src": "/media/models/mx240-mkiii/mx240mkiii-front.webp",
     "thumb": "/media/models/mx240-mkiii/mx240mkiii-front.thumb.webp",
-    "w": 1296,
-    "h": 896,
+    "w": 1240,
+    "h": 827,
     "alt": "Rodec MX240 MKIII",
     "caption": "MX240MKIII_front"
    }
@@ -3557,7 +3557,24 @@
    "to": 2007
   },
   "series": null,
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/alc-01/web-alc-01-1.webp",
+    "thumb": "/media/models/alc-01/web-alc-01-1.thumb.webp",
+    "w": 652,
+    "h": 115,
+    "alt": "Rodec ALC-01",
+    "caption": "ALC-01"
+   },
+   {
+    "src": "/media/models/alc-01/web-alc-01-2.webp",
+    "thumb": "/media/models/alc-01/web-alc-01-2.thumb.webp",
+    "w": 539,
+    "h": 111,
+    "alt": "Rodec ALC-01",
+    "caption": "ALC-01"
+   }
+  ],
   "brochures": [],
   "docs": [
    "alc-01-user",
@@ -3582,7 +3599,24 @@
    "to": 2007
   },
   "series": null,
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/multi-source-ii/web-multi-source-ii-1.webp",
+    "thumb": "/media/models/multi-source-ii/web-multi-source-ii-1.thumb.webp",
+    "w": 350,
+    "h": 84,
+    "alt": "Rodec Multi Source II",
+    "caption": "Multi Source II"
+   },
+   {
+    "src": "/media/models/multi-source-ii/web-multi-source-ii-2.webp",
+    "thumb": "/media/models/multi-source-ii/web-multi-source-ii-2.thumb.webp",
+    "w": 550,
+    "h": 143,
+    "alt": "Rodec Multi Source II",
+    "caption": "Multi Source II"
+   }
+  ],
   "brochures": [],
   "docs": [
    "multi-source-ii-user",
@@ -3643,16 +3677,16 @@
    {
     "src": "/media/models/mixbox/mixbox-front-darkgrey.webp",
     "thumb": "/media/models/mixbox/mixbox-front-darkgrey.thumb.webp",
-    "w": 1063,
-    "h": 1535,
+    "w": 1124,
+    "h": 1633,
     "alt": "Rodec miXboX",
     "caption": "MIXBOX_front_darkgrey"
    },
    {
     "src": "/media/models/mixbox/mixbox-front-silver.webp",
     "thumb": "/media/models/mixbox/mixbox-front-silver.thumb.webp",
-    "w": 1063,
-    "h": 1535,
+    "w": 1118,
+    "h": 1619,
     "alt": "Rodec miXboX",
     "caption": "MIXBOX_front_silver"
    },
@@ -3748,7 +3782,32 @@
    "to": 2007
   },
   "series": null,
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/cx-1100/web-cx-1100-1.webp",
+    "thumb": "/media/models/cx-1100/web-cx-1100-1.thumb.webp",
+    "w": 1705,
+    "h": 1161,
+    "alt": "Rodec CX-1100",
+    "caption": "CX-1100"
+   },
+   {
+    "src": "/media/models/cx-1100/web-cx-1100-2.webp",
+    "thumb": "/media/models/cx-1100/web-cx-1100-2.thumb.webp",
+    "w": 1800,
+    "h": 1350,
+    "alt": "Rodec CX-1100",
+    "caption": "CX-1100"
+   },
+   {
+    "src": "/media/models/cx-1100/web-cx-1100-3.webp",
+    "thumb": "/media/models/cx-1100/web-cx-1100-3.thumb.webp",
+    "w": 1800,
+    "h": 1350,
+    "alt": "Rodec CX-1100",
+    "caption": "CX-1100"
+   }
+  ],
   "brochures": [],
   "docs": [
    "cx-1100-user",
@@ -3774,7 +3833,32 @@
    "to": 2007
   },
   "series": "BX series",
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/bx-9/web-bx-9-1.webp",
+    "thumb": "/media/models/bx-9/web-bx-9-1.thumb.webp",
+    "w": 1800,
+    "h": 1084,
+    "alt": "Rodec BX-9",
+    "caption": "BX-9"
+   },
+   {
+    "src": "/media/models/bx-9/web-bx-9-2.webp",
+    "thumb": "/media/models/bx-9/web-bx-9-2.thumb.webp",
+    "w": 1800,
+    "h": 1350,
+    "alt": "Rodec BX-9",
+    "caption": "BX-9"
+   },
+   {
+    "src": "/media/models/bx-9/web-bx-9-3.webp",
+    "thumb": "/media/models/bx-9/web-bx-9-3.thumb.webp",
+    "w": 640,
+    "h": 480,
+    "alt": "Rodec BX-9",
+    "caption": "BX-9"
+   }
+  ],
   "brochures": [],
   "docs": [
    "bx-user",
@@ -3800,7 +3884,24 @@
    "to": 2007
   },
   "series": "BX series",
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/bx-14/web-bx-14-1.webp",
+    "thumb": "/media/models/bx-14/web-bx-14-1.thumb.webp",
+    "w": 1800,
+    "h": 1350,
+    "alt": "Rodec BX-14",
+    "caption": "BX-14"
+   },
+   {
+    "src": "/media/models/bx-14/web-bx-14-3.webp",
+    "thumb": "/media/models/bx-14/web-bx-14-3.thumb.webp",
+    "w": 1800,
+    "h": 1350,
+    "alt": "Rodec BX-14",
+    "caption": "BX-14"
+   }
+  ],
   "brochures": [],
   "docs": [
    "bx-user",
@@ -3826,7 +3927,16 @@
    "to": 2007
   },
   "series": "PA amplifiers",
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/pa800/web-pa800-1.webp",
+    "thumb": "/media/models/pa800/web-pa800-1.thumb.webp",
+    "w": 437,
+    "h": 113,
+    "alt": "Rodec PA800",
+    "caption": "PA800"
+   }
+  ],
   "brochures": [],
   "docs": [
    "pa-user"
@@ -3850,7 +3960,16 @@
    "to": 2007
   },
   "series": "PA amplifiers",
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/pa1600/web-pa1600-2.webp",
+    "thumb": "/media/models/pa1600/web-pa1600-2.thumb.webp",
+    "w": 436,
+    "h": 114,
+    "alt": "Rodec PA1600",
+    "caption": "PA1600"
+   }
+  ],
   "brochures": [],
   "docs": [
    "pa-user"
@@ -3874,7 +3993,16 @@
    "to": 2007
   },
   "series": "PA amplifiers",
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/pa2400/web-pa2400-2.webp",
+    "thumb": "/media/models/pa2400/web-pa2400-2.thumb.webp",
+    "w": 437,
+    "h": 148,
+    "alt": "Rodec PA2400",
+    "caption": "PA2400"
+   }
+  ],
   "brochures": [],
   "docs": [
    "pa-user"
@@ -3947,7 +4075,24 @@
    "to": 2007
   },
   "series": null,
-  "photos": [],
+  "photos": [
+   {
+    "src": "/media/models/mx180-limited-edition/web-mx180-ltd50-0-photo.webp",
+    "thumb": "/media/models/mx180-limited-edition/web-mx180-ltd50-0-photo.thumb.webp",
+    "w": 880,
+    "h": 595,
+    "alt": "Rodec MX180 Limited Edition",
+    "caption": "MX180 Limited Edition"
+   },
+   {
+    "src": "/media/models/mx180-limited-edition/web-mx180-ltd50-2-cropped.webp",
+    "thumb": "/media/models/mx180-limited-edition/web-mx180-ltd50-2-cropped.thumb.webp",
+    "w": 528,
+    "h": 356,
+    "alt": "Rodec MX180 Limited Edition",
+    "caption": "MX180 Limited Edition"
+   }
+  ],
   "brochures": [],
   "docs": [
    "mx180-limited-user",
@@ -3992,7 +4137,7 @@
    {
     "src": "/media/models/scratchbox/scratchbox-frontpanel-flat-rgb.webp",
     "thumb": "/media/models/scratchbox/scratchbox-frontpanel-flat-rgb.thumb.webp",
-    "w": 1122,
+    "w": 1162,
     "h": 1800,
     "alt": "Rodec Scratchbox",
     "caption": "scratchbox_frontpanel_flat_rgb"
@@ -4001,7 +4146,7 @@
     "src": "/media/models/scratchbox/scratchbox-achterkant-flat-rgb.webp",
     "thumb": "/media/models/scratchbox/scratchbox-achterkant-flat-rgb.thumb.webp",
     "w": 1800,
-    "h": 771,
+    "h": 794,
     "alt": "Rodec Scratchbox",
     "caption": "scratchbox_achterkant_flat_rgb"
    },
@@ -4009,7 +4154,7 @@
     "src": "/media/models/scratchbox/scratchbox-voorkant-flat-rgb.webp",
     "thumb": "/media/models/scratchbox/scratchbox-voorkant-flat-rgb.thumb.webp",
     "w": 1800,
-    "h": 771,
+    "h": 797,
     "alt": "Rodec Scratchbox",
     "caption": "scratchbox_voorkant_flat_rgb"
    },
@@ -4051,16 +4196,16 @@
    {
     "src": "/media/models/mx1800/catalogue-012-053.webp",
     "thumb": "/media/models/mx1800/catalogue-012-053.thumb.webp",
-    "w": 717,
-    "h": 631,
+    "w": 777,
+    "h": 649,
     "alt": "Rodec MX1800",
     "caption": "MX1800, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/mx1800/catalogue-013-059.webp",
     "thumb": "/media/models/mx1800/catalogue-013-059.thumb.webp",
-    "w": 331,
-    "h": 307,
+    "w": 352,
+    "h": 290,
     "alt": "Rodec MX1800",
     "caption": "MX1800, Rodec catalogue 2010"
    }
@@ -4094,16 +4239,16 @@
    {
     "src": "/media/models/mx3000/catalogue-008-037.webp",
     "thumb": "/media/models/mx3000/catalogue-008-037.thumb.webp",
-    "w": 658,
-    "h": 592,
+    "w": 717,
+    "h": 598,
     "alt": "Rodec MX3000",
     "caption": "MX3000, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/mx3000/catalogue-009-041.webp",
     "thumb": "/media/models/mx3000/catalogue-009-041.thumb.webp",
-    "w": 327,
-    "h": 279,
+    "w": 357,
+    "h": 280,
     "alt": "Rodec MX3000",
     "caption": "MX3000, Rodec catalogue 2010"
    }
@@ -4137,24 +4282,24 @@
    {
     "src": "/media/models/mx1400/catalogue-014-061.webp",
     "thumb": "/media/models/mx1400/catalogue-014-061.thumb.webp",
-    "w": 583,
-    "h": 583,
+    "w": 600,
+    "h": 608,
     "alt": "Rodec MX1400",
     "caption": "MX1400, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/mx1400/catalogue-015-066.webp",
     "thumb": "/media/models/mx1400/catalogue-015-066.thumb.webp",
-    "w": 266,
-    "h": 396,
+    "w": 296,
+    "h": 400,
     "alt": "Rodec MX1400",
     "caption": "MX1400, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/mx1400/catalogue-015-067.webp",
     "thumb": "/media/models/mx1400/catalogue-015-067.thumb.webp",
-    "w": 336,
-    "h": 162,
+    "w": 355,
+    "h": 170,
     "alt": "Rodec MX1400",
     "caption": "MX1400, Rodec catalogue 2010"
    }
@@ -4188,24 +4333,24 @@
    {
     "src": "/media/models/mx2200/catalogue-010-045.webp",
     "thumb": "/media/models/mx2200/catalogue-010-045.thumb.webp",
-    "w": 619,
-    "h": 565,
+    "w": 609,
+    "h": 581,
     "alt": "Rodec MX2200",
     "caption": "MX2200, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/mx2200/catalogue-011-050.webp",
     "thumb": "/media/models/mx2200/catalogue-011-050.thumb.webp",
-    "w": 326,
-    "h": 360,
+    "w": 334,
+    "h": 365,
     "alt": "Rodec MX2200",
     "caption": "MX2200, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/mx2200/catalogue-011-051.webp",
     "thumb": "/media/models/mx2200/catalogue-011-051.thumb.webp",
-    "w": 303,
-    "h": 150,
+    "w": 304,
+    "h": 147,
     "alt": "Rodec MX2200",
     "caption": "MX2200, Rodec catalogue 2010"
    }
@@ -4239,8 +4384,8 @@
    {
     "src": "/media/models/mx180-original/catalogue-018-072.webp",
     "thumb": "/media/models/mx180-original/catalogue-018-072.thumb.webp",
-    "w": 549,
-    "h": 428,
+    "w": 563,
+    "h": 454,
     "alt": "Rodec MX180 Original",
     "caption": "MX180 Original, Rodec catalogue 2010"
    },
@@ -4248,15 +4393,15 @@
     "src": "/media/models/mx180-original/catalogue-019-075.webp",
     "thumb": "/media/models/mx180-original/catalogue-019-075.thumb.webp",
     "w": 399,
-    "h": 281,
+    "h": 286,
     "alt": "Rodec MX180 Original",
     "caption": "MX180 Original, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/mx180-original/catalogue-019-077.webp",
     "thumb": "/media/models/mx180-original/catalogue-019-077.thumb.webp",
-    "w": 370,
-    "h": 162,
+    "w": 385,
+    "h": 166,
     "alt": "Rodec MX180 Original",
     "caption": "MX180 Original, Rodec catalogue 2010"
    }
@@ -4290,24 +4435,24 @@
    {
     "src": "/media/models/bx9-original/catalogue-022-087.webp",
     "thumb": "/media/models/bx9-original/catalogue-022-087.thumb.webp",
-    "w": 768,
-    "h": 510,
+    "w": 820,
+    "h": 561,
     "alt": "Rodec BX9 Original",
     "caption": "BX9 Original, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/bx9-original/catalogue-023-091.webp",
     "thumb": "/media/models/bx9-original/catalogue-023-091.thumb.webp",
-    "w": 426,
-    "h": 248,
+    "w": 437,
+    "h": 258,
     "alt": "Rodec BX9 Original",
     "caption": "BX9 Original, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/bx9-original/catalogue-023-092.webp",
     "thumb": "/media/models/bx9-original/catalogue-023-092.thumb.webp",
-    "w": 418,
-    "h": 185,
+    "w": 437,
+    "h": 172,
     "alt": "Rodec BX9 Original",
     "caption": "BX9 Original, Rodec catalogue 2010"
    }
@@ -4341,16 +4486,16 @@
    {
     "src": "/media/models/bx14-original/catalogue-020-081.webp",
     "thumb": "/media/models/bx14-original/catalogue-020-081.thumb.webp",
-    "w": 703,
-    "h": 493,
+    "w": 763,
+    "h": 531,
     "alt": "Rodec BX14 Original",
     "caption": "BX14 Original, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/bx14-original/catalogue-021-083.webp",
     "thumb": "/media/models/bx14-original/catalogue-021-083.thumb.webp",
-    "w": 437,
-    "h": 253,
+    "w": 451,
+    "h": 266,
     "alt": "Rodec BX14 Original",
     "caption": "BX14 Original, Rodec catalogue 2010"
    }
@@ -4385,7 +4530,7 @@
     "src": "/media/models/restyler/rodecre-4347-def.webp",
     "thumb": "/media/models/restyler/rodecre-4347-def.thumb.webp",
     "w": 1800,
-    "h": 1200,
+    "h": 1297,
     "alt": "Rodec Restyler",
     "caption": "RODECRe-4347-def"
    },
@@ -4393,7 +4538,7 @@
     "src": "/media/models/restyler/rodecre-4353-bewerkt-2.webp",
     "thumb": "/media/models/restyler/rodecre-4353-bewerkt-2.thumb.webp",
     "w": 1800,
-    "h": 1388,
+    "h": 1464,
     "alt": "Rodec Restyler",
     "caption": "RODECRe-4353-bewerkt 2"
    },
@@ -4401,7 +4546,7 @@
     "src": "/media/models/restyler/rodecre-4360-def.webp",
     "thumb": "/media/models/restyler/rodecre-4360-def.thumb.webp",
     "w": 1800,
-    "h": 1200,
+    "h": 957,
     "alt": "Rodec Restyler",
     "caption": "RODECRe-4360-def"
    },
@@ -4409,7 +4554,7 @@
     "src": "/media/models/restyler/rodecre-4361-lb.webp",
     "thumb": "/media/models/restyler/rodecre-4361-lb.thumb.webp",
     "w": 1800,
-    "h": 1200,
+    "h": 1144,
     "alt": "Rodec Restyler",
     "caption": "RODECRe-4361-lb"
    },
@@ -4417,7 +4562,7 @@
     "src": "/media/models/restyler/rodecre-4361-lo.webp",
     "thumb": "/media/models/restyler/rodecre-4361-lo.thumb.webp",
     "w": 1800,
-    "h": 1200,
+    "h": 1144,
     "alt": "Rodec Restyler",
     "caption": "RODECRe-4361-lo"
    },
@@ -4425,7 +4570,7 @@
     "src": "/media/models/restyler/rodecre-4361-zl.webp",
     "thumb": "/media/models/restyler/rodecre-4361-zl.thumb.webp",
     "w": 1800,
-    "h": 1200,
+    "h": 1144,
     "alt": "Rodec Restyler",
     "caption": "RODECRe-4361-zl"
    },
@@ -4433,7 +4578,7 @@
     "src": "/media/models/restyler/rodecre-4364-lv.webp",
     "thumb": "/media/models/restyler/rodecre-4364-lv.thumb.webp",
     "w": 1800,
-    "h": 1200,
+    "h": 1367,
     "alt": "Rodec Restyler",
     "caption": "RODECRe-4364-lv"
    },
@@ -4441,30 +4586,30 @@
     "src": "/media/models/restyler/rodecre-4368-def.webp",
     "thumb": "/media/models/restyler/rodecre-4368-def.thumb.webp",
     "w": 1800,
-    "h": 1200,
+    "h": 722,
     "alt": "Rodec Restyler",
     "caption": "RODECRe-4368-def"
    },
    {
     "src": "/media/models/restyler/catalogue-026-104.webp",
     "thumb": "/media/models/restyler/catalogue-026-104.thumb.webp",
-    "w": 948,
-    "h": 678,
+    "w": 876,
+    "h": 650,
     "alt": "Rodec Restyler",
     "caption": "Restyler, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/restyler/catalogue-027-106.webp",
     "thumb": "/media/models/restyler/catalogue-027-106.thumb.webp",
-    "w": 409,
-    "h": 329,
+    "w": 433,
+    "h": 352,
     "alt": "Rodec Restyler",
     "caption": "Restyler, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/restyler/catalogue-027-105.webp",
     "thumb": "/media/models/restyler/catalogue-027-105.thumb.webp",
-    "w": 332,
+    "w": 330,
     "h": 212,
     "alt": "Rodec Restyler",
     "caption": "Restyler, Rodec catalogue 2010"
@@ -4472,8 +4617,8 @@
    {
     "src": "/media/models/restyler/catalogue-027-107.webp",
     "thumb": "/media/models/restyler/catalogue-027-107.thumb.webp",
-    "w": 399,
-    "h": 205,
+    "w": 432,
+    "h": 223,
     "alt": "Rodec Restyler",
     "caption": "Restyler, Rodec catalogue 2010"
    }
@@ -4505,32 +4650,32 @@
    {
     "src": "/media/models/patch-live/catalogue-028-1025.webp",
     "thumb": "/media/models/patch-live/catalogue-028-1025.thumb.webp",
-    "w": 1004,
-    "h": 595,
+    "w": 1060,
+    "h": 649,
     "alt": "Rodec Patch Live",
     "caption": "Patch Live, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/patch-live/catalogue-029-1028.webp",
     "thumb": "/media/models/patch-live/catalogue-029-1028.thumb.webp",
-    "w": 573,
-    "h": 236,
+    "w": 595,
+    "h": 268,
     "alt": "Rodec Patch Live",
     "caption": "Patch Live, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/patch-live/catalogue-029-1026.webp",
     "thumb": "/media/models/patch-live/catalogue-029-1026.thumb.webp",
-    "w": 580,
-    "h": 189,
+    "w": 608,
+    "h": 219,
     "alt": "Rodec Patch Live",
     "caption": "Patch Live, Rodec catalogue 2010"
    },
    {
     "src": "/media/models/patch-live/catalogue-028-112.webp",
     "thumb": "/media/models/patch-live/catalogue-028-112.thumb.webp",
-    "w": 460,
-    "h": 320,
+    "w": 498,
+    "h": 347,
     "alt": "Rodec Patch Live",
     "caption": "Patch Live, Rodec catalogue 2010"
    }
