@@ -6,11 +6,11 @@ import { NAV, LINKS } from '../data/site';
 interface Props { title?: string; description?: string; image?: string; jsonLd?: object | object[] }
 const {
   title,
-  description = 'The archive of Rodec, the Belgian brand that has been serving DJs since 1954: history, every model, original brochures and all the manuals and schematics we could find.',
+  description = 'The archive of Rodec, the Belgian DJ mixer brand that has been moving crowds since 1954: history, every model, original brochures and all the manuals and schematics we could find.',
   image = '/media/book/ro-000.webp',
   jsonLd,
 } = Astro.props;
-const fullTitle = title ? `${title} · Rodec Legacy` : 'Rodec Legacy · Serving DJs since 1954';
+const fullTitle = title ? `${title} · Rodec Legacy` : 'Rodec Legacy · Moving crowds since 1954';
 const path = Astro.url.pathname;
 const canonical = new URL(path, Astro.site);
 const GTM_ID = 'GTM-KPNSLV7M';
@@ -83,7 +83,7 @@ const analytics = import.meta.env.PROD; // no tracking in local dev
       <div class="wrap foot__inner">
         <div class="foot__brand">
           <Logo variant="emblem" class="foot__emblem" />
-          <p class="display foot__claim">Serving DJ’s<br />since 1954</p>
+          <p class="display foot__claim">Moving crowds<br />since 1954</p>
         </div>
         <div class="foot__cols">
           <div>

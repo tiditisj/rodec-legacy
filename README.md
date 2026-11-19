@@ -1,6 +1,6 @@
 # Rodec Legacy
 
-**legacy.rodec.com**: the archive of Rodec, the Belgian brand that has been serving DJs since 1954.
+**legacy.rodec.com**: the archive of Rodec, the Belgian DJ mixer brand that has been moving crowds since 1954.
 
 The site covers:
 
