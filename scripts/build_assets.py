@@ -153,7 +153,69 @@ def autotrim(im: Image.Image, margin: float = 0.05) -> Image.Image:
     return out
 
 
-def to_webp(src: Path, dst: Path, max_side: int, quality: int = 80, trim: bool = False) -> tuple[int, int]:
+# Studio prints scanned with their dark film edge: shown cut out on plain white instead.
+ON_WHITE = {"MX18 Front slanted BW", "MX18 Back BW", "MX180 Black Front slanted BW", "MX180 Back BW"}
+
+
+def on_white(im: Image.Image, margin: float = 0.06) -> Image.Image:
+    """Cut the dark film edge away, lift the grey studio backdrop to pure white and centre the
+    product on a white canvas."""
+    from PIL import ImageDraw, ImageFilter
+    rgb = im.convert("RGB")
+    g = rgb.convert("L")
+    w, h = g.size
+    px = g.load()
+
+    def mean(coords):
+        vals = [px[x, y] for x, y in coords]
+        return sum(vals) / len(vals)
+
+    def edge(line, limit):  # first line in from the edge that shows the light backdrop
+        for i in range(int(limit)):
+            if line(i) > 200:
+                return i
+        return 0
+
+    xs = range(0, w, 4)
+    top = edge(lambda i: mean([(x, i) for x in xs]), h * .35)
+    bot = edge(lambda i: mean([(x, h - 1 - i) for x in xs]), h * .35)
+    ys = range(top, h - bot, 4)
+    left = edge(lambda i: mean([(i, y) for y in ys]), w * .35)
+    right = edge(lambda i: mean([(w - 1 - i, y) for y in ys]), w * .35)
+    inset = max(4, min(w, h) // 150)
+    rgb = rgb.crop((left + (inset if left else 0), top + (inset if top else 0),
+                    w - right - (inset if right else 0), h - bot - (inset if bot else 0)))
+    g = rgb.convert("L")
+    w, h = g.size
+
+    # lift the backdrop to white with a highlight-only curve (product tones stay as they are)
+    k = max(2, min(w, h) // 60)
+    border = sorted(v for b in ((0, 0, w, k), (0, h - k, w, h)) for v in g.crop(b).getdata())
+    bg = border[len(border) // 2]
+    lo = bg - 30
+    lut = [v if v <= lo else min(255, round(lo + (v - lo) * (255 - lo) / max(1, bg - 8 - lo))) for v in range(256)]
+    rgb = rgb.point(lut * 3)
+
+    # flood the backdrop from the edges so vignetting and soft shadows go white too
+    mask = rgb.convert("L").point(lambda v: 255 if v >= 238 else 0)
+    for seed in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1), (w // 2, 0), (w // 2, h - 1)):
+        if mask.getpixel(seed) == 255:
+            ImageDraw.floodfill(mask, seed, 128)
+    bgmask = mask.point(lambda v: 255 if v == 128 else 0).filter(ImageFilter.GaussianBlur(1.2))
+    rgb = Image.composite(Image.new("RGB", rgb.size, (255, 255, 255)), rgb, bgmask)
+
+    bbox = rgb.convert("L").point(lambda v: 255 if v < 245 else 0).filter(ImageFilter.MedianFilter(5)).getbbox()
+    if not bbox:
+        return rgb
+    x0, y0, x1, y1 = bbox
+    pad = int(max(x1 - x0, y1 - y0) * margin)
+    out = Image.new("RGB", (x1 - x0 + 2 * pad, y1 - y0 + 2 * pad), (255, 255, 255))
+    out.paste(rgb.crop(bbox), (pad, pad))
+    return out
+
+
+def to_webp(src: Path, dst: Path, max_side: int, quality: int = 80, trim: bool = False,
+            white: bool = False) -> tuple[int, int]:
     dst.parent.mkdir(parents=True, exist_ok=True)
     if not stale(src, dst):
         with Image.open(dst) as im:
@@ -163,7 +225,9 @@ def to_webp(src: Path, dst: Path, max_side: int, quality: int = 80, trim: bool =
         im = ImageOps.exif_transpose(im)
         if im.mode in ("1", "L", "P", "LA", "I;16", "I", "CMYK"):
             im = im.convert("RGBA" if "A" in im.mode or im.mode == "P" else "RGB")
-        if trim:
+        if white:
+            im = on_white(im)
+        elif trim:
             im = autotrim(im)
         im.thumbnail((max_side, max_side), Image.LANCZOS)
         im.save(dst, "WEBP", quality=quality, method=5)
@@ -179,13 +243,14 @@ class Img:
     full: int = 1800
     thumb: int = 640
     trim: bool = False
+    white: bool = False  # cut out on plain white (see ON_WHITE)
 
     def build(self) -> dict:
         if self.trim is None:
             self.trim = False
         trim = self.trim or self.key.startswith("models/")
-        w, h = to_webp(self.src, MEDIA / f"{self.key}.webp", self.full, trim=trim)
-        to_webp(self.src, MEDIA / f"{self.key}.thumb.webp", self.thumb, 74, trim=trim)
+        w, h = to_webp(self.src, MEDIA / f"{self.key}.webp", self.full, trim=trim, white=self.white)
+        to_webp(self.src, MEDIA / f"{self.key}.thumb.webp", self.thumb, 74, trim=trim, white=self.white)
         out = {"src": f"/media/{self.key}.webp", "thumb": f"/media/{self.key}.thumb.webp",
                "w": w, "h": h, "alt": self.alt}
         if self.caption:
@@ -635,7 +700,8 @@ def main() -> None:
     for m in models:
         items = sorted(m["photos"], key=photo_rank)
         m["photos"] = [Img(p, f"models/{m['slug']}/{slugify(stem)}", f"Rodec {m['name']}",
-                           re.sub(r"(?i)\b(BW|C)\b", "", stem).strip()).build() for p, stem in items]
+                           re.sub(r"(?i)\b(BW|C)\b", "", stem).strip(), white=p.stem in ON_WHITE).build()
+                       for p, stem in items]
 
     # ---- studio photo prints from the archive boxes
     for stem, slug, cap, first in box_scans.PHOTOS:

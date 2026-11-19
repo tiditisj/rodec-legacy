@@ -2739,8 +2739,8 @@
    {
     "src": "/media/models/mx18/mx18-front-slanted-bw.webp",
     "thumb": "/media/models/mx18/mx18-front-slanted-bw.thumb.webp",
-    "w": 1403,
-    "h": 1146,
+    "w": 1426,
+    "h": 747,
     "alt": "Rodec MX18",
     "caption": "MX18 Front slanted"
    },
@@ -2755,8 +2755,8 @@
    {
     "src": "/media/models/mx18/mx18-back-bw.webp",
     "thumb": "/media/models/mx18/mx18-back-bw.thumb.webp",
-    "w": 1399,
-    "h": 1150,
+    "w": 1411,
+    "h": 635,
     "alt": "Rodec MX18",
     "caption": "MX18 Back"
    }
@@ -3054,8 +3054,8 @@
    {
     "src": "/media/models/mx180/mx180-black-front-slanted-bw.webp",
     "thumb": "/media/models/mx180/mx180-black-front-slanted-bw.thumb.webp",
-    "w": 1086,
-    "h": 1069,
+    "w": 1020,
+    "h": 614,
     "alt": "Rodec MX180",
     "caption": "MX180 Black Front slanted"
    },
@@ -3070,8 +3070,8 @@
    {
     "src": "/media/models/mx180/mx180-back-bw.webp",
     "thumb": "/media/models/mx180/mx180-back-bw.thumb.webp",
-    "w": 1109,
-    "h": 1090,
+    "w": 1087,
+    "h": 510,
     "alt": "Rodec MX180",
     "caption": "MX180 Back"
    },
